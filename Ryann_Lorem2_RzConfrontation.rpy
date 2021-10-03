@@ -35,7 +35,7 @@ hide reza
 $ renpy.pause (8.5)
 hide rezashotsixtimes with dissolve
 
-m "I immediately went to check on Lorem. {w}He was unconscious, but didn't have any visivble injuries which was a releif."
+m "I immediately went to check on Lorem. {w}He was unconscious, but didn't have any visible injuries which was a releif."
 m "Maverick hobbled over to me."
 Mv nice flip "Guess I was wrong about you."
 c "Are you okay?"
@@ -46,7 +46,7 @@ show maverick nice
 $ renpy.pause (0.2)
 hide maverick with easeoutleft
 
-m "Mavrick went to get help while I watched over Lorem, I check on Reza, and unsuprisingly, he was dead."
+m "Mavrick went to get help while I watched over Lorem, I checked on Reza, and unsuprisingly, he was dead."
 m "He had an unanticipated amount of ammo on him though, much more needed for simple self-defence."
 play sound "fx/door/hallwaydoor.ogg"
 m "The sound of a door opening behind me snapped me out of my thoughts. {w}It was the Administrator."
