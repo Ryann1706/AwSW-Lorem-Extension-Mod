@@ -14,7 +14,8 @@ menu:
         Lo "You really don't mind?"
         c "Not at all, I don't think of you any diffrently or any less of you, now that I know that."
         Lo relieved "Thank you... That meant so much more then you could ever think..."
-        Lo "Hearing that is such a big relief."
+        $ renpy.pause (1.5)
+        Lo sad "Hearing that is such a big relief."
         m "Lorem pulled away and continued talking."
 
 
