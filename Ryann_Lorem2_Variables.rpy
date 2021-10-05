@@ -4,6 +4,9 @@
 
 define Rn = Character(_("Ryan"), color="#008000")
 
+init python:
+    ryannixomenbook = False
+
 
 label ryann_lorem2_ixomenbook:
 $ ryannixomenbook = True
