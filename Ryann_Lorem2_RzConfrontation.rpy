@@ -42,7 +42,7 @@ m "Maverick hobbled over to me."
 Mv nice flip "Guess I was wrong about you."
 c "Are you okay?"
 Mv "Hurts like hell, but I'll live. {w}How is he?"
-c "He's unconscious, but I think other than he's fine."
+c "He's unconscious, but I think other than that he's fine."
 Mv "I'll get help, you stay here and watch over him."
 show maverick nice
 $ renpy.pause (0.2)
