@@ -13,6 +13,7 @@ class AWSWMod(Mod):
     def mod_load(self):
         ml = modinfo.get_mod("MagmaLink").import_ml()
 
+        # These are for changing Lorem's 4th date and the Reza confrontation
         ml.find_label("menubooks") \
             .search_menu("The Ixomen Sphere and How to Use it").branch() \
             .search_say("Quick start guide") \
@@ -35,7 +36,43 @@ class AWSWMod(Mod):
             .search_say("They belong to humanity!") \
             .hook_to("ryann_lorem2_rezaconfrontation", condition="SphereCharged == True")
 
+        # These are defining variables for the tests in Anna3 (Not fully used yet)
+        # Agreeing to do the tests
+        ml.find_label("anna1skip") \
+            .search_say("Just look at that, I won.") \
+            .hook_call_to("ryann_lorem2_agreeannatest")
+
+        ml.find_label("cont4") \
+            .search_if("annaanswers == 3").branch_else() \
+            .search_say("And in a twist of fate that shocked no one, Anna, the magnificent, won the game.") \
+            .hook_call_to("ryann_lorem2_agreeannatest")
+
+        ml.find_label("cont4") \
+            .search_if("annaanswers == 3").branch() \
+            .search_say("Well, it appears to me that our game has ended in a tie.") \
+            .hook_call_to("ryann_lorem2_agreeannatest")
+
+        ml.find_label("c3fac") \
+            .search_if("annasurvives == False").branch_else() \
+            .search_if("annastatus == \"none\"").branch() \
+            .search_menu("Sure.", depth=450).branch() \
+            .search_say("Oh, great. In that case, I could make time for a few of your questions.") \
+            .hook_call_to("ryann_lorem2_agreeannatest")
+
+        # Canceling the test because lab was raided
+        ml.find_label("c4facility") \
+            .search_if("annasurvives == True").branch() \
+            .search_if("annastatus == \"good\"").branch_else() \
+            .search_say("Also, it doesn't look like I'll be able to do those tests on you any longer, so don't bother contacting me again.") \
+            .hook_call_to("ryann_lorem2_cancelannatest", condition= "rnagreedannatest == True") 
+
+        # Actually doing the tests
+        ml.find_label("anna3") \
+            .search_say("There you are. I was wondering if you'd even show up.") \
+            .hook_call_to("ryann_lorem2_didannatest") 
+
+
 
     def mod_complete(self):
         pass
-        
+
