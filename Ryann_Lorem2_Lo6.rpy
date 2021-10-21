@@ -502,7 +502,7 @@ elif rnwyrasked == 2:
         "Mac & Cheese":
             c "I think I’d choose mac & cheese."
             c "But not the kind you’d get from a box, I mean the homemade kind."
-            c "But nearly every time I make Its always a bit burnt, the time when its perfect to take out of the oven is far too short."
+            c "But nearly every time I make it, it's always a bit burnt, the time when its perfect to take out of the oven is far too short."
             Ip think "I've never had the homemade kind."
             c "Well, you’re missing out then."
 
