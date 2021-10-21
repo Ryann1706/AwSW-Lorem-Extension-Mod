@@ -114,7 +114,7 @@ m "Still quite shaken from the encounter with Reza I just went straight to bed, 
 $ renpy.pause (2.0)
 scene black with dissolveslow
 
- $ renpy.pause (3.0)
+$ renpy.pause (3.0)
 
 if player_name == "Thing":
     jump ryann_lorem2_spiteeval
