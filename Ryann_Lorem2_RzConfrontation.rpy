@@ -24,7 +24,7 @@ $ renpy.pause (4.5)
 show reza gunself with dissolve
 hide loremwounded with fade
 play sound "fx/glassimpact.ogg"
-m "I hurled the Ixomen Sphere in Reza direction, witch moved with supprising speed, hitting Reza right between the eyes, causing him to stagger back, dazed, and involuntarily toss his gun towards me."
+m "I hurled the Ixomen Sphere in Reza direction, which moved with supprising speed, hitting Reza right between the eyes, causing him to stagger back, dazed, and involuntarily toss his gun towards me."
 show reza angry with dissolve
 m "I picked it up, and not wanting to take any chances, and unsure how to properly weild a gun, I just wildly fired in his direction."
 play sound "fx/gunshots3.ogg"
