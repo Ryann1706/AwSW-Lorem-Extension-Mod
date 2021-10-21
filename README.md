@@ -6,3 +6,5 @@ This needs MagmaLink to work witch can be found here, or on the Steam workshop.
 https://gitlab.com/jakzie2/awsw-magmalink
 
 Feedback is greatly appriciated so feel free to message me on disscord at Ryann1706#2372
+
+Huge thanks to Jakzie, 4onen and Eval for helping me with this.
