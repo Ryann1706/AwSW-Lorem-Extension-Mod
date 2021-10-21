@@ -114,30 +114,13 @@ m "Still quite shaken from the encounter with Reza I just went straight to bed, 
 $ renpy.pause (2.0)
 scene black with dissolveslow
 
-Rn "Well I hope you enjoyed the mod, because right now thats all there is."
-Rn "I am planning on finishing it but it'll probely be a while before its completly finished."
-Rn "Also, if you find any bugs or have any ideas on what I should add, message me on discord at Ryann1706#2372."
-$ renpy.pause (1.5) 
+ $ renpy.pause (3.0)
 
 if player_name == "Thing":
-    Rn "Hopefully this is working right."
-    Rn "If it is, this should be a personal message for Eval."
-    Rn "I wanted to say thanks for helping test my mods for me."
-    Rn "Also (as of writing this) the score for bug finding is Ryann:100+ to Eval:5."
-    Rn "And I bet you wont be able to overtake me by the time i've fully finished this mod."
-    Rn "Also make more mods so I can have even more of a lead."
-
-
-
-elif player_name == "Jakzie":
-    Rn "Hopefully this is working right."
-    Rn "If it is, this should be a personal message for Jakzie"
-    Rn "I just wanted to say thanks for helping me with my code. I really appreciate it."
-    Rn "Also, I hope I didn’t annoy you with how often I messaged you."
-    Rn "If there's any way to repay the favor let me know."
+    jump ryann_lorem2_spiteeval
 
 else:
-    pass
+    jump ryann_lorem2_lorem6
 
-jump mainmenu
+
         
