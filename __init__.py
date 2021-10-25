@@ -19,6 +19,13 @@ class AWSWMod(Mod):
             .search_say("Quick start guide") \
             .hook_to("ryann_lorem2_ixomenbook")
         
+        ml.find_label("lorem2") \
+            .search_if("annadead == False", depth=550).branch() \
+            .search_say("Yes, but that makes me wonder: [player_name], did you agree to visit her and undergo her rigorous testing regimen?") \
+            .hook_to("ryann_lorem2_lo2change") \
+            .search_say("Oh, and Lorem: Have you seen my Ixomen Sphere recently?") \
+            .link_from("ryann_lorem2_lo2change_end")
+        
         ml.find_label("lorem4") \
             .search_say("In the eyes of some, that makes me a freak of nature. Something that needs fixing, or shouldn't exist in the first place.", depth=600) \
             .hook_to("ryann_lorem2_lorem4change") \
