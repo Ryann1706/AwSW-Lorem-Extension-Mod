@@ -1,4 +1,17 @@
 
+label ryann_lorem2_lo2change:
+
+if rnagreedannatest == True:
+    c "I did."
+    Ip normal "Oh. Good luck to you, then."
+
+else:
+    c "Certainly not."
+    Ip normal "Evidently, she thinks otherwise."
+
+jump ryann_lorem2_lo2change_end
+
+
 label ryann_lorem2_lorem4change:
 
 menu:
