@@ -689,9 +689,9 @@ scene black with dissolveslow
 stop music fadeout 2.0
 $ renpy.pause (3.0)
 
-Rn "Well, I hoped you enjoyed the mod so far."
-Rn "Obviously this isnt finished yet, but it will be at some point."
-Rn "Please send any feedback to me at Ryann1706#2372 on discord."
+Rnn "Well, I hoped you enjoyed the mod so far."
+Rnn "Obviously this isnt finished yet, but it will be at some point."
+Rnn "Please send any feedback to me at Ryann1706#2372 on discord."
 nvl clear
 $ renpy.pause (1.0)
 
