@@ -76,7 +76,7 @@ window show
 n "Dear [player_name],"
 n "I hope you are in good health and condition given the circumstances you were under in recent times."
 n "I am writing to inform you that we must discuss matters related to the portal, your ambassador status and other important details."
-n "Please come to see me at my office your earliest convenience."
+n "Please come to see me at my office at your earliest convenience."
 n "Minister of Culture and Arts,"
 n "Emera."
 window hide
@@ -115,7 +115,7 @@ c "This might sound hard to believe, but... The human and dragon's world aren't 
 Lo "Wait... You’re saying the portal is actually a time machine?"
 c "Well, basically yeah, but there's more."
 c "The coordinates to the human world are... Gone, so I’ll be staying here permanently."
-Lo sad flip "Oh... [player_name] I’m so sorry to hear that, but what do you mean they’re gone what happened?"
+Lo sad flip "Oh... [player_name] I’m so sorry to hear that, but what do you mean they’re gone, what happened?"
 Lo "Actually, you don’t have to talk about it if you don’t want to... It must still be pretty painful..."
 c "It’s okay Lorem, but there's one last thing, have you heard anything about a comet lately?"
 Lo think flip "Ipsum offhandedly mentioned it at some point, but with everything else you’ve said I don’t think it's good news."
@@ -141,6 +141,7 @@ jump ryann_lorem2_lorem6_aptsearch
 label ryann_lorem2_lorem6_aptsearch:
 
 if ryannlookatthings == 4:
+    $ renpy.pause (0.5)
     c "(I think I've looked at enough.)"
     jump ryann_lorem2_lorem6_loremreturn
 else:
