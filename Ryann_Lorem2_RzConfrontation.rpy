@@ -103,9 +103,14 @@ menu:
         $ renpy.pause (0.2)
         hide izumi with easeoutright
     
+if brycedead == False:
+    m "Soon after, Maverick returned with Bryce and some paramedics, who had already bandaged Maverick's wound, they proceded to check over me and then bring Lorem to the hospital to be monitored."
+    m "Bryce took mine and Maverick's statements and escorted me back to my apartment."
 
-m "Soon after, Maverick returned with Bryce and some paramedics, who had already bandaged Maverick's wound, they proceded to check over me and then bring Lorem to the hospital to be monitored."
-m "Bryce took mine and Maverick's statements and escorted me back to my apartment."
+else:
+    m "Soon after, Maverick returned with some paramedics, who had already bandaged Maverick's wound, they proceded to check over me and then bring Lorem to the hospital to be monitored."
+    m "I left after, and made my way back to my apartment."
+
 stop music fadeout 2.0
 scene black with dissolveslow
 scene o3 with dissolveslow
