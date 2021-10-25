@@ -2,7 +2,7 @@
 # This file is for variables and defining stuff, so kinda just ignore this one.
 
 
-define Rn = Character(_("Ryan"), color="#008000")
+define Rnn = Character(_("Ryan"), color="#008000")
 
 
 init python:
