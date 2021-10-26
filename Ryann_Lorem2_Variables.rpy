@@ -87,16 +87,16 @@ label ryann_lorem2_cancelannatest:
 
 
 label ryann_lorem2_spiteeval:
-    Rn "Heya Eval buddy."
-    Rn "I really appreciate you looking through my mod for me."
-    Rn "I appreciate it so much I handpicked a song for this next scene just for you."
-    Rn "Hope you enjoy."
+    Rnn "Heya Eval buddy."
+    Rnn "I really appreciate you looking through my mod for me."
+    Rnn "I appreciate it so much I handpicked a song for this next scene just for you."
+    Rnn "Hope you enjoy."
     scene o4 with dissolveslow
     play music "mx/funness.ogg"
     $ renpy.pause (10.0)
     stop music fadeout 2.0
     scene black 
-    Rn "Just kidding, im not that cruel."
-    Rn "(Hopefully no one looks through the code and finds this.)"
+    Rnn "Just kidding, im not that cruel."
+    Rnn "(Hopefully no one looks through the code and finds this.)"
     jump ryann_lorem2_lorem6
 
