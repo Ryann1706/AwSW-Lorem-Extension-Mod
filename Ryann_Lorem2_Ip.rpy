@@ -536,7 +536,7 @@ else:
     $ renpy.pause (0.5)
     show anna disgust b at right with easeinright
     An "Which one of you bastards keeps doing this? You’re dead when I get my hands on you!" with vpunch
-    show anna disgust b with dissolve
+    show anna disgust b flip with dissolve
     $ renpy.pause (0.3)
     hide anna with easeoutright
     m "It was hard for us to continue without laughing at this point."
