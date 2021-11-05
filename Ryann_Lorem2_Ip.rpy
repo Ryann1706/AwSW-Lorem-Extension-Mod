@@ -22,7 +22,7 @@ else:
 $ renpy.pause (2.0)
 Ip "Hey [player_name], what is it?"
 c "I know it’s a bit short notice but, I can come in for those tests you wanted to do."
-Ip "Actually, it’s perfect timing, I don’t start work for a while, so we can do in... roughly an hour?"
+Ip "Actually, it’s perfect timing, I don’t start work for a while, so we can do it in... roughly an hour?"
 c "Sound good to me."
 Ip "I’ll meet you outside and bring you to the testing room."
 c "See you soon then."
@@ -90,7 +90,7 @@ c "Yes, that’s true."
 Ip think "If you don’t mind me asking, why?"
 c "Well, one reason is because human skin isn’t as good of an insulator as fur or scales, so in the past clothes were the solution."
 c "But as our society was developed it became a social norm and law to wear clothes."
-c "For humans, wearing little or no clothes Infront of someone, is either seen as inappropriate or shameless, or as a sign of affection, and an implication of something more... intimate."
+c "For humans, wearing little or no clothes infront of someone, is either seen as inappropriate or shameless, or as a sign of affection, and an implication of something more... intimate."
 Ip sad "Ah, I’m sorry if I made you feel uncomfortable or offended you when I said I was curious what was under you clothes earlier then."
 c "It’s fine, you didn’t know."
 $ renpy.pause (0.5)
@@ -112,7 +112,7 @@ if annadead == True:
     m "We had a few minutes of silence while waiting for the machine to start-up."
 
 else:
-    m "I was about to ask something when I heard loud, angry footsteps approaching the room."
+    m "I was about to ask something when I heard loud angry footsteps approaching the room."
     play sound "fx/ryanndoorslam.mp3"
     show ipsum normal with dissolve
     show ipsum at right with move 
@@ -536,6 +536,8 @@ else:
     $ renpy.pause (0.5)
     show anna disgust b at right with easeinright
     An "Which one of you bastards keeps doing this? You’re dead when I get my hands on you!" with vpunch
+    show anna disgust b with dissolve
+    $ renpy.pause (0.3)
     hide anna with easeoutright
     m "It was hard for us to continue without laughing at this point."
     play sound "fx/knocking1.ogg"
