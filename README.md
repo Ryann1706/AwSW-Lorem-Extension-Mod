@@ -1,6 +1,6 @@
 # AwSW-Lorem-Extention-Mod
 This is a demo for an extension mod for Lorem.
-This isnt finished, this current version only has some changes for Lorems 4th date, a better ending and an extra scene.
+This isnt finished, this current version has some changes for Lorems 4th date, a better ending, extra scene with Lorem and Ipsum and one with Ipsum alone.
 
 This needs MagmaLink to work witch can be found here, or on the Steam workshop.
 https://gitlab.com/jakzie2/awsw-magmalink
