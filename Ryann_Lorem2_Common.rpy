@@ -61,7 +61,7 @@ label ryann_lorem2_ixomenbook:
 
 # This is for overcoming Anna’s status being abandoned at the start of Lorem4 
 
-label ryann_lorem2_lo4annastatus:
+label ryann_lorem2_c5annastatus:
     if rnannastatus == "neutral":
         $ annastatus = "neutral"
     elif rnannastatus == "good":
