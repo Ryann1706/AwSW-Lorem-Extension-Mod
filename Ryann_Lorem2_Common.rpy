@@ -4,6 +4,7 @@
 
 define Rnn = Character(_("Ryan"), color="#008000")
 
+image ryannfacilitylab = "bg/ryannfacilitylab.jpg"
 
 init python:
     # This is for dialoge changing for charging the Ixomen Sphere if you've read the book or not
@@ -41,6 +42,13 @@ init python:
     # Lorem romanece counter
     rnloremromance = 0
 
+    # For extra content if played Casual Vandalism
+    WindowSmashed = False
+
+    # Other random stuff
+    ryannmavapology = False
+    ryannipsumalarm = False
+
 
 
 # These are hooking from something to change a veriable
@@ -55,14 +63,28 @@ label ryann_lorem2_ixomenbook:
 
 label ryann_lorem2_lo4annastatus:
     if rnannastatus == "neutral":
-        $ annastatus = neutral
+        $ annastatus = "neutral"
     elif rnannastatus == "good":
-        $ annastatus = good
+        $ annastatus = "good"
     elif rnannastatus == "bad":
-        $ annastatus = bad
+        $ annastatus = "bad"
     else:
         pass
-    jump ryann_lorem2_lo4annastatusreturn
+    return
+    
+    
+label ryann_lorem2_annastatusneutral:
+    $ rnannastatus = "neutral"
+    return
+
+label ryann_lorem2_annastatusgood:
+    $ rnannastatus = "good"
+    return
+
+label ryann_lorem2_annastatusbad:
+    $ rnannastatus = "bad"
+    return
+    
 
 # Theres are about the defining the Anna3 tests (If you agreed to, did or canceled doing the tests.) 
 
