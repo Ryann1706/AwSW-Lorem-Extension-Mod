@@ -5,7 +5,7 @@ from modloader.modclass import Mod, loadable_mod
 @loadable_mod
 class AWSWMod(Mod): 
     name="Lorem Extention Mod"
-    version="v0.2"
+    version="v0.3"
     author="Ryann1706"
     nsfw=False
 
@@ -43,7 +43,7 @@ class AWSWMod(Mod):
             .search_say("They belong to humanity!") \
             .hook_to("ryann_lorem2_rezaconfrontation", condition="SphereCharged == True")
 
-        # These are defining variables for the tests in Anna3 (Not fully used yet)
+        # These are defining variables for the tests in Anna3 
         # Agreeing to do the tests
         ml.find_label("anna1skip") \
             .search_say("Just look at that, I won.") \
@@ -77,7 +77,26 @@ class AWSWMod(Mod):
         ml.find_label("anna3") \
             .search_say("There you are. I was wondering if you'd even show up.") \
             .hook_call_to("ryann_lorem2_didannatest") 
+        
+        # These are overcoming Anna's status being abononed at the start of chapter 5
+        ml.find_label("anna3skip") \
+            .search_if("anna3mood >= 8").branch() \
+            .search_say("I wouldn't mind staying for a bit longer.") \
+            .hook_call_to("ryann_lorem2_annastatusgood")
 
+        ml.find_label("anna3skip") \
+            .search_if("anna3mood >= 8").branch_else() \
+            .search_say("Sure. Thanks for having me.") \
+            .hook_call_to("ryann_lorem2_annastatusneutral")
+
+        ml.find_label("anna3") \
+            .search_if("anna3mood <= 2", depth=1300).branch() \
+            .search_say("We're done here. Get out.") \
+            .hook_call_to("ryann_lorem2_annastatusbad")
+
+        ml.find_label("chapter5") \
+            .search_say("After a night of turbulent dreams, my consciousness returned to the shores of the waking world.", depth=450) \
+            .hook_call_to("ryann_lorem2_c5annastatus")
 
 
     def mod_complete(self):
