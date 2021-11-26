@@ -46,6 +46,7 @@ c "Good morning Emera, your letter said you had something to discuss with me?"
 Em ques "I see you’re getting straight to business."
 $ renpy.pause (1.0)
 Em normal "There was an in-depth investigation done over yesterday and the night before on the underground building, because of the... {w}situation with Reza."
+Em "Due to water pockets surrounding the building, only just beyond the entrance could be examined carefully."
 Em "The portal was examined as well, and it was found out that it is no longer functioning."
 c "You mean its broken?"
 Em "Not in the way you think, the portal itself is properly functioning, but the coordinates to the human world are missing."
@@ -93,7 +94,7 @@ m "Somehow, I managed to get it all done, but just as I was leaving..."
 # There's defiantly a better way to do this with labels but I can't be bothered, might improve at some point, might not idk
 
 if brycedead == False:
-    if WindowSmashed == True:
+    if ryannwindowssmashed > 0:
         m "I saw Bryce, who started walking over to me."
         if brycestatus == "good" or brycestatus == "neutral":
             show bryce normal b with easeinright
