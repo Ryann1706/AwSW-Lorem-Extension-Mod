@@ -485,7 +485,7 @@ elif rnwyrasked == 2:
     Ip normal "So, you can ask me that kind of question but I can't?"
     Lo sad flip"I meant because I'm not giving up on my game, so the poor plants will just die."
     Ip think "Oh, I should have clarified your game wasn’t included."
-    Lo normal flip "I’d still choose games regardless anyway."
+    Lo normal flip "I’d still choose games regardless."
     Lo "Anyway, [player_name]."
     Lo think flip "Would you rather eat ice cream or mac & cheese?"
     menu:
@@ -539,7 +539,7 @@ menu:
             "Be blind or deaf?" if not rnwyraskedlo3:
                 $ rnwyraskedlo3 = True
                 $ rnwyrasked += 1
-                c "Would you rather, blind or deaf for the rest of your life?"
+                c "Would you rather, be blind or deaf for the rest of your life?"
                 Lo think flip "Oh, that’s a bit tough..."
                 Lo "..."
                 Lo "I couldn’t work on my game if I was blind so I'll pick deaf."
@@ -617,7 +617,7 @@ menu:
         c "Unless, {w}this {i}is{/i} what you wanted to happen?"
         Lo think flip "[player_name], what do you mean?"
         c "Well, first Ipsum wondered what I looked like naked, now he wants to know if I'll kiss him?"
-        c " You really do have ulterior motives, dont you?"
+        c "You really do have ulterior motives, dont you?"
         Ip sad "N-no, thats not what I meant at all!"
         Lo normal flip "{i}Sure{/i}, it wasnt."
         $ renpy.pause (1.0)
