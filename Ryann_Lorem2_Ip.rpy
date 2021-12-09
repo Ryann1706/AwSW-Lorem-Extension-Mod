@@ -580,9 +580,10 @@ m "I waited for Ipsum to give me some kind of signal to jump out."
 $ renpy.pause (2.0)
 m "The door was open enough for me to jump out, and see Ipsum, but not enough for me or the other person to see each other."
 m "Ipsum signaled me and I leaped through the door."
-scene facin2 with dissolve
-show ipsum normal at right with dissolve
-show maverick normal b flip at left with dissolve 
+scene facin2 
+show ipsum normal at right
+show maverick normal b flip at left 
+with dissolve
 $ renpy.pause (0.3)
 show maverick scared b flip with dissolve
 m "But I stopped dead in my tracks when I saw Maverick."
