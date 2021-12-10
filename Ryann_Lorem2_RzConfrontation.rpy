@@ -24,9 +24,9 @@ $ renpy.pause (4.5)
 show reza gunself with dissolve
 hide loremwounded with fade
 play sound "fx/glassimpact.ogg"
-m "I hurled the Ixomen Sphere in Reza direction, which moved with supprising speed, hitting Reza right between the eyes, causing him to stagger back, dazed, and involuntarily toss his gun towards me."
+m "I hurled the Ixomen Sphere in Reza's direction, which moved with supprising speed, hitting Reza right between the eyes, causing him to stagger back, dazed, and involuntarily toss his gun towards me."
 show reza angry with dissolve
-m "I picked it up, and not wanting to take any chances, and unsure how to properly weild a gun, I just wildly fired in his direction."
+m "I picked it up, not wanting to take any chances, and unsure how to properly weild a gun, I just wildly fired in his direction."
 play sound "fx/gunshots3.ogg"
 $ renpy.pause (1.7)
 play sound "fx/impact.wav"
@@ -37,7 +37,7 @@ show maverick normal flip
 $ renpy.pause (8.5)
 hide rezashotsixtimes with dissolve
 
-m "I immediately went to check on Lorem. {w}He was unconscious, but didn't have any visible injuries which was a releif."
+m "I immediately went to check on Lorem. {w}They were unconscious, but didn't have any visible injuries which was a releif."
 m "Maverick hobbled over to me."
 Mv nice flip "Guess I was wrong about you."
 c "Are you okay?"
@@ -48,7 +48,7 @@ show maverick nice
 $ renpy.pause (0.2)
 hide maverick with easeoutleft
 
-m "Mavrick went to get help while I watched over Lorem, I checked on Reza, and unsuprisingly, he was dead."
+m "Maverick went to get help while I watched over Lorem, I checked on Reza, and unsuprisingly, he was dead."
 m "He had an unanticipated amount of ammo on him though, much more needed for simple self-defence."
 play sound "fx/door/hallwaydoor.ogg"
 m "The sound of a door opening behind me snapped me out of my thoughts. {w}It was the Administrator."
@@ -64,9 +64,9 @@ m "The Administrator took off their mask to reveal... {w}{i}My face?{/i}"
 show izumi normal with dissolve
 c "But... How is this possible?"
 "???" "To make a long story short, time travel is a hell of a lot more complicated than we initially thought."
-"???" "The Izumi in this timeline died at some point and since I was the person next in line with the most experience, I took her place."
-"???" "She left behind a lot to help me, it's almost as if she expecteed this to happen at some point..."
-"???" "Anyway, I carried out her plan just as she would which, unfortunately includeed deleting our home coordanates."
+"???" "The Izumi in this timeline died at some point, and since I was the person next in line with the most experience, I took her place."
+"???" "She left behind a lot to help me, it's almost as if she expected this to happen at some point..."
+"???" "Anyway, I carried out her plan just as she would, which unfortunately includeed deleting our home coordanates."
 c "Why did you do that?"
 "???" "Well, it was part of Izumi's plan and it was the most reliable way of stopping Reza from escaping with the generator we need to stop the comet."
 "???" "But more importantly, we didn’t save our people too this time, so one of us has to go back."
@@ -104,8 +104,8 @@ menu:
         hide izumi with easeoutright
     
 if brycedead == False:
-    m "Soon after, Maverick returned with Bryce and some paramedics, who had already bandaged Maverick's wound, they proceded to check over me and then bring Lorem to the hospital to be monitored."
-    m "Bryce took mine and Maverick's statements and escorted me back to my apartment."
+    m "Soon after, Maverick returned with Bryce and some paramedics, who had already bandaged Maverick's wound, they proceded to check over me, and then bring Lorem to the hospital to be monitored."
+    m "Bryce took mine and Maverick's statements, and escorted me back to my apartment."
 
 else:
     m "Soon after, Maverick returned with some paramedics, who had already bandaged Maverick's wound, they proceded to check over me and then bring Lorem to the hospital to be monitored."
@@ -115,7 +115,7 @@ stop music fadeout 2.0
 scene black with dissolveslow
 scene o3 with dissolveslow
 $ renpy.pause (2.0)
-m "Still quite shaken from the encounter with Reza I just went straight to bed, hoping to proses everything in the morning."
+m "Still quite shaken from the encounter with Reza, I just went straight to bed, hoping to proses everything in the morning."
 $ renpy.pause (2.0)
 scene black with dissolveslow
 
