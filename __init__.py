@@ -5,7 +5,7 @@ from modloader.modclass import Mod, loadable_mod
 @loadable_mod
 class AWSWMod(Mod): 
     name="Lorem Extention Mod"
-    version="v0.3"
+    version="v0.4"
     author="Ryann1706"
     nsfw=False
 
