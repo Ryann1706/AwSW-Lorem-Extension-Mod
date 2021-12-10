@@ -59,7 +59,7 @@ init python:
     # Lorem romanece counter
     rnloremromance = 0
     # For extra content if played Casual Vandalism
-    WindowSmashed = False
+    ryannwindowssmashed = 0
 
     # Other random stuff
     ryannmavapology = False
