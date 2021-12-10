@@ -96,6 +96,7 @@ init python:
     ryannscrewdriveratpump = False
     ryannpumpon = False
     # Other things
+    rnunlockedfootlocker = False 
     ryannlookedtable = False
     ryannlookedboxes = False
     ryannmovedboxes = False
