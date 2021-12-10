@@ -4,7 +4,24 @@
 
 define Rnn = Character(_("Ryan"), color="#008000")
 
+# For extra backgrounds
 image ryannfacilitylab = "bg/ryannfacilitylab.jpg"
+image ryannkitchen = "bg/ryannkitchen.jpg"
+image ryannundergroundlab = "bg/ryannundergroundlab.jpg"
+
+
+# For Lorem's extra sprites
+image lorem blush = "cr/lorem_blush.png"
+image lorem blush flip = im.Flip("cr/lorem_blush.png", horizontal=True)
+image lorem normal blush = "cr/lorem_normal_blush.png"
+image lorem normal blush flip = im.Flip("cr/lorem_normal_blush.png", horizontal=True)
+image lorem scared = "cr/lorem_scared.png"
+image lorem scared flip = im.Flip("cr/lorem_scared.png", horizontal=True)
+image lorem sleep = "cr/lorem_sleep.png"
+image lorem sleep flip = im.Flip("cr/lorem_sleep.png", horizontal=True)
+image lorem sleep blush = "cr/lorem_sleep_blush.png"
+image lorem sleep blush flip = im.Flip("cr/lorem_sleep_blush.png", horizontal=True)
+
 
 init python:
     # This is for dialoge changing for charging the Ixomen Sphere if you've read the book or not
@@ -41,13 +58,50 @@ init python:
     rnwyraskedip3 = False
     # Lorem romanece counter
     rnloremromance = 0
-
     # For extra content if played Casual Vandalism
     WindowSmashed = False
 
     # Other random stuff
     ryannmavapology = False
     ryannipsumalarm = False
+    
+    # For the minigame, joy...
+
+    # For the extra display
+    ryannDisplayVar1name = ""
+    ryannDisplayVar1 = 0
+    ryannDisplayVar1unit = ""
+    ryannDisplayVar2name = ""
+    ryannDisplayVar2 = ""
+    ryannDisplayVar2unit = ""
+    # The timer for the minigame
+    ryannactionsremaining = 25
+    # For the laptop search thing
+    ryannsearchterm = ""
+    ryannsecretscene = False
+    # For items in the minigame
+    ryanncurrentitem = "Nothing"
+    ryanncrowbarused = False
+    ryannwrenchused = False
+    ryanntapeused = False 
+    ryannhaskey = False 
+    ryannhaskeycard = False 
+    ryannwrenchlocker = False
+    # Things for the pump
+    ryannpumpbefore = False
+    ryannpumpused = False
+    ryannpumpfixed = False
+    ryannpumponoff = 0
+    ryannvalveatpump = False
+    ryannscrewdriveratpump = False
+    ryannpumpon = False
+    # Other things
+    ryannlookedtable = False
+    ryannlookedboxes = False
+    ryannmovedboxes = False
+    ryannlookedcabinet = False 
+    ryannlookedlist = False 
+
 
 
 
