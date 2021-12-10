@@ -1022,10 +1022,18 @@ menu:
                 jump ryann_lorem2_lo7_minigame_living
 
             else:
-                m "Using the key I got earlier I unlocked the footlocker, inside it were some personal items and some tools."
-                m "Out of all the tools only the scredriver seemed useful."
-                $ ryanncurrentitem = "Screwdriver"
-                $ ryannactionsremaining -= 1
+                if rnunlockedfootlocker == False:
+                    $ rnunlockedfootlocker = True
+                    m "Using the key I got earlier I unlocked the footlocker, inside it were some personal items and some tools."
+                    m "Out of all the tools only the scredriver seemed useful."
+                    $ ryanncurrentitem = "Screwdriver"
+                    $ ryannactionsremaining -= 1
+
+                else:
+                    m "I checked the footlocker again, and still, the screwdriver was the only useful thing in it."
+                    $ ryanncurrentitem = "Screwdriver"
+                    $ ryannactionsremaining -= 1
+
 
             jump ryann_lorem2_lo7_minigame_living
 
