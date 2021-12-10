@@ -649,12 +649,8 @@ Ip normal "Anyway, I’ll see you later, thanks again for doing this."
 c "See ya."
 
 scene black with dissolveslow
-$ renpy.pause (2.0)
-Rnn "Well, I hoped you enjoyed the mod so far."
-Rnn "Obviously this isnt finished yet, but it will be at some point."
-Rnn "Please send any feedback to me at Ryann1706#2372 on discord."
-nvl clear
-$ renpy.pause (1.0)
+$ renpy.pause (4.0)
 
-jump mainmenu
+
+jump ryann_lorem2_lo7_start
 
