@@ -556,7 +556,7 @@ else:
 
 Ip happy "Again, that was a lot more fun that I thought, I might just do this again at some point."
 c "I’ve said it before but that Sphere really is useful."
-Ip normal "Can you say that more often in front of Lorem so he’ll stop saying it’s a toy for grown-ups?"
+Ip normal "Can you say that more often in front of Lorem so they’ll stop saying it’s a toy for grown-ups?"
 c "I will if I remember."
 Ip "Thank you."
 
