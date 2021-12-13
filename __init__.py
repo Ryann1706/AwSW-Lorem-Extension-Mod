@@ -96,7 +96,7 @@ class AWSWMod(Mod):
 
         ml.find_label("chapter5") \
             .search_say("After a night of turbulent dreams, my consciousness returned to the shores of the waking world.", depth=450) \
-            .hook_call_to("ryann_lorem2_c5annastatus")
+            .hook_call_to("ryann_lorem2_c5annastatus", condition= "anna4unplayed == True")
 
 
     def mod_complete(self):
