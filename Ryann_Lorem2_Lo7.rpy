@@ -1299,16 +1299,16 @@ if rnloremromance > 7:
     Lo blush "I have feeling for you, I-I like you as more than a friend..."
     $ renpy.pause (1.5)
     show lorem normal blush with dissolve 
-    m "Lorem and I looked deeply into each other's eyes, his having a hint of fear of being rejected, yet also hope and relief of finally telling me his true feelings."
+    m "Lorem and I looked deeply into each other's eyes, theirs having a hint of fear of being rejected, yet also hope and relief of finally telling me their true feelings."
     c "Lorem..."
     $ renpy.pause (1.5)
     c "I feel the same, I like you as more than a friend too."
     Lo "R-really...?"
-    m "I gently put my hand under Lorem’s chin, guiding his lips to mine, pulling him into a passionate kiss."
+    m "I gently put my hand under Lorem’s chin, guiding their lips to mine, pulling them into a passionate kiss."
     show lorem shy with dissolve 
     m "Lorem was surprised by my action, but soon gave in, returning the kiss and subtly slipping in a small amount tongue, which I took as an invitation to return the favor."
     show lorem sleep blush with dissolve 
-    m"I moved my hand from his chin and started caressing his neck, while he held my shoulders pulling me closer."
+    m "I moved my hand from their chin and started caressing their neck, while they held my shoulders pulling me closer."
     show lorem normal blush with dissolve 
     m "We slowly parted; eyes still locked."
     c "Really."
@@ -1332,7 +1332,7 @@ elif rnloremromance > 3:
     show lorem shy with dissolve 
     m "Lorem seemed flustered, yet still copied my actions, the two of us getting closer to each other by the second."
     show lorem sleep blush with dissolve 
-    m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck as he grabbed my shoulder, pulling me closer."
+    m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck as they grabbed my shoulder, pulling me closer."
     show lorem normal blush with dissolve
     m "We stayed like that for serval long seconds, until we both slowly pulled away, still staring into each other's eyes."
     c "Do you believe me now?"
@@ -1359,7 +1359,7 @@ if rnloremromance > 3:
 else:
     Lo normal "Sure, thanks for the offer."
 
-m "I brought Lorem to my bedroom and started preparing the bed for him, after I did, I looked at him and gestured towards it."
+m "I brought Lorem to my bedroom and started preparing the bed for them, after I did, I looked at them and gestured towards it."
 Lo think "Wait, you’re letting me sleep in your bed?"
 c "Of course, there's no way I'm letting you sleep on the couch, I want you to be as comfortable as possible."
 Lo normal "Alright, thank you..."
@@ -1376,20 +1376,20 @@ if rnloremromance > 3:
     $ renpy.pause (1.0)
     play sound "fx/undress.ogg"
     show lorem shy with dissolve
-    m "I started to get undressed, and as expected, Lorem got his usual adorable flustered look."
-    m "I got into the bed, and made short work of reducing the gap between us, after some slight hesitation Lorem did too, nuzzling himself into me."
+    m "I started to get undressed, and as expected, Lorem got their usual adorable flustered look."
+    m "I got into the bed, and made short work of reducing the gap between us, after some slight hesitation Lorem did too, nuzzling themselves into me."
     show lorem blush with dissolve
     $ renpy.pause (1.0)
     Lo "I didn’t know humans were so... warm, and soft, and cuddly..."
     show lorem sleep blush with dissolve 
-    m "I wrapped my arms around him, careful not to injure his wings, and pulled him into a closer embrace."
-    m "Lorem wrapped his arms around me too, eager to steal as much of my body heat as possible."
-    m "I kissed the top of his muzzle, and rested my chin on his forehead, helping him drift into a peaceful slumber."
+    m "I wrapped my arms around them, careful not to injure their wings, and pulled them into a closer embrace."
+    m "Lorem wrapped their arms around me too, eager to steal as much of my body heat as possible."
+    m "I kissed the top of their muzzle, and rested my chin on their forehead, helping them drift into a peaceful slumber."
     c "Goodnight, Lorem."
     Lo "Goodnight, [player_name]."
     $ renpy.pause (2.0)
     show lorem sleep with dissolveslow
-    m "I listened to Lorem’s breathing gradually slow down, and his grip on me relaxed, as he fell asleep."
+    m "I listened to Lorem’s breathing gradually slow down, and their grip on me relaxed, as they fell asleep."
     m "I held Lorem in my embrace, and closed my eyes too."
     m "For the first time in a while of being in the dragons world, I finally felt at peace, and was filled with a wave of contentedness."
     m "I slowly drifted off to sleep as well."
@@ -1421,8 +1421,8 @@ if rnloremromance > 3:
     show lorem sleep with dissolveslow
     $ renpy.pause (0.5)
     m "The adorable small dragon clinging to me was a pretty good reminder though."
-    m "Me and Lorem had moved during the night, so he was now lying on top of, his small tail wrapped around my leg and wings unfolded, covering me like a scaly blanket."
-    m "I hadn’t the heart to wake him."
+    m "Me and Lorem had moved during the night, so they were now lying on top of, their small tail wrapped around my leg and wings unfolded, covering me like a scaly blanket."
+    m "I hadn’t the heart to wake them."
     $ renpy.pause (3.5)
     m "After a while of being Lorem’s personal pillow, I made sure my movements getting up were very slow and carful as not to wake Lorem."
     Lo "Mmmhhh...?"
@@ -1452,38 +1452,38 @@ show lorem normal with dissolve
 $ renpy.pause (0.3)
 hide lorem with easeoutleft
 $ renpy.pause (0.5)
-c "(I didn’t even think he could be more adorable, but being half asleep does it apparently.)"
+c "(I didn’t even think they could be more adorable, but being half asleep does it apparently.)"
 m "After finishing up I brought our breakfast out to the living room."
 scene o4 with dissolveslow
 show lorem normal with dissolve 
 play sound "fx/undress.ogg"
 if rnloremromance > 3:
-    m "I handed Lorem his plate and sat down next to him, but he seemed unusually quiet."
+    m "I handed Lorem their plate and sat down next to them, but they seemed unusually quiet."
     c "Hey, Lorem, are you alright?"
     Lo think " It's just... About last night..."
     Lo "I... {w}You..."
     $ renpy.pause (1.5)
     Lo relieved "I don't know what I want to say..."
     $ renpy.pause (1.5)
-    m "I leaned over to Lorem and gave him a quick peck on the cheek."
+    m "I leaned over to Lorem and gave them a quick peck on the cheek."
     show lorem shy with dissolve
     c "Maybe we don't have to say anything, and we can just enjoy this together, we don't need to overthink it."
     show lorem normal blush with dissolve
     $ renpy.pause (1.5)
     Lo "Yeah, maybe you're right."
-    m "Lorem moved closer, cuddling into my side, and wrapping his small tail around my back."
+    m "Lorem moved closer, cuddling into my side, and wrapping their small tail around my back."
     c "Someone’s suddenly very clingy."
     Lo normal blush "It’s because of your warm soft skin, and now I know you're okay with... {w}{i}us{/i},{w=0.5} I'm definitely gonna do this more often, now that I know about it."
-    m "I said nothing in response, I just smiled at him and put my arm around his shoulder, pulling him closer."
+    m "I said nothing in response, I just smiled at them and put my arm around their shoulder, pulling them closer."
     m "We ate our breakfast together and afterwards set the plates aside, continuing to cuddle on the couch, just wanting to truly enjoy the quiet, peaceful moment together."
     m "I looked down at Lorem, who had a huge grin, and adorable blush, leaning into me."
     menu:
         "Caress their side.":
-            m "I moved my hand from Lorem’s shoulder and began to gently caress his side."
+            m "I moved my hand from Lorem’s shoulder and began to gently caress their side."
             play sound "fx/purr.ogg"
-            m "And in response Lorem started purring adorably, and moving closer to me, nuzzling his head onto my chest."
+            m "And in response Lorem started purring adorably, and moving closer to me, nuzzling their head onto my chest."
             Lo sleep blush "Your hands feel amazing..."
-            m "I continued to caress him for a while longer, enjoying listening to his contented purring."
+            m "I continued to caress them for a while longer, enjoying listening to their contented purring."
             c "You’re really enjoying this, huh?"
             Lo "I never thought {i}I’d{/i} be jealous of someone's hands; I hope you do stuff like this more often..."
             c "Maybe I will, just for you."
@@ -1493,8 +1493,8 @@ if rnloremromance > 3:
 
         "Just cuddle.":
             m "I didn’t want to rush things and possibly make Lorem uncomfortable, so we continued to cuddle together on the couch."
-            m "His small tail subtly wrapped itself around my back even further, and one of his hands rested on my thigh."
-            c "(I don’t expect Lorem to be this comfortable already, given how nervous he was before, but I'm definitely not complaining.)"
+            m "Their small tail subtly wrapped itself around my back even further, and one of their hands rested on my thigh."
+            c "(I don’t expect Lorem to be this comfortable already, given how nervous they were before, but I'm definitely not complaining.)"
             $ renpy.pause (2.5)
             m "After cuddling for a while longer, Lorem sighed and moved away slightly to look up at me."
 
@@ -1504,7 +1504,7 @@ if rnloremromance > 3:
     c "That’s convenient."
     play sound "fx/undress.ogg"
     $ renpy.pause (3.0)
-    m "I walked Lorem to the door, but just as he was about to leave, he tuned back around towards me. With an assisting flap of his wings, he jumped up to kiss my cheek before leaving."
+    m "I walked Lorem to the door, but just as they was about to leave, they tuned back around towards me. With an assisting flap of their wings, they jumped up to kiss my cheek before leaving."
     play sound "fx/kiss.wav"
     $ renpy.pause (0.5)
     Lo normal blush "I-I'll see you tomorrow!"
@@ -1514,7 +1514,7 @@ if rnloremromance > 3:
 
 else:
     show lorem think with dissolve 
-    m "I sat down, and as we ate, I noticed that Lorem was very quiet, it seemed he was occupied with his thoughts."
+    m "I sat down, and as we ate, I noticed that Lorem was very quiet, it seemed they were occupied with their thoughts."
     c "Hey Lorem, you alright?"
     Lo "Huh? Oh, I was just thinking about how I reacted when we were in that underground building."
     Lo relieved "You managed to be brave and stay calm, while I was scared, like a coward."
