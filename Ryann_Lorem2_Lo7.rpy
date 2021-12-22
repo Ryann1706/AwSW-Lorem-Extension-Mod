@@ -1266,7 +1266,7 @@ menu:
         m "I leaned over to the little dragon and put my arm around them, to help console them over what had just happened."
         m "They moved closer to me, resting at my side."
         m "We sat together in silence, me listening to Lorem breathing slow as they gradually calmed down."
-        m "After a while he moved away and broke the silence."
+        m "After a while they moved away and broke the silence."
 
     "[[Get the leftover pizza.] ":
         m "I noticed I was fairly hungry and remembered about the pizza we had earlier, I thought Lorem might enjoy it too, and help him settle down."
