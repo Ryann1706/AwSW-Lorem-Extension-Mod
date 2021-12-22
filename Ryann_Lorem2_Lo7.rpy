@@ -1260,7 +1260,7 @@ play sound "fx/undress.ogg"
 m "We entered my apartment and sat on the couch, still in complete silence."
 m "I managed to at least partially compose myself, unlike Lorem who still seemed quite unsettled."
 menu:
-    "[[Put your arm around him.]":
+    "[[Put your arm around them.]":
         $ rnloremromance += 1
         play sound "fx/undress.ogg"
         m "I leaned over to the little dragon and put my arm around him, to help console him over what had just happened."
@@ -1478,7 +1478,7 @@ if rnloremromance > 3:
     m "We ate our breakfast together and afterwards set the plates aside, continuing to cuddle on the couch, just wanting to truly enjoy the quiet, peaceful moment together."
     m "I looked down at Lorem, who had a huge grin, and adorable blush, leaning into me."
     menu:
-        "Caress his side.":
+        "Caress their side.":
             m "I moved my hand from Lorem’s shoulder and began to gently caress his side."
             play sound "fx/purr.ogg"
             m "And in response Lorem started purring adorably, and moving closer to me, nuzzling his head onto my chest."
