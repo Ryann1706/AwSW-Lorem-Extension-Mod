@@ -664,7 +664,7 @@ Lo normal "Alright, see you soon!"
 
 if rnloremromance > 0:
     menu:
-        "Kiss him on the cheek.":
+        "Kiss them on the cheek.":
             $ rnloremromance += 3
             m "Before I left, I bent down next to the little dragons face and..."
             play sound "fx/kiss.wav"
