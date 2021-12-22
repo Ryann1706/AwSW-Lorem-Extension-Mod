@@ -1263,9 +1263,9 @@ menu:
     "[[Put your arm around them.]":
         $ rnloremromance += 1
         play sound "fx/undress.ogg"
-        m "I leaned over to the little dragon and put my arm around him, to help console him over what had just happened."
-        m "He moved closer to me, resting at my side."
-        m "We sat together in silence, me listening to Lorem breathing slow as he gradually calmed down."
+        m "I leaned over to the little dragon and put my arm around them, to help console them over what had just happened."
+        m "They moved closer to me, resting at my side."
+        m "We sat together in silence, me listening to Lorem breathing slow as they gradually calmed down."
         m "After a while he moved away and broke the silence."
 
     "[[Get the leftover pizza.] ":
