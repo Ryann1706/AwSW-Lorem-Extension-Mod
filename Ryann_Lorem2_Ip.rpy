@@ -69,17 +69,17 @@ c "What did you want to talk about?"
 Ip "I wanted to say how much I appreciate you spending time with Lorem."
 
 if c4witnessavailable == False:
-    Ip "Like I've said before, he doesn't have many friends, so getting to spend time with someone else other than me, especially a human, has been really good for him."
+    Ip "Like I've said before, they don't have many friends, so getting to spend time with someone else other than me, especially a human, has been really good for them."
 else:
-    Ip "He doesn't have many friends, so getting to spend time with someone else other than me, especially a human, has been really good for him."
+    Ip "They don't have many friends, so getting to spend time with someone else other than me, especially a human, has been really good for them."
 
-Ip "He seems so much more cheerful and optimistic lately, which I think is you’re doing."
-Ip "After everything else he’s been through; he really needs the support."
+Ip "They seem so much more cheerful and optimistic lately, which I think is you’re doing."
+Ip "After everything else they've been through; they really needs the support."
 $ renpy.pause (1.5)
-Ip think "I'm assuming he told you about his... {w}condition already?"
-c "He did."
+Ip think "I'm assuming they told you about their... {w}condition already?"
+c "They did."
 Ip "How did you react?"
-c "I told him I didn’t mind at all, and hugged him."
+c "I told them I didn’t mind at all, and hugged them."
 Ip happy "I'm really grateful about that, other people haven't been as understanding."
 $ renpy.pause (1.0)
 Ip normal "Anyway, sorry about rambling, now one thing before we start doing this."
@@ -641,9 +641,9 @@ Ip "Ah, my shift is starting soon, so it looks like this is the end of our get 
 c "I guess it is, I had a really great time though."
 Ip normal "Maybe we should hang out again at some point?"
 c "Sure, hopefully Lorem doesn't get jealous."
-Ip happy "I don’t think he will, if anything he’ll be grateful his favorite dragon and favorite human are getting along."
-Ip normal "Also, that reminds me, Lorem told me that he wanted to hang out with you again soon."
-c "Maybe he is jealous?"
+Ip happy "I don’t think they will, if anything they’ll be grateful their favorite dragon and favorite human are getting along."
+Ip normal "Also, that reminds me, Lorem told me that they wanted to hang out with you again soon."
+c "Maybe they are jealous?"
 Ip happy "Heh, let’s hope not."
 Ip normal "Anyway, I’ll see you later, thanks again for doing this."
 c "See ya."
