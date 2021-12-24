@@ -8,7 +8,7 @@ m "I woke up looking at the ceiling I was now well-acquainted with, but without 
 m "I got up and did my daily morning routine as best I could, given the lack of certain things that dragons didn’t need, but humans did."
 m "With the threat of Reza eliminated, and the other me going through the portal, I had the chance to reflect on me staying in the dragon's world permanently."
 m "There were pros and cons, and I knew I’d have to deal with some sooner then I liked, but I tried to focus on the positive things, like getting to stay with Lorem."
-m "After the confrontation with Reza, he was told to take it easy, and was let off work, but with Ipsum still working I decided to visit so he wouldn’t get lonely."
+m "After the confrontation with Reza, they were told to take it easy, and was let off work, but with Ipsum still working I decided to visit so they wouldn’t get lonely."
 m "But just as I was about to leave..."
 play sound "fx/door/doorbell.wav"
 $ renpy.pause (2.0)
@@ -232,7 +232,7 @@ menu:
         Lo normal flip "I thought it was really good, but it doesn't have an entirely happy ending."
         c "Well, nothing gold can stay Ponyboy."
         Lo think flip "What?"
-        c "It was a reference to... {w}Never mind."
+        c "It was a reference to... {w}Nevermind."
         $ ryannlo6ask += 1
         $ ryannaskbooks = True
         jump ryann_lorem2_lorem6_questions
@@ -329,7 +329,7 @@ else:
     Ip "I am, but with what happened to Damion the shift schedules are still a bit messy, so I was sent home early." 
 
 Ip think "And, once again I didn’t know [player_name] would be here today."
-c "I assumed you would’ve been in work, and I didn't want Lorem to get lonely being here by himself."
+c "I assumed you would’ve been in work, and I didn't want Lorem to get lonely being here by themselves."
 Ip happy "Well, isn't that very considerate."
 play sound "fx/undress.ogg" # ( Again I swear its the sound of sitting on the couch )
 m "Ipsum sat down on the other end of the couch, as he did Lorem got up and picked up the two now empty plates."
@@ -629,7 +629,7 @@ menu:
 Lo relieved flip "Don’t explode anything while [player_name] is here."
 Ip happy "But where's the fun in that?"
 c "That’s not concerning at all."
-Lo "Don’t worry about him, he joking... {w}Mostly..."
+Lo "Don’t worry about him, he's joking... {w}Mostly..."
 $ renpy.pause (0.5)
 hide ipsum with easeoutleft
 $ renpy.pause (0.5)
@@ -656,7 +656,7 @@ c "Yeah, you’re an astounding person, anyone who says otherwise is an immature
 c "But remember, you'll have my support no matter what."
 $ renpy.pause (0.5)
 Lo relieved "Thank you, I know I've said it before, but that means a lot."
-m "Lorem walked up to me and hugged me, but because of his height he just rested his head against my upper abdomen, I still returned the hug regardless."
+m "Lorem walked up to me and hugged me, but because of their height they just rested their head against my upper abdomen, I still returned the hug regardless."
 $ renpy.pause (2.5)
 m "After a good few seconds Lorem let go and back off a bit."
 c "It's gotten fairly late and I might be pretty busy tomorrow, so I’ll see you later, okay?"
