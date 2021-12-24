@@ -234,7 +234,7 @@ if brycedead == False:
                     Br smirk b flip "See Maverick, it wasn't that hard."
                     Mv normal "Shut it Bryce."
                     Br laugh b flip "He's quite the charming fellow, isn't he [player_name]?"
-                    Br normal b flip "I gotta go, im still on the clock, we'll see you around."
+                    Br normal b flip "I gotta go, I'm still on the clock, we'll see you around."
                     show maverick normal flip with dissolve
                     $ renpy.pause (0.3)
                     hide maverick with easeoutright
@@ -252,7 +252,7 @@ if brycedead == False:
                     Br stern b flip "I understand you two didnt get along but did you have to say that?"
                     c "I just said what I thought, I didnt have to accept his apology."
                     Br "I know, but still, you could have just lied."
-                    Br "Anyway, im still on the clock, I gotta go."
+                    Br "Anyway, I'm still on the clock, I gotta go."
                     c "Bye."
                     hide bryce with easeoutright
 
