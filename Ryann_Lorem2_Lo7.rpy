@@ -7,7 +7,7 @@ play music "mx/cruising.ogg"
 
 m "I woke up normally, like every other day."
 c "(Another day, another morning I have no idea what to do.)"
-c "(Ipsum said Lorem wanted to hang out again soon, so we can do that, assuming he isn't working.)"
+c "(Ipsum said Lorem wanted to hang out again soon, so we can do that, assuming they aren't working.)"
 $ renpy.pause (1.5)
 play sound "fx/phonepickup.ogg"
 $ renpy.pause (0.5)
@@ -56,13 +56,13 @@ Lo "Anyway, there is something I wanted to do though, I wanted you to experience
 c "Alright, but I gave Ipsum his Ixomen Sphere yesterday too, so how are you gonna order it?"
 Lo think "Ipsum told me that too, so I brought one of their menus with me."
 play sound "fx/paper.wav"
-m "Lorem unfolded one of his wings and took the menu out, putting it on the coffee table for us both to see."
+m "Lorem unfolded one of their wings and took the menu out, putting it on the coffee table for us both to see."
 Lo "I think I’ll have salad again, what topping do you want this time?"
 c "Are we splitting this pizza too?"
 Lo relieved "Like I said, this is better quality, which means it more expensive, and the smallest size is still too big for me, so yes, we’re splitting it again."
 show lorem normal with dissolve
 m "Just from looking at the menu and it's vast amount of topping I could tell this wasn’t cheaply made like Pantoli’s."
-m "Not knowing more than half the things on the menu, I decided to play it safe and order some I at least recognized."
+m "Not knowing more than half the things on the menu, I decided to play it safe and order something I at least recognized."
 menu:
     "Peperoni":
         $ ryannpizzatopping = "peperoni"
@@ -245,7 +245,7 @@ $ renpy.pause (1.5)
 scene np1n with dissolveslow
 show lorem think with dissolve
 $ renpy.pause (1.5)
-m "I noticed as we got closer to the portal Lorem had gotten more and more apprehensive, so I tried to help him calm his nerves."
+m "I noticed as we got closer to the portal Lorem had gotten more and more apprehensive, so I tried to help them calm their nerves."
 menu:
     "I’ll protect you no matter what happens.":
         c "Hey Lorem."
@@ -1421,7 +1421,7 @@ if rnloremromance > 3:
     show lorem sleep with dissolveslow
     $ renpy.pause (0.5)
     m "The adorable small dragon clinging to me was a pretty good reminder though."
-    m "Me and Lorem had moved during the night, so they were now lying on top of, their small tail wrapped around my leg and wings unfolded, covering me like a scaly blanket."
+    m "Me and Lorem had moved during the night, so they were now lying on top of me, their small tail wrapped around my leg and wings unfolded, covering me like a scaly blanket."
     m "I hadn’t the heart to wake them."
     $ renpy.pause (3.5)
     m "After a while of being Lorem’s personal pillow, I made sure my movements getting up were very slow and carful as not to wake Lorem."
