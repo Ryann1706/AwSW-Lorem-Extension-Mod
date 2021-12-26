@@ -1,6 +1,8 @@
 
 label ryann_lorem2_lorem6:
 
+$ save_name = (_("LI - Lorem 6"))
+
 $ renpy.pause (3.0)
 play music "mx/basicguitar.ogg"
 scene o4 with dissolveslow
