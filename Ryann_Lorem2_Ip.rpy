@@ -1,6 +1,8 @@
 
 label ryann_lorem2_ipsum:
 
+$ save_name = (_("LI - Ipsum"))
+
 scene o4 with dissolveslow
 play music "mx/sail.ogg"
 m "I woke up like any other day, but still adjusting to not having any pressure or worry about Reza."
