@@ -5,10 +5,15 @@ NOTE: This requires MagmaLink to work, which can be found on [Gitlab](https://gi
 After multiple months of work, I’d like to present “Lorem Ipsun’t”, a mod that improves and extends Lorem’s good ending.
 
 This mod includes:
+
 A scene with both Lorem and Ipsum
+
 Scenes with each of them one on one
+
 A minigame
+
 Either a romance or friendship route with Lorem
+
 And a secret unlockable bonus scene
 
 
