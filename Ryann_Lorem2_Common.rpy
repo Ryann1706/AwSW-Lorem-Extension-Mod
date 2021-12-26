@@ -22,6 +22,30 @@ image lorem sleep flip = im.Flip("cr/lorem_sleep.png", horizontal=True)
 image lorem sleep blush = "cr/lorem_sleep_blush.png"
 image lorem sleep blush flip = im.Flip("cr/lorem_sleep_blush.png", horizontal=True)
 
+# For Lorem and Ipsum's flower crown sprites, I'm definitely not using all of these but I might as well define them 
+image lorem normal fl = "cr/lorem_normal_fl.png"
+image lorem normal fl flip = im.Flip("cr/lorem__normal_fl.png", horizontal=True)
+image lorem happy fl = "cr/lorem_happy_fl.png"
+image lorem happy fl flip = im.Flip("cr/cr/lorem_happy_fl.png", horizontal=True)
+image lorem relieved fl = "cr/lorem_relieved_fl.png"
+image lorem relieved fl flip = im.Flip("cr/lorem_relieved_fl.png", horizontal=True)
+image lorem sad fl = "cr/lorem_sad_fl.png"
+image lorem sad fl flip = im.Flip("cr/lorem_sad_fl.png", horizontal=True)
+image lorem shy fl = "cr/lorem_shy_fl.png"
+image lorem shy fl flip = im.Flip("cr/lorem_shy_fl.png", horizontal=True)
+image lorem think fl = "cr/lorem_think_fl.png"
+image lorem think fl flip = im.Flip("cr/lorem_think_fl.png", horizontal=True)
+
+image ipsum happy fl = "cr/ipsum_happy_fl.png"
+image ipsum happy fl flip  = im.Flip("cr/ipsum_happy_fl.png", horizontal=True)
+image ipsum normal fl = "cr/ipsum_normal_fl.png"
+image ipsum normal fl flip = im.Flip("cr/ipsum_normal_fl.png", horizontal=True)
+image ipsum sad fl = "cr/ipsum_sad_fl.png"
+image ipsum sad fl flip = im.Flip("cr/ipsum_sad_fl.png", horizontal=True)
+image ipsum think fl = "cr/ipsum_think_fl.png"
+image ipsum think fl flip = im.Flip("cr/ipsum_think_fl.png", horizontal=True)
+
+
 
 init python:
     # This is for dialoge changing for charging the Ixomen Sphere if you've read the book or not
@@ -64,6 +88,8 @@ init python:
     # Other random stuff
     ryannmavapology = False
     ryannipsumalarm = False
+    ryannpizzatopping = "none"
+    ryannplayerdrink = "none"
     
     # For the minigame, joy...
 
@@ -156,24 +182,101 @@ label ryann_lorem2_cancelannatest:
     return 
 
 
+# Credits for the mod
+
+label ryann_lorem2_credits:
+
+play sound "mx/nostalgia.ogg" 
 
 
+show black2 at left with dissolvemed
+
+show loremapt at Pan((200, 0), (700, 0), 25)
+show credits1 at right
+with dissolvemed
+
+$ renpy.pause (10.0)
+
+show black2 at right with dissolvemed
+
+show credits2 at right with dissolvemed
+
+$ renpy.pause (10.0)
+
+scene black with dissolvemed
+
+show loremsphere at Pan ((250, 326), (750,0), 24.0)
+show credits3 at right
+with dissolvemed
+
+$ renpy.pause (10.0)
+
+show black2 at right with dissolvemed
+
+show credits4 at right with dissolvemed
+
+$ renpy.pause (10.0)
+
+scene black with dissolvemed
+
+show meetingipsum at Pan ((-200, 0), (-100,324), 25)
+show credits5 at left
+with dissolvemed
+
+$ renpy.pause (10.0)
+
+show black2 at left with dissolvemed
+
+show credits6 at left with dissolvemed
+
+$ renpy.pause (10.0)
+
+scene black with dissolvemed
+
+show school at Pan ((200, 252), (700, 302), 25)
+show credits7 at right
+with dissolvemed
+
+$ renpy.pause (10.0)
+
+show black2 at right with dissolvemed
+
+show credits8 at right with dissolvemed
+
+$ renpy.pause (10.0)
+
+scene black with dissolvemed
+
+show meetinglorem at Pan((90, 0), (90, 408), 25.0)
+show credits9 at left
+with dissolvemed
+
+$ renpy.pause (10.0)
+
+show black2 at left with dissolvemed
+
+show credits10 at left with dissolvemed
+
+$ renpy.pause (10.0)
+
+scene black with dissolvemed
+
+scene logo with dissolvemed
+
+$ renpy.pause (9.5)
+
+stop sound fadeout 1.5
+
+$ renpy.pause (1.0)
+
+scene black with dissolvemed
+
+stop sound fadeout 2.5
+
+$ renpy.pause (5.0)
 
 
-# Dont look at this next part unless you're Eval, or do im just text I cant stop you
+jump ml_main_menu
 
 
-label ryann_lorem2_spiteeval:
-    Rnn "Heya Eval buddy."
-    Rnn "I really appreciate you looking through my mod for me."
-    Rnn "I appreciate it so much I handpicked a song for this next scene just for you."
-    Rnn "Hope you enjoy."
-    scene o4 with dissolveslow
-    play music "mx/funness.ogg"
-    $ renpy.pause (10.0)
-    stop music fadeout 2.0
-    scene black 
-    Rnn "Just kidding, im not that cruel."
-    Rnn "(Hopefully no one looks through the code and finds this.)"
-    jump ryann_lorem2_lorem6
 
