@@ -1,6 +1,8 @@
 
 label Ryann_Lorem2_Emera_Mav:
 
+$ save_name = (_("LI - Emera"))
+
 scene o4 with dissolveslow
 $ renpy.pause (2.0)
 play music "mx/basicguitar.ogg"
