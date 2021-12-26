@@ -8,6 +8,9 @@ define Rnn = Character(_("Ryan"), color="#008000")
 image ryannfacilitylab = "bg/ryannfacilitylab.jpg"
 image ryannkitchen = "bg/ryannkitchen.jpg"
 image ryannundergroundlab = "bg/ryannundergroundlab.jpg"
+image ryannbeachevening = "bg/ryannbeachevening.jpg"
+image ryannbeachnight = "bg/ryannbeachnight.jpg"
+image ryannsecretforest = "bg/ryannsecretforest.jpg"
 
 
 # For Lorem's extra sprites
