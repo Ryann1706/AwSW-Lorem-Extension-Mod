@@ -109,7 +109,7 @@ play sound "fx/door/door_close.ogg"
 $ renpy.pause (1.0)
 play sound "fx/undress.ogg" # (Its the sound of them sitting on the couch I swear)
 m "We sat down on the couch and I began to explain."
-c "Alright so, what happened was, you were knocked out, I threw Ipsum’s Ixomen Sphere at Reza, then took his gun and shot him and you were taken to the hospital after that."
+c "Alright so, what happened was, you were knocked out, I threw Ipsum’s Ixomen Sphere at Reza, then took his gun and shot him, and you were taken to the hospital after that."
 Lo think flip"Okay, that makes sense, but what was Reza talking about? He said the generator was from our {i}time{/i}, what did he mean by that?"
 c "This might sound hard to believe, but... The human and dragon's world aren't separated by space, {w}they’re separated by time."
 Lo "Wait... You’re saying the portal is actually a time machine?"
@@ -199,8 +199,8 @@ label ryann_lorem2_lorem6_loremreturn:
 m "After waiting for a bit Lorem came back out from the kitchen carrying two plates with some appetizing sandwiches."
 show lorem normal flip with easeinleft
 $ renpy.pause (0.5)
-Lo "I know it's not amazing but I didn’t want to keep you waiting too long."
-m "He set one down in front of me and sat next to me with the other."
+Lo "I know it's not amazing, but I didn’t want to keep you waiting too long."
+m "They set one down in front of me and sat next to me with the other."
 m "I bit into the sandwich, {w}and it was delicious! {w}The combination of the unknown meat, vegetables and uniquely flavored bread was an entirely different experience, but not unwelcome."
 c "Wow Lorem, this is amazing!"
 Lo shy flip "O-oh, thanks [player_name], it's really nothing special..."
@@ -242,7 +242,7 @@ menu:
     "Ask about games." if not ryannaskgames:
         if ryannlookgames == True:
             c "I saw a game over on the shelf, Super Marco Bros, what's it about?"
-            Lo happy flip "Oh, that's one of my favorites! it’s a 2D side scroller where you have to jump to get power ups and ovoid enemy's and obstacles."
+            Lo happy flip "Oh, that's one of my favorites! It’s a 2D side scroller where you have to jump to get power ups and avoid enemy's and obstacles."
             Lo "There's lots of different worlds and level in it too! it's fairly old, but it’s a classic, do you have anything similar in your world?"
             c "It does sound familiar but I can't seem to quite place it..."
             $ ryannlo6ask += 1
@@ -257,13 +257,13 @@ menu:
             $ ryannaskgames = True
             jump ryann_lorem2_lorem6_questions
         
-    "Ask about plants" if not ryannaskplant:
+    "Ask about plants." if not ryannaskplant:
         if ryannlookplant == True:
             c "I looked at that plant and seems to be doing really well, Ipsum wasn’t joking when he said you loved plants."
             Lo normal flip "Well, it's not just plants, it’s botany I love."
             c "He also said you made a daisy crown, I'd love to see that, I bet you’d look so cute."
             Lo shy flip "Uhm... I-I..."
-            m "He looked away blushing and avoiding eye contact, clearly embarrassed about me bringing it up."
+            m "They looked away blushing and avoiding eye contact, clearly embarrassed about me bringing it up."
             $ ryannlo6ask += 1
             $ ryannaskplant = True
             $ rnloremromance += 1
@@ -287,7 +287,7 @@ menu:
             Lo "Also, it's not DVD, its DDVD."
             c "What does the extra D stand for?"
             Lo "The whole thing stands for, digital dragon video disc."
-            c "(Do they have to clarify its for, or made by dragons?)"
+            c "(Do they have to clarify it's for, or made by dragons?)"
             $ ryannlo6ask += 1
             $ ryannaskTV = True
             jump ryann_lorem2_lorem6_questions
@@ -328,7 +328,7 @@ if annadead == True:
 else:
     Ip "I am, but with what happened to Damion the shift schedules are still a bit messy, so I was sent home early." 
 
-Ip think "And, once again I didn’t know [player_name] would be here today."
+Ip think "And once again, I didn’t know [player_name] would be here today."
 c "I assumed you would’ve been in work, and I didn't want Lorem to get lonely being here by themselves."
 Ip happy "Well, isn't that very considerate."
 play sound "fx/undress.ogg" # ( Again I swear its the sound of sitting on the couch )
@@ -440,7 +440,7 @@ c "I have an idea of a human game we could play."
 Lo normal flip "Oooh, what is it?"
 c "It's called would you rather, the idea of it is you give someone two hypothetical situations, and they have to choose which of the two they’d rather."
 Lo "Can they be good or bad?"
-c "Yeah, but you’d obviously want to choose two good or two bad, not one of each because whoever would choose the good one."
+c "Yeah, but you’d obviously want to choose two good or two bad, not one of each, because whoever would choose the good one."
 c "I can start so you two can properly understand."
 c "So..."
 
@@ -451,12 +451,12 @@ if rnwyrasked == 0:
 elif rnwyrasked == 1:
     c "So, do both of you understand now?"
     Ip think "I think I get it."
-    Ip "So, [player_name], {w}if you had the opportunity would you rather change into a dragon or stay as a human?"
+    Ip "So, [player_name], {w}if you had the opportunity would you rather change into a dragon, or stay as a human?"
     c "Yeah, that’s the idea exactly."
     c "Now, as for the question..."
     menu:
         "Human":
-            c "I’d say how I am now; I think I’d miss my hands too much."
+            c "I’d stay how I am now; I think I’d miss my hands too much."
             c "Also, suddenly having claws, a tail and other things would be too huge a change, considering I've never had them at all up to this point."
             Ip normal "You do bring up some fair points."
 
@@ -494,7 +494,7 @@ elif rnwyrasked == 2:
             Lo normal flip "But what flavor?"
             c "I guess that depends on what flavors are available."
             c "Speaking of availability I've noticed a lack of certain flavors that were in the human world."
-            c "Well, its most of them but, mainly strawberry."
+            c "Well, it's most of them, but mainly strawberry."
             Lo think flip "When did you see what flavors we had?"
             c "I did have to buy food at some point while I’ve been here."
             Lo relieved flip "Right, duh."
@@ -542,7 +542,7 @@ menu:
                 c "Would you rather, be blind or deaf for the rest of your life?"
                 Lo think flip "Oh, that’s a bit tough..."
                 Lo "..."
-                Lo "I couldn’t work on my game if I was blind so I'll pick deaf."
+                Lo "I couldn’t work on my game if I was blind, so I'll pick deaf."
                 jump ryann_lorem2_lorem6_wyr
 
     "Ipsum":
@@ -552,14 +552,14 @@ menu:
                 $ rnwyraskedip1 = True
                 $ rnwyrasked += 1
                 c "Would you rather live in the future or past?"
-                Ip happy "The future definitely, I love to see the advancements in technology and science."
+                Ip happy "The future, definitely, I love to see the advancements in technology and science."
                 Lo normal flip "You really just want an excuse to get another Ixomen Sphere."
                 jump ryann_lorem2_lorem6_wyr
 
             "Have no hair, or be completely covered in hair?" if not rnwyraskedip2:
                 $ rnwyraskedip2 = True
                 $ rnwyrasked += 1
-                c "Would you rather lose the hair you currently have or be completely covered in hair?"
+                c "Would you rather lose the hair you currently have, or be completely covered in hair?"
                 Ip "There actually are dragons that are completely coved in fur, they’re just less common."
                 Ip think "I think that could be interesting to have more fur like that though."
                 Lo happy flip "And you’d give way better hugs!"
@@ -658,7 +658,7 @@ $ renpy.pause (0.5)
 Lo relieved "Thank you, I know I've said it before, but that means a lot."
 m "Lorem walked up to me and hugged me, but because of their height they just rested their head against my upper abdomen, I still returned the hug regardless."
 $ renpy.pause (2.5)
-m "After a good few seconds Lorem let go and back off a bit."
+m "After a good few seconds, Lorem let go and back off a bit."
 c "It's gotten fairly late and I might be pretty busy tomorrow, so I’ll see you later, okay?"
 Lo normal "Alright, see you soon!"
 
