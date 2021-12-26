@@ -121,11 +121,7 @@ scene black with dissolveslow
 
 $ renpy.pause (3.0)
 
-if player_name == "Thing":
-    jump ryann_lorem2_spiteeval
-
-else:
-    jump ryann_lorem2_lorem6
+jump ryann_lorem2_lorem6
 
 
         
