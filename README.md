@@ -1,10 +1,19 @@
-# AwSW-Lorem-Extention-Mod
-This is a demo for an extension mod for Lorem.
-This isnt finished, this current version has some changes for Lorems 4th date, a better ending, extra scene with Lorem and Ipsum and one with Ipsum alone.
+# AwSW-Lorem-Ipsun't
 
-This needs MagmaLink to work witch can be found here, or on the Steam workshop.
-https://gitlab.com/jakzie2/awsw-magmalink
+NOTE: This requires MagmaLink to work, which can be found on [Gitlab](https://gitlab.com/jakzie2/awsw-magmalink), or on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2594080243)
 
-Feedback is greatly appriciated so feel free to message me on disscord at Ryann1706#2372
+After multiple months of work, I’d like to present “Lorem Ipsun’t”, a mod that improves and extends Lorem’s good ending.
 
-Huge thanks to Jakzie, 4onen and Eval for helping me with this.
+This mod includes:
+A scene with both Lorem and Ipsum
+Scenes with each of them one on one
+A minigame
+Either a romance or friendship route with Lorem
+And a secret unlockable bonus scene
+
+
+Requirements:
+Just do Lorem’s normal good ending route, but a new choice will appear in Lorem’s 4th date that will pick either the modded or unmodded route. (Skipping the first part of the date works fine.)
+
+
+Also, I’d like to give a huge thanks to Jakzie, 4onen, Kolsavdür and Eval for helping me make this mod.
