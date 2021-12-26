@@ -18,7 +18,7 @@ show lorem at right with move
 show reza angry with dissolve
 play sound "fx/loremkick.ogg"
 hide lorem with dissolve
-m "He also doged Lorem's charge, hitting them with a well-placed kick knocking him into a wall, which they then fell to the ground."
+m "He also doged Lorem's charge, hitting them with a well-placed kick knocking them into a wall, which they then fell to the ground."
 show loremwounded at Pan((1080, 0), (500, 350), 6) with fade
 $ renpy.pause (4.5)
 show reza gunself with dissolve
@@ -42,7 +42,7 @@ m "Maverick hobbled over to me."
 Mv nice flip "Guess I was wrong about you."
 c "Are you okay?"
 Mv "Hurts like hell, but I'll live. {w}How is he?"
-c "He's unconscious, but I think other than that he's fine."
+c "They're unconscious, but I think other than that they're fine."
 Mv "I'll get help, you stay here and watch over him."
 show maverick nice
 $ renpy.pause (0.2)
@@ -68,7 +68,7 @@ c "But... How is this possible?"
 "???" "She left behind a lot to help me, it's almost as if she expected this to happen at some point..."
 "???" "Anyway, I carried out her plan just as she would, which unfortunately includeed deleting our home coordanates."
 c "Why did you do that?"
-"???" "Well, it was part of Izumi's plan and it was the most reliable way of stopping Reza from escaping with the generator we need to stop the comet."
+"???" "Well, it was part of Izumi's plan, and it was the most reliable way of stopping Reza from escaping with the generator we need to stop the comet."
 "???" "But more importantly, we didn’t save our people too this time, so one of us has to go back."
 c "Are you asking me or telling me? Because I'm pretty sure both of us want to stay here."
 "???" "You were the one who was successful in their timeline, so it's only fair you get to choose."
@@ -89,8 +89,8 @@ menu:
         $ renpy.pause (2.0)
         scene black with dissolveslow
         play sound "fx/system.wav"
-        s "Congratulations! You abandoned Lorem while he was unconscious, hope you’re happy with yourself."
-        jump mainmenu
+        s "Congratulations! You abandoned Lorem while they were unconscious, hope you’re happy with yourself."
+        jump ml_main_menu
 
 
     "[[Stay in this timeline.]":
