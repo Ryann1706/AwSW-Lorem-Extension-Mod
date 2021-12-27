@@ -24,9 +24,9 @@ $ renpy.pause (4.5)
 show reza gunself with dissolve
 hide loremwounded with fade
 play sound "fx/glassimpact.ogg"
-m "I hurled the Ixomen Sphere in Reza's direction, which moved with supprising speed, hitting Reza right between the eyes, causing him to stagger back, dazed, and involuntarily toss his gun towards me."
+m "I hurled the Ixomen Sphere in Reza's direction, which moved with surprising speed, hitting Reza right between the eyes, causing him to stagger back, dazed, and involuntarily toss his gun towards me."
 show reza angry with dissolve
-m "I picked it up, not wanting to take any chances, and unsure how to properly weild a gun, I just wildly fired in his direction."
+m "I picked it up, not wanting to take any chances, and unsure how to properly wield a gun, I just wildly fired in his direction."
 play sound "fx/gunshots3.ogg"
 $ renpy.pause (1.7)
 play sound "fx/impact.wav"
@@ -48,14 +48,14 @@ show maverick nice
 $ renpy.pause (0.2)
 hide maverick with easeoutleft
 
-m "Maverick went to get help while I watched over Lorem, I checked on Reza, and unsuprisingly, he was dead."
+m "Maverick went to get help while I watched over Lorem, I checked on Reza, and unsurprisingly, he was dead."
 m "He had an unanticipated amount of ammo on him though, much more needed for simple self-defence."
 play sound "fx/door/hallwaydoor.ogg"
 m "The sound of a door opening behind me snapped me out of my thoughts. {w}It was the Administrator."
 hide izumi 
 show izumi normal with dissolve
 c "Hey Izumi, did you get lost on your way here, where were you?"
-As "It's intresting that you remeber her name, even though you were nerver told it in this timeline."
+As "It's interesting that you remeber her name, even though you were nerver told it in this timeline."
 c "{i}Her{/i} name? {w}What do you mean?"
 m "A muffled sigh came from behind their mask."
 As "You really haven't pieced it together yet? Height or voice not ring a bell?"
@@ -66,7 +66,7 @@ c "But... How is this possible?"
 "???" "To make a long story short, time travel is a hell of a lot more complicated than we initially thought."
 "???" "The Izumi in this timeline died at some point, and since I was the person next in line with the most experience, I took her place."
 "???" "She left behind a lot to help me, it's almost as if she expected this to happen at some point..."
-"???" "Anyway, I carried out her plan just as she would, which unfortunately includeed deleting our home coordanates."
+"???" "Anyway, I carried out her plan just as she would, which unfortunately included deleting our home coordinates."
 c "Why did you do that?"
 "???" "Well, it was part of Izumi's plan, and it was the most reliable way of stopping Reza from escaping with the generator we need to stop the comet."
 "???" "But more importantly, we didn’t save our people too this time, so one of us has to go back."
@@ -115,7 +115,7 @@ stop music fadeout 2.0
 scene black with dissolveslow
 scene o3 with dissolveslow
 $ renpy.pause (2.0)
-m "Still quite shaken from the encounter with Reza, I just went straight to bed, hoping to proses everything in the morning."
+m "Still quite shaken from the encounter with Reza, I just went straight to bed, hoping to process everything in the morning."
 $ renpy.pause (2.0)
 scene black with dissolveslow
 
