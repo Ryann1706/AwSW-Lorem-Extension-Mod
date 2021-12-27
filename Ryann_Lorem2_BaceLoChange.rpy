@@ -66,7 +66,7 @@ menu:
             m "I remembered about the book I saw about Ixomen Spheres, and after skimming through the start-up guide I got it to start charging."
         else:
             play sound "fx/sphereslide.ogg"
-            m "I tried to put the sphere on the charger, and after struggeling to get it working for a few seconds, I got it to start charging."
+            m "I tried to put the sphere on the charger, and after struggling to get it working for a few seconds, I got it to start charging."
 
 # Felt wrong not having a line here, want to change this, but right now its better than nothing.
 m "After that, I settled down and got ready for bed."
