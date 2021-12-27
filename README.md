@@ -19,3 +19,5 @@ Just do Lorem’s normal good ending route, but a new choice will appear in Lore
 Also, I’d like to give a huge thanks to Jakzie, 4onen, Kolsavdür and Eval for helping me make this mod.
 
 And credit to Uncle Mugen for the extra backgrounds, zapsplat.com for the extra sound effects, and EvilChaosKnight for the code and assets for the minigame display.
+
+If you have any issues, questions, feedback or encounter any bugs, grammar mistakes ect, then DM me on Discord at Ryann1706#2372
