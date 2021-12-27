@@ -629,7 +629,7 @@ else:
     Ip happy "Heh, well someone's pretty annoyed."
 
 show ipsum at center with move 
-c "Well, that deffinetly could have gone worce."
+c "Well, that deffinetly could have gone worse."
 Ip "I at least thought it was a bit funny."
 
 jump ryann_lorem2_ipsum_end
