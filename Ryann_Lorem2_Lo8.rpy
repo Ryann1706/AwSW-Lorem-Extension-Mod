@@ -503,13 +503,22 @@ else:
 $ renpy.pause (2.5)
 scene black with dissolveslow
 stop music fadeout 2.5
-$ renpy.pause (7.5)
+$ renpy.pause (4.5)
+
+play sound "fx/system.wav"
+if rnloremromance > 3:
+    s "You got the romantic ending!"
+else:
+    s "You got the friendship ending!"
 
 if ryannsecretscene == True:
+    $ renpy.pause (4.5)
     jump ryann_lorem2_secret
 else:
+    s "Too bad there wasn't some kind of flower or daisy crown related scene in this mod..."
+    s "Or... {w}is there?"
+    $ renpy.pause (4.5)
     jump ryann_lorem2_credits
-
 
 
 # Secret flower crown scene
