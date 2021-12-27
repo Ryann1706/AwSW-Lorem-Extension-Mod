@@ -34,7 +34,7 @@ else:
     $ renpy.pause (1.5)
     c "There's no point in us arguing over this, let's just say we’re both responsible for going down there, and leave it at that."
     Lo normal "Alright."
-    Lo think "Still, we could both really could use today to help us de-stress from all that."
+    Lo think "Still, we could both really use today to help us de-stress from all that."
     c "How about going to a cafe first, and think of what else to do later?"
     Lo normal "Sure, let’s go then."
 
@@ -66,7 +66,7 @@ else:
         Ad "Hey [player_name], and Lorem, you two are still hanging out together I see."
         c "That we are."
         Ad "Well, I hope you two have fun."
-        Ad "Also, [player_name], I enjoyed hanging out last time, so if you wanted to meet up again, I wouldn’t mind"
+        Ad "Also, [player_name], I enjoyed hanging out last time, so if you wanted to meet up again, I wouldn’t mind."
         c "Wait a second… {w}You’re not jealous of Lorem, are you?"
         Ad giggle b flip "Oh shush, I'm not!"
         Ad normal b flip "Anyway, what can I get both of you?"
@@ -149,7 +149,7 @@ if rnloremromance > 3:
     Lo "Oh... T-Thank you..."
 
 else:
-    m "I saw the occasional dragon passing by, glacinging or staring at me. I gave a friendly wave or nod, but secretly hoped they wouldn’t come in and interrupt me and Lorem."
+    m "I saw the occasional dragon passing by, glacing or staring at me. I gave a friendly wave or nod, but secretly hoped they wouldn’t come in and interrupt me and Lorem."
     m "Thankfully none did, but they didn’t go unnoticed by Lorem."
     Lo normal flip "Well, looks like someone is pretty popular, huh?"
     c "Do you really blame them for being interested in me? If I recall correctly, you were just as, if not more excited when you first met me."
@@ -237,7 +237,7 @@ scene store with dissolveslow
 play sound "fx/bell2.ogg"
 $ renpy.pause (0.5)
 if zhongunplayed == False:
-    $ renpy.paus (1.5)
+    $ renpy.pause (1.5)
     show zhong normal c at right with dissolve
     m "I saw Zhong at the cash register and went to make small talk."
     c "Hey Zhong."
@@ -263,7 +263,7 @@ if zhongunplayed == False:
 else:
     m "I didn’t really have an idea of what I could do to distract myself from waiting, but I just started browsing various things for the time being."
     m "A stand of newspapers and magazines caught my interest first though."
-    m "As expected, the newspapers referred to either mine and Reza’s arrival into the dragons world, the resent murders or other things I didn’t have enough knowledge on the dragons world to really understand."
+    m "As expected, the newspapers referred to either mine and Reza’s arrival into the dragons world, the recent murders or other things I didn’t have enough knowledge on the dragons world to really understand."
     m "The magazines were a lot more eye-catching though."
     m "There was pretty much any category you could think of, lifestyle, cooking, fitness, catalogs, sports, childrens and some for dragons I assumed were celebrities."
     m "I briefly skimmed over a few in more detail, some by the  names of “Universal Fitness” and  “LIFESTYLE: The Magazine for Modern People” caught my attention more than others did."
@@ -284,7 +284,7 @@ $ renpy.pause (0.5)
 Lo "Hope you weren't too bored while waiting for me [player_name]."
 m "I looked at what Lorem was now holding, it was a wicker picnic basket."
 c "What do you have that for?"
-Lo "Well, I thought it could be a good idea for us to go on a picnic, earlier I remember a perfect spot we could go to, and a picnic seemed fitting."
+Lo "Well, I thought it could be a good idea for us to go on a picnic, earlier I remembered a perfect spot we could go to, and a picnic seemed fitting."
 c "Sounds good, and I’m assuming we’re here to get food and other stuff?"
 Lo "Exactly."
 c "Let’s have a look at what we can find then."
@@ -448,7 +448,7 @@ if rnloremromance > 3:
     m "Lorem then proceeded to lie down on their back on the blanket, and I copied, so we could both get a better look at the night sky."
 
 else:
-    m "Lorem then laid down on their back on the blanket to get  a better look at the night sky, I copied them, lying down too."
+    m "Lorem then laid down on their back on the blanket to get a better look at the night sky, I copied them, lying down too."
 
 scene stars with dissolveslow 
 if rnloremromance > 3:
@@ -458,7 +458,7 @@ if rnloremromance > 3:
     m "After a few seconds we parted, and went back to staring at the sky."
 
 else:
-    Lo " It’s so amazing..."
+    Lo "It’s so amazing..."
     c "It feels like you could just stare at it forever."
     Lo "Yeah..."
     c "It’s a shame most of those stars are probably already dead though."
