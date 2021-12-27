@@ -75,8 +75,8 @@ if c4witnessavailable == False:
 else:
     Ip "They don't have many friends, so getting to spend time with someone else other than me, especially a human, has been really good for them."
 
-Ip "They seem so much more cheerful and optimistic lately, which I think is you’re doing."
-Ip "After everything else they've been through; they really needs the support."
+Ip "They seem so much more cheerful and optimistic lately, which I think is your doing."
+Ip "After everything else they've been through; they really need the support."
 $ renpy.pause (1.5)
 Ip think "I'm assuming they told you about their... {w}condition already?"
 c "They did."
@@ -178,7 +178,7 @@ else:
 
     else:
         An normal b flip "I just needed medical data."
-        c "Thats vauge."
+        c "Thats vague."
         An face b flip "And? Do want an entire list of things I've looked at?"
 
     An disgust b flip "I'm going, but Ipsum I'm warning you, you’re on thin ice."
@@ -253,7 +253,7 @@ m "Ipsum proceeded to point the machine at my abdomen and lower chest, taking a 
 play sound "fx/undress.ogg"
 m "Afterwards he moved the machine away, while I got redressed."
 
-Ip "I dont want to keep you here too long, so I’ll just take some samples and look at them in more detail later."
+Ip "I don't want to keep you here too long, so I’ll just take some samples and look at them in more detail later."
 play sound "fx/rummage.wav"
 m "Ipsum rummaged through a drawer and pulled out a few things."
 if blood == True:
@@ -357,7 +357,7 @@ m "The door was fully opened with the string tied to the handle, then loosely pu
 show ipsum normal flip with dissolve
 $ renpy.pause (0.3)
 show ipsum at center with move
-Ip think flip "Now we just need to conceal in some way."
+Ip think flip "Now we just need to conceal it in some way."
 m "We looked around the room looking for something to hide the newly built trap, when I spotted a filing cabinet at the back of the room."
 play sound "fx/rummage3.ogg"
 m "I checked inside and found an unused folder."
