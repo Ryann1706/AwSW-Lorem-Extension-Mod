@@ -596,7 +596,7 @@ menu:
 
                 else:
                     $ ryannpumpfixed = True
-                    m "I put the valve back into it's slot, and now with the scredriver I tightned the value into place."
+                    m "I put the valve back into it's slot, and now with the screwdriver I tightned the value into place."
                     m "After a slight shake to make sure it was fitted properly, I was confident enough that it would work."
                     $ ryanncurrentitem = "Nothing"
 
@@ -605,7 +605,7 @@ menu:
                     $ ryannvalveatpump = True 
                     m "I slotted the valve into it's slot and tried to turn it, it did turn but it was extremely loose."
                     m "I then noticed another flathead shaped slot on the valve."
-                    c "(This must need a scredriver to be tightened, so I'll leave the valve here for now.)"
+                    c "(This must need a screwdriver to be tightened, so I'll leave the valve here for now.)"
                     $ ryanncurrentitem = "Nothing"
 
                 else:
@@ -656,7 +656,7 @@ menu:
                     jump ryann_lorem2_lo7_minigame_end
                 else:
                     m "Yet there was still something stopping the pump from working."
-                    c "(Maybe I should have another look at this to make sure I havent missed anything...)"
+                    c "(Maybe I should have another look at this to make sure I haven't missed anything...)"
 
             "Press the on/off button." if ryannpumponoff < 2:
                 $ ryannactionsremaining -= 1
@@ -770,7 +770,7 @@ menu:
 
             else:
                 play sound "fx/ryannpickuptool.mp3"
-                m "Using the keycard I had gotten earlier I opened the locker, the only thing that seemed like it could be useful was a spare valve, the other random components and storage boxes didnt."
+                m "Using the keycard I had gotten earlier I opened the locker, the only thing that seemed like it could be useful was a spare valve, the other random components and storage boxes didn't."
 
             $ ryanncurrentitem = "Valve"
 
@@ -909,7 +909,7 @@ menu:
                     if ryannwrenchlocker == False:
                         $ ryannwrenchlocker = True 
                         play sound "fx/ryannmetalhit.mp3"
-                        m "I swung the pipe wrech at the lock, but it didnt break it, it just indented the locker slightly."
+                        m "I swung the pipe wrench at the lock, but it didn't break it, it just indented the locker slightly."
                         c "(I shouldn't try that again, if I cave the locker door in, I doubt we could get it open at all.)"
                         $ ryannactionsremaining -= 1
                         jump ryann_lorem2_lo7_minigame_meeting
@@ -1330,13 +1330,13 @@ elif rnloremromance > 3:
     Lo "B-but what about me being a hermaphrodite?"
     c "Remember what I said when you told me? I don’t mind at all."
     show lorem normal blush with dissolve 
-    m "We stared into each other's eyes for what felt like serval long minutes, I tiled my head to the side and started moving closer."
+    m "We stared into each other's eyes for what felt like several long minutes, I tilted my head to the side and started moving closer."
     show lorem shy with dissolve 
     m "Lorem seemed flustered, yet still copied my actions, the two of us getting closer to each other by the second."
     show lorem sleep blush with dissolve 
     m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck as they grabbed my shoulder, pulling me closer."
     show lorem normal blush with dissolve
-    m "We stayed like that for serval long seconds, until we both slowly pulled away, still staring into each other's eyes."
+    m "We stayed like that for several long seconds, until we both slowly pulled away, still staring into each other's eyes."
     c "Do you believe me now?"
     show lorem blush with dissolve 
     Lo "Yes..."
@@ -1346,9 +1346,9 @@ else:
     Lo normal "I know I’ve said it before but, I wanted you to know how much our friendship means to me."
     Lo sad "I don’t really have many other friends other than you and Ipsum, and no one else who knows I’m a hermaphrodite."
     Lo normal "But I’m glad that after what just happened, I know that you’ll have my back no matter what."
-    c "Of course, Lorem, that’s what friend do for each other, I'm glad to know you’ll be by my side no matter what too."
+    c "Of course, Lorem, that’s what friends do for each other, I'm glad to know you’ll be by my side no matter what too."
     Lo "Again, thank you for everything, I really couldn’t ask for a better friend."
-    c "One question though, does this mean I out rank Ipsum now?"
+    c "One question though, does this mean I outrank Ipsum now?"
     Lo think "Hmm..."
     Lo normal "To stop anyone from being jealous, I’ll say you’re on par."
     c "I guess I’ll take it."
@@ -1532,7 +1532,7 @@ else:
     c "I just didn’t show it because I knew the impact of how I reacted would have had on you."
     Lo normal "Well, I'm glad you did, that whole situation definitely could have ended a lot worse."
     c "Yeah..."
-    Lo think "So, that’s... three times you’ve saved my life now? From Reza, in the underground building and soon enough, the commet."
+    Lo think "So, that’s... three times you’ve saved my life now? From Reza, in the underground building and soon enough, the comet."
     c "And you saved mine by telling me to throw the Ixomen Sphere at Reza."
     Lo normal "Heh, after saving each other that much we must be bonded for life then, huh?"
     c "I guess so."
