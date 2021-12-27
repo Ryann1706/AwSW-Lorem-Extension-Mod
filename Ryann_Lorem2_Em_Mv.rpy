@@ -52,7 +52,7 @@ Em "Due to water pockets surrounding the building, only just beyond the entrance
 Em "The portal was examined as well, and it was found out that it is no longer functioning."
 c "You mean its broken?"
 Em "Not in the way you think, the portal itself is properly functioning, but the coordinates to the human world are missing."
-m "I obviously knew this already, but explaining how would defiantly be difficult, {w}playing dumb however, wasn’t. "
+m "I obviously knew this already, but explaining how would definitely be difficult, {w}playing dumb however, wasn’t. "
 c "Really? How did this happen?"
 Em ques "That is what we’re unsure of, and from that reaction, I'm assuming you are too."
 Em normal "Which brings us to the point of this meeting."
@@ -251,8 +251,8 @@ if brycedead == False:
                     $ renpy.pause (0.3)
                     hide maverick with easeoutright
                     $ renpy.pause (1.0)
-                    Br stern b flip "I understand you two didnt get along but did you have to say that?"
-                    c "I just said what I thought, I didnt have to accept his apology."
+                    Br stern b flip "I understand you two didn't get along but did you have to say that?"
+                    c "I just said what I thought, I didn't have to accept his apology."
                     Br "I know, but still, you could have just lied."
                     Br "Anyway, I'm still on the clock, I gotta go."
                     c "Bye."
