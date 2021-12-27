@@ -102,7 +102,7 @@ if brycedead == False:
             show bryce normal b with easeinright
             Br "Hey [player_name]."
             c "Hey Bryce, what's up?"
-            Br "Now that Reza’s been delt with, not nearly as much as before. {w}But that’s not why I came over to you."
+            Br "Now that Reza’s been dealt with, it's much more peaceful then before. {w}But that’s not why I came over to you."
             c "What is it then?"
             Br stern b "We still need to have that chat about the window."
             c "Right..."
