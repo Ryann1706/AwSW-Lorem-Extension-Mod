@@ -181,7 +181,7 @@ c "I think normal pizza will be ruined for us now."
 Lo happy "Definitely, but it's so worth it."
 $ renpy.pause (1.5)
 show lorem think with dissolve 
-m "I continued eating, completely captivated by the pizza, but I snaped out of it when I noticed Lorem gazing out the window, fixated on something."
+m "I continued eating, completely captivated by the pizza, but I snapped out of it when I noticed Lorem gazing out the window, fixated on something."
 c "What are you looking at?"
 Lo "Huh? Oh, I was just looking at the portal, I was thinking about the underground building attached to it."
 Lo "I know we were there when Reza was, but we barely saw any of it, and being there at all made me really curious what else could be in there."
@@ -270,7 +270,7 @@ menu:
         Lo relieved "But whoever arrested them would arrest us too."
         c "But they’re trespassing too, so they’ll get arrested before they arrest us, check and mate."
         show lorem normal with dissolve 
-        m "I heard Lorem quietly chuckling, not wanting me to hear him laughing at my stupid joke."
+        m "I heard Lorem quietly chuckling, not wanting me to hear them laughing at my stupid joke."
         Lo "You always know what to just say to lighten the mood, huh?"
         m "We continued walking, the tone slightly lifted from my dumb joke."
 
@@ -283,7 +283,7 @@ menu:
         Lo shy "..."
         $ renpy.pause (1.5)
         Lo normal blush "Okay..."
-        m "We continued walking, me holding Lorem’s small scaly hand to help comfort him."
+        m "We continued walking, me holding Lorem’s small scaly hand to help comfort hthem."
 
 
 $ renpy.pause(1.0)
@@ -321,7 +321,7 @@ menu:
                 c "(That’s not at all concerning...)"
 
             "Look at toolbox.":
-                m "Unsurprisingly, the toolbox had lots of useful tools in it, a crowbar, a heavy-duty pipe wrench, a claw hammer, some flex tape and more miscellanies things."
+                m "Unsurprisingly, the toolbox had lots of useful tools in it, a crowbar, a heavy-duty pipe wrench, a claw hammer, some flex tape and more miscellaneous things."
                 m "There was also a note on the toolbox, which said the following:"
                 m "“Someone keeps taking my tools without asking, so I'm keeping some my quarters. If you want something you’ll actually have to ask,” - Otomo "
 
@@ -359,7 +359,7 @@ menu:
                 hide lorem with dissolve
 
             "Look at eye washing station." if ryannlookedboxes and ryannmovedboxes:
-                m " The eye washing statian wasnt working, and neither of being plumbers we didn’t try and fix it."
+                m " The eye washing station wasn't working, and neither of us being plumbers we didn’t try and fix it."
 
             "Look at wall indent.":
                 m "I looked at the indent in the wall, wondering what it could be used for, but then I saw a sign next to it saying it was where the backup generator was supposed to be."
@@ -410,7 +410,7 @@ menu:
     "Living quarters.":
         scene sec with dissolve 
         m "We walked into the living quarters, which was very well furnished, there was normal things to have in a bedroom, a bed, footlocker, shelf, desk, laptop, etc."
-        m "If this room was you’re only point of reference you’d probably think it was part of a normal house."
+        m "If this room was your only point of reference you’d probably think it was part of a normal house."
         label ryann_lorem2_lo7_before_living:
         menu:
             "Look at shelf.":
@@ -450,7 +450,7 @@ menu:
                 show lorem scared with dissolve 
                 play sound "fx/run.ogg"
                 m "We ran out into the corridor we entered from and saw a large blast door closing us out from the entrance."
-                m "We ran to tried to escape before it closed completely, but we stopped when we heard some extremely concerning noises."
+                m "We ran and tried to escape before it closed completely, but we stopped when we heard some extremely concerning noises."
                 play sound "fx/creak3.ogg"
                 $ renpy.pause (3.5)
                 play music "mx/fervor.ogg"
@@ -566,7 +566,7 @@ menu:
                 $ ryanntapeused = True
                 $ ryannactionsremaining += 10
                 m "I used a generous amount of flex tape on the crack on the casing, it wouldn’t be enough to stop the water from spilling over the top, but it would at least buy us some time."
-                c "(There barely any of this tape left now, and definitely not enough of it left to be useful.)"
+                c "(There's barely any of this tape left now, and definitely not enough of it left to be useful.)"
                 $ ryanncurrentitem = "Nothing"
 
             else:
@@ -590,8 +590,8 @@ menu:
             if ryanncurrentitem == "Screwdriver":
                 if ryannvalveatpump == False:
                     $ ryannscrewdriveratpump = True
-                    m "I tried to use the screwdriver to turn the slot for the valve, but it didnt give enough leverage. {w}Then I noticed some threads around the slot."
-                    c "(Something deffinetly needs to be screwed in here, so I'll leave the scredriver here for now.)"
+                    m "I tried to use the screwdriver to turn the slot for the valve, but it didn't give enough leverage. {w}Then I noticed some threads around the slot."
+                    c "(Something definitely needs to be screwed in here, so I'll leave the screwdriver here for now.)"
                     $ ryanncurrentitem = "Nothing"
 
                 else:
@@ -610,12 +610,12 @@ menu:
 
                 else:
                     $ ryannpumpfixed = True
-                    m "As I put the valve into it's slot, I noticed another flathead like slot on the valve, I took the scredriver and tightened it."
+                    m "As I put the valve into its slot, I noticed another flathead like slot on the valve, I took the scredriver and tightened it."
                     m "After a slight shake to make sure it was fitted properly, I was confident enought that it would work."
                     $ ryanncurrentitem = "Nothing"
 
 
-        m "There were multiple diffrent things to interact with on the face of the pump."
+        m "There were multiple different things to interact with on the face of the pump."
         menu:
             "Turn the valve clockwise." if not ryannpumpused:
                 $ ryannactionsremaining -= 1
@@ -650,7 +650,7 @@ menu:
                 hide lorem with dissolve 
 
             "Turn the valve counterclockwise." if ryannpumpfixed and not ryannpumpon:
-                m "With the new valve slotted in I turned it, and it moved with supprising ease."
+                m "With the new valve slotted in I turned it, and it moved with surprising ease."
                 $ ryannpumpon = True
                 if ryannpumponoff == 2:
                     jump ryann_lorem2_lo7_minigame_end
@@ -766,7 +766,7 @@ menu:
         elif ryannhaskeycard == True:
             if ryannpumpused == True:
                 play sound "fx/ryannpickuptool.mp3"
-                m "Using the keycard I had gotten earlier I opened the locker, I spoted a spare valve and took it immediately, not caring much for anything else inside."
+                m "Using the keycard I had gotten earlier I opened the locker, I spotted a spare valve and took it immediately, not caring much for anything else inside."
 
             else:
                 play sound "fx/ryannpickuptool.mp3"
@@ -805,7 +805,7 @@ menu:
             m "I looked at the drain beneath the eye washing station yet it wasn't draining any water from the room."
             m "After a bit of seaching I saw a pipe with a nut on it leading to the drain, I firmly tightend the pipe wrench around it and loosened it."
             m "Some air bubbles came up from the drain, then a small stream of water started flowing down the pipe, not enough to stop the water but enough to buy us some time."
-            m "I tried to retreive the pipe wrench from the pipe but it was stuck, probably from being tightened too much, we left it as we didnt have the time to spare getting it unstuck."
+            m "I tried to retrieve the pipe wrench from the pipe but it was stuck, probably from being tightened too much, we left it as we didnt have the time to spare getting it unstuck."
             $ ryanncurrentitem = "Nothing"
             $ ryannwrenchused = True 
             $ ryannactionsremaining += 10
@@ -884,7 +884,7 @@ menu:
         if ryannhaskey == False:
             m "The only non-locked locker was labeled “I. Otomo” and it had a sturdy looking fingerprint lock on it."
             if ryanncurrentitem == "Crowbar":
-                m "I jammed the crowbar into the top corner of the locker and began to forece it open."
+                m "I jammed the crowbar into the top corner of the locker and began to forec it open."
                 play sound "fx/ryannusecrowbar.mp3"
                 m "It was working for the most part and the locker door was begining to bend, {w}then suddenly the crowbar slipped."
                 play sound "fx/metalbox.ogg"
@@ -898,7 +898,7 @@ menu:
                 $ ryanncrowbarused = True
                 $ ryannhaskey = True
                 m "I looked through the now opened gap into the locker, there was a horizontal pole with what looked like a uniform and some kind of cloak on hung up on it."
-                m "Ironicly, there was also a key on a small shelf at the top of the locker, I took it and put it in one of my pockets, grateful I might not need to use brute force to open another lock."
+                m "Ironically, there was also a key on a small shelf at the top of the locker, I took it and put it in one of my pockets, grateful I might not need to use brute force to open another lock."
                 hide lorem with dissolve
                 $ ryannactionsremaining -= 1
                 jump ryann_lorem2_lo7_minigame_meeting
@@ -968,7 +968,7 @@ menu:
             "Look at maintenance list.":
                 $ ryannlookedlist = True 
                 $ ryannactionsremaining -= 1
-                m "There was a list on the shelf of things that needed to be fixed, presumably belonging to maintenance worker."
+                m "There was a list on the shelf of things that needed to be fixed, presumably belonging to a maintenance worker."
                 nvl clear
                 window show
                 n "{b}List of things to fix:{/b}"
@@ -1213,7 +1213,7 @@ hide screen ryannextrainfo
 stop music fadeout 2.0
 m "With the pump restarted, and the new valve being turned, the pump came to life."
 play sound "fx/system3.wav"
-s "Primary pump active, draining system inaciated."
+s "Primary pump active, draining system initiated."
 m "The water level in the room started to slowly, but surely decrease."
 show lorem think with dissolve 
 Lo think "D-did we do it...?"
@@ -1232,7 +1232,7 @@ s "Welcome user, \"[player_name]\"."
 s "Deactivating lockdown..."
 s "New familiar user “Lorem” defined..."
 $ renpy.pause (1.0)
-m "We heard the sound of the door opening and left immediately, not wanting to be stuck down there incase anything else happened."
+m "We heard the sound of the door opening and left immediately, not wanting to be stuck down there in case anything else happened."
 scene hallway with dissolveslow
 $ renpy.pause (1.5)
 if not ryanncurrentitem == "Nothing":
@@ -1273,8 +1273,8 @@ menu:
     "[[Get the leftover pizza.] ":
         m "I noticed I was fairly hungry and remembered about the pizza we had earlier, I thought Lorem might enjoy it too, and help him settle down."
         m "I got the box out of the fridge, and brought it out to the couch we were sitting on."
-        m "Neither of us said anything, we just ate the pizza, which surprising, was still amazing despite being chilled from the fridge."
-        Lo relieved "This is exactly what I needed, it's some much better after what just happened."
+        m "Neither of us said anything, we just ate the pizza, which surprisingly, was still amazing despite being chilled from the fridge."
+        Lo relieved "This is exactly what I needed, it's so much better after what just happened."
         $ renpy.pause (0.5)
         show lorem sad with dissolve 
         m "We sat in silence after eating, and Lorem eventually broke it."
@@ -1298,7 +1298,7 @@ if rnloremromance > 7:
     Lo relieved "But that’s the problem..."
     show lorem sad with dissolve 
     $ renpy.pause (2.0)
-    Lo blush "I have feeling for you, I-I like you as more than a friend..."
+    Lo blush "I have feelings for you, I-I like you as more than a friend..."
     $ renpy.pause (1.5)
     show lorem normal blush with dissolve 
     m "Lorem and I looked deeply into each other's eyes, theirs having a hint of fear of being rejected, yet also hope and relief of finally telling me their true feelings."
