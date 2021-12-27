@@ -84,7 +84,7 @@ n "Emera."
 window hide
 nvl clear
 $ renpy.pause (0.5)
-c "(Lovely, I knew this was inevitable but I didn’t think It'd be so soon.)"
+c "(Lovely, I knew this was inevitable but I didn’t think it'd be so soon.)"
 c "(I don’t know how long this will take, and I don’t want to keep Lorem waiting...)"
 c "(I guess tomorrow will have to do.)"
 play sound "fx/door/door_close.ogg"
@@ -131,7 +131,7 @@ Lo "Actually, I still owe you dinner from you letting me draw you."
 c "It’s a bit early for dinner."
 Lo normal flip "I can make you lunch then, is there anything specific you want?"
 c "As long as it's not Pantoli’s Pizza, I'll be happy with it."
-Lo "Ha! Good one, {w}you can wait here I shouldn’t be that long."
+Lo "Ha! Good one, {w}you can wait here, I shouldn’t be that long."
 show lorem normal with dissolve
 $ renpy.pause (0.2)
 hide lorem with easeoutleft
@@ -285,10 +285,10 @@ menu:
     "Ask about TV." if not ryannaskTV:
         if ryannlookTV == True:
             c "I saw what looked like a console and a DVD player, but do you us the TV for anything else?"
-            Lo normal flip "Well, there a subscription service you can pay for to watch shows, but most of them aren’t worth watching, except a show called humans which is apparently pretty good, but not accurate to actual humans."
+            Lo normal flip "Well, there a subscription service you can pay for to watch shows, but most of them aren’t worth watching, except a show called Humans which is apparently pretty good, but not accurate to actual humans."
             Lo "Also, it's not DVD, its DDVD."
             c "What does the extra D stand for?"
-            Lo "The whole thing stands for, digital dragon video disc."
+            Lo "The whole thing stands for, Digital Dragon Video Disc."
             c "(Do they have to clarify it's for, or made by dragons?)"
             $ ryannlo6ask += 1
             $ ryannaskTV = True
@@ -298,7 +298,7 @@ menu:
             c "So, what do you use that TV for? I don’t have one in my apartment."
             Lo normal flip "We really only use it for video games or watching DDVDs."
             c "DDVD?"
-            Lo "It stands for digital dragon video disc."
+            Lo "It stands for Digital Dragon Video Disc."
             c "For humans it's just DVD, not... {w}DHVD?"
             Lo think flip "Huh, I thought it would be."
             $ ryannlo6ask += 1
@@ -432,7 +432,7 @@ menu:
     "Barely anything":
         c "I barely know anything about physics."
         Lo normal flip "See? I'm not the only one who doesn't know physics."
-        Ip "At least your honest, you really should consider learning about it though, it's really interesting."
+        Ip "At least you're honest, you really should consider learning about it though, it's really interesting."
         c "I’ll stick to biology for now thanks."
     
 Lo normal flip "Anyway, enough science talk, [player_name] got enough of that last time, let's do something fun instead."
@@ -562,7 +562,7 @@ menu:
                 $ rnwyraskedip2 = True
                 $ rnwyrasked += 1
                 c "Would you rather lose the hair you currently have, or be completely covered in hair?"
-                Ip "There actually are dragons that are completely coved in fur, they’re just less common."
+                Ip "There actually are dragons that are completely covered in fur, they’re just less common."
                 Ip think "I think that could be interesting to have more fur like that though."
                 Lo happy flip "And you’d give way better hugs!"
                 c "It would be a pain to wash all that fur though, trust me."
@@ -668,7 +668,7 @@ if rnloremromance > 0:
     menu:
         "Kiss them on the cheek.":
             $ rnloremromance += 3
-            m "Before I left, I bent down next to the little dragons face and..."
+            m "Before I left, I bent down next to the little dragon's face and..."
             play sound "fx/kiss.wav"
             show lorem shy with dissolve
             $ renpy.pause (0.7)
