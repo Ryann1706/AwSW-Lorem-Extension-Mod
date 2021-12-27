@@ -8,6 +8,7 @@ class AWSWMod(Mod):
     version="v1.0"
     author="Ryann1706"
     nsfw=False
+    dependencies = ["MagmaLink"]
 
 
     def mod_load(self):
