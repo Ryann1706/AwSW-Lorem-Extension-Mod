@@ -164,13 +164,13 @@ if brycedead == False:
         Mv "I wanted to apologize."
         c "Oh, that’s not what I expected."
         Mv "In the underground building I saw your true intentions."
-        Mv "I was wrong for assuming you were working with Reza, I misjudged you, and I'm sorry."
+        Mv "I was wrong for assuming you were working with Reza. I misjudged you, and I'm sorry."
         Mv "I hope we can put this behind us."
         menu:
             "Accept his apology.":
                 $ ryannmavapology = True
                 c "Honestly, I don’t blame you for acting the way you did, from your point of view I can see why you were suspicious of me."
-                Mv nice "I'm glad to hear that, I’ll be seeing you around then."
+                Mv nice "I'm glad to hear that. I’ll be seeing you around then."
                 show maverick nice flip with dissolve
                 $ renpy.pause (0.2)
                 hide maverick with easeoutright
@@ -192,13 +192,13 @@ if brycedead == False:
             Mv "I wanted to apologize."
             c "Oh, that’s not what I expected."
             Mv "In the underground building I saw your true intentions."
-            Mv "I was wrong for assuming you were working with Reza, I misjudged you, and I'm sorry."
+            Mv "I was wrong for assuming you were working with Reza. I misjudged you, and I'm sorry."
             Mv "I hope we can put this behind us."
             menu:
                 "Accept his apology.":
                     $ ryannmavapology = True
                     c "Honestly, I don’t blame you for acting the way you did, from your point of view I can see why you were suspicious of me."
-                    Mv nice "I'm glad to hear that, I’ll be seeing you around then."
+                    Mv nice "I'm glad to hear that. I’ll be seeing you around then."
                     show maverick nice flip with dissolve
                     $ renpy.pause (0.2)
                     hide maverick with easeoutright
@@ -226,7 +226,7 @@ if brycedead == False:
             Mv normal "[player_name], I wanted to apologize."
             show bryce normal b flip with dissolve
             Mv "In the underground building I saw your true intentions."
-            Mv "I was wrong for assuming you were working with Reza, I misjudged you, and I'm sorry."
+            Mv "I was wrong for assuming you were working with Reza. I misjudged you, and I'm sorry."
             Mv "I hope we can put this behind us."
             menu:
                 "Accept his apology.":
