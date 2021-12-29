@@ -143,6 +143,12 @@ label ryann_lorem2_ixomenbook:
     $ ryannixomenbook = True
     jump ryann_lorem2_ixomenbook_return
 
+# This is for fixing a bug in Lorem 5
+
+label ryann_lorem2_spherecharged:
+    $ SphereCharged = False
+    return
+
 # This is for overcoming Anna’s status being abandoned at the start of Lorem4 
 
 label ryann_lorem2_c5annastatus:
