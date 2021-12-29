@@ -25,12 +25,12 @@ $ renpy.pause (2.0)
 Ip "Hey [player_name], what is it?"
 c "I know it’s a bit short notice but, I can come in for those tests you wanted to do."
 Ip "Actually, it’s perfect timing, I don’t start work for a while, so we can do it in... roughly an hour?"
-c "Sound good to me."
+c "Sounds good to me."
 Ip "I’ll meet you outside and bring you to the testing room."
 c "See you soon then."
 play sound "fx/phonepickup"
 c "(Guess I just have to wait for a bit now...)"
-c "(Also, I should also finally give Ipsum his Ixomen Sphere back...)"
+c "(Also, I should finally give Ipsum his Ixomen Sphere back...)"
 $ renpy.pause (1.5)
 
 scene black with dissolveslow
@@ -53,7 +53,7 @@ scene testingroom with dissolveslow
 $ renpy.pause (1.5)
 show ipsum normal with dissolve
 
-Ip "We’re actually pretty lucky to have gotten this room, usually it has to be reserved days in advance."
+Ip "We’re actually pretty lucky to have gotten this room. Usually it has to be reserved days in advance."
 c "I see."
 c "Also, before I forget I brought your Ixomen Sphere with me."
 Ip happy "Great, you can leave it there and I’ll bring it home after my shift."
@@ -76,13 +76,13 @@ else:
     Ip "They don't have many friends, so getting to spend time with someone else other than me, especially a human, has been really good for them."
 
 Ip "They seem so much more cheerful and optimistic lately, which I think is your doing."
-Ip "After everything else they've been through; they really need the support."
+Ip "After everything else they've been through, they really need the support."
 $ renpy.pause (1.5)
 Ip think "I'm assuming they told you about their... {w}condition already?"
 c "They did."
 Ip "How did you react?"
 c "I told them I didn’t mind at all, and hugged them."
-Ip happy "I'm really grateful about that, other people haven't been as understanding."
+Ip happy "I'm really grateful about that. Other people haven't been as understanding."
 $ renpy.pause (1.0)
 Ip normal "Anyway, sorry about rambling, now one thing before we start doing this."
 play sound "fx/ryanncurtainpull.mp3"
@@ -91,7 +91,7 @@ Ip "I'm assuming because of the clothes you’re wearing, humas don’t like bei
 c "Yes, that’s true."
 Ip think "If you don’t mind me asking, why?"
 c "Well, one reason is because human skin isn’t as good of an insulator as fur or scales, so in the past clothes were the solution."
-c "But as our society was developed it became a social norm and law to wear clothes."
+c "Also, as our society was developed it became a social norm and law to wear clothes."
 c "For humans, wearing little or no clothes infront of someone, is either seen as inappropriate or shameless, or as a sign of affection, and an implication of something more... intimate."
 Ip sad "Ah, I’m sorry if I made you feel uncomfortable or offended you when I said I was curious what was under you clothes earlier then."
 c "It’s fine, you didn’t know."
