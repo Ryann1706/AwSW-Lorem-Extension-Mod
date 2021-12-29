@@ -48,9 +48,9 @@ if remydead == False:
         show remy normal with dissolve
         Ry "Hello [player_name], I was asked to deliver this to you."
         c "Hey Remy, who is this from?"
-        Ry "It's from Emera, she said she wanted to talk to you about something, there's more about it in the letter."
+        Ry "It's from Emera. She said she wanted to talk to you about something. There's more about it in the letter."
         c "Alright, thanks."
-        Ry "It’s no problem, goodbye."
+        Ry "It’s no problem. Goodbye."
         c "Bye."
         hide remy with dissolve
         jump ryann_lorem2_lorem6_letter
@@ -116,10 +116,10 @@ Lo think flip"Okay, that makes sense, but what was Reza talking about? He said t
 c "This might sound hard to believe, but... The human and dragon's world aren't separated by space, {w}they’re separated by time."
 Lo "Wait... You’re saying the portal is actually a time machine?"
 c "Well, basically yeah, but there's more."
-c "The coordinates to the human world are... Gone, so I’ll be staying here permanently."
-Lo sad flip "Oh... [player_name] I’m so sorry to hear that, but what do you mean they’re gone, what happened?"
+c "The coordinates to the human world are... gone. So I’ll be staying here permanently."
+Lo sad flip "Oh... [player_name] I’m so sorry to hear that, but what do you mean they’re gone? What happened?"
 Lo "Actually, you don’t have to talk about it if you don’t want to... It must still be pretty painful..."
-c "It’s okay Lorem, but there's one last thing, have you heard anything about a comet lately?"
+c "It’s okay Lorem, but there's one last thing. Have you heard anything about a comet lately?"
 Lo think flip "Ipsum offhandedly mentioned it at some point, but with everything else you’ve said I don’t think it's good news."
 c "Well, yes and no, the important part is that us stopping Reza from escaping through the portal with the generator saved your entire species from extinction."
 Lo sad flip "I don’t follow, but I'm not sure I want to think about what would have happened if we didn’t stop him, if us stopping him saved dragon kind."
@@ -244,9 +244,9 @@ menu:
     "Ask about games." if not ryannaskgames:
         if ryannlookgames == True:
             c "I saw a game over on the shelf, Super Marco Bros, what's it about?"
-            Lo happy flip "Oh, that's one of my favorites! It’s a 2D side scroller where you have to jump to get power ups and avoid enemy's and obstacles."
-            Lo "There's lots of different worlds and level in it too! it's fairly old, but it’s a classic, do you have anything similar in your world?"
-            c "It does sound familiar but I can't seem to quite place it..."
+            Lo happy flip "Oh, that's one of my favorites! It’s a 2D side scroller where you have to jump to get powerups and avoid enemies and obstacles."
+            Lo "There are lots of different worlds and level in it too! it's fairly old, but it’s a classic, do you have anything similar in your world?"
+            c "It does sound familiar but I can't quite seem to place it..."
             $ ryannlo6ask += 1
             $ ryannaskgames = True
             jump ryann_lorem2_lorem6_questions
@@ -263,7 +263,7 @@ menu:
         if ryannlookplant == True:
             c "I looked at that plant and seems to be doing really well, Ipsum wasn’t joking when he said you loved plants."
             Lo normal flip "Well, it's not just plants, it’s botany I love."
-            c "He also said you made a daisy crown, I'd love to see that, I bet you’d look so cute."
+            c "He also said you made a daisy crown. I'd love to see that. I bet you’d look so cute."
             Lo shy flip "Uhm... I-I..."
             m "They looked away blushing and avoiding eye contact, clearly embarrassed about me bringing it up."
             $ ryannlo6ask += 1
@@ -324,7 +324,7 @@ $ renpy.pause (0.5)
 show lorem normal flip with dissolve
 show lorem at left with move
 show ipsum normal at right with easeinright
-Lo "Oh, Ipsum I thought you were supposed to be in work?"
+Lo "Oh, Ipsum, I thought you were supposed to be at work?"
 if annadead == True:
     Ip "I am, but with what happened to Anna the shift schedules are still a bit messy, so I was sent home early. "
 else:
@@ -334,7 +334,7 @@ Ip think "And once again, I didn’t know [player_name] would be here today."
 c "I assumed you would’ve been in work, and I didn't want Lorem to get lonely being here by themselves."
 Ip happy "Well, isn't that very considerate."
 play sound "fx/undress.ogg" # ( Again I swear its the sound of sitting on the couch )
-m "Ipsum sat down on the other end of the couch, as he did Lorem got up and picked up the two now empty plates."
+m "Ipsum sat down on the other end of the couch, as he did Lorem rose and picked up the two now-empty plates."
 play sound "fx/glasses.wav"
 Lo "I’ll be back in a few minutes."
 show lorem normal with dissolve
@@ -349,7 +349,7 @@ Ip normal "Oh, sorry about that, I'm just still very curious about your biology,
 Ip think "Hmm, if you wouldn't mind, maybe I could take some samples to examine and run some tests on you in the production facility?"
 if annadead == True:
     Ip sad "And... {w}With what happened to Anna... She won't be a problem."
-    Ip normal "Its only if you want to do them, if you don’t, I'd understand."
+    Ip normal "It's only if you want to do them, if you don’t, I'd understand."
 else:
     Ip sad "Ah, right, Anna said you're off limits to only her..."
     if rndidannatest == True:
@@ -375,13 +375,13 @@ else:
         
         Ip think "Really...? Maybe we could do it then, if you don’t mind, of course."
 
-c "Sure, I wouldn’t mind, it might be a few days before we can though."
-Ip happy "Glad to hear that, just let me know when you’re available."
+c "Sure, I wouldn’t mind. It might be a few days before we can though."
+Ip happy "Glad to hear that. Just let me know when you’re available."
 $ renpy.pause (0.7)
 show lorem normal flip at left with easeinleft
 Lo "Hey, what were you two talking about while I was gone?"
 Ip normal "Oh, just science, physics mostly."
-Lo relieved flip "[player_name] you know what happened last time, don’t get him started again."
+Lo relieved flip "[player_name], you know what happened last time. Don’t get him started again."
 Ip "You’re just saying that because you know you won't be able to keep up with us."
 Lo "Hmph."
 Lo think flip " Actually [player_name], how much do you know about physics?"
@@ -399,7 +399,7 @@ menu:
 
             "A conductive material with little to no resistance.":
                 $ renpy.pause (0.3)
-                Ip think "Oh, wow. I didn’t expect you to know that, I'm impressed."
+                Ip think "Oh, wow. I didn’t expect you to know that. I'm impressed."
 
             "An insulated lithium-ion battery connected to a copper aluminide relay.": 
                 $ renpy.pause (0.3)
@@ -435,12 +435,12 @@ menu:
         Ip "At least you're honest, you really should consider learning about it though, it's really interesting."
         c "I’ll stick to biology for now thanks."
     
-Lo normal flip "Anyway, enough science talk, [player_name] got enough of that last time, let's do something fun instead."
+Lo normal flip "Anyway, enough science talk; [player_name] got enough of that last time. Let's do something fun instead."
 c "What did you have in mind?"
 Lo think flip "I'm not actually sure..."
 c "I have an idea of a human game we could play."
 Lo normal flip "Oooh, what is it?"
-c "It's called would you rather, the idea of it is you give someone two hypothetical situations, and they have to choose which of the two they’d rather."
+c "It's called Would You Rather, The idea of it is you give someone two hypothetical situations, and they have to choose which of the two they’d rather."
 Lo "Can they be good or bad?"
 c "Yeah, but you’d obviously want to choose two good or two bad, not one of each, because whoever would choose the good one."
 c "I can start so you two can properly understand."
@@ -465,7 +465,7 @@ elif rnwyrasked == 1:
         "Dragon":
             c "Do I get to keep things like my mind and personality, it's just my body changing?"
             Ip normal "Yep."
-            c "Oh, I’d definitely prefer being a dragon then, you can do so many more cool things than humans can."
+            c "Oh, I’d definitely prefer being a dragon then. You can do so many more cool things than humans can."
             Ip happy "Now the real question is, what species of dragon?"
             c "I don’t know many dragon species, so I’ll pass on that question for now."
 
@@ -621,7 +621,7 @@ menu:
         c "Well, first Ipsum wondered what I looked like naked, now he wants to know if I'll kiss him?"
         c "You really do have ulterior motives, dont you?"
         Ip sad "N-no, thats not what I meant at all!"
-        Lo normal flip "{i}Sure{/i}, it wasnt."
+        Lo normal flip "{i}Sure{/i}, it wasn't."
         $ renpy.pause (1.0)
         show ipsum normal with dissolve
         Ip "Ahem, well I have to go do stuff in my lab."
