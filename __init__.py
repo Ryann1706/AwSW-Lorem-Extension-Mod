@@ -39,6 +39,12 @@ class AWSWMod(Mod):
             .hook_to("ryann_lorem2_spherecharge") \
             .search_python("renpy.pause (2.0)") \
             .link_from("ryann_lorem2_spherecharge_end")
+        
+        ml.find_label("lorem5") \
+            .search_if("loremhavesphere == True").branch() \
+            .search_menu("Leave it.").branch() \
+            .search_say("(It's probably not the best time to take it with me. I'll give it to Ipsum some other time.)") \
+            .hook_call_to("ryann_lorem2_spherecharged")
 
         ml.find_label("lorem5") \
             .search_say("They belong to humanity!") \
