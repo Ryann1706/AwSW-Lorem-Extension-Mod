@@ -30,6 +30,7 @@ if katsuunplayed == False:
 else:
     m "I walked inside and with some directions from the receptionist, I made my way to her office."
 
+scene corridor with dissolveslow
 stop music fadeout (2.0)
 m "I knocked on the door."
 play sound "fx/knocking1.ogg"
@@ -65,7 +66,7 @@ c "I expected that, but before I start there’s something crucially important I
 Em "What is it?"
 c "Have you heard at all about a comet lately?"
 Em ques "I am aware of it, its path is projected to pass by the planet safely, if that’s what you were worried about."
-c "Actually, it won't, according to my PDA, the comet will directly hit the planet causing a global extension event if nothing is done about it."
+c "Actually, it won't, according to my PDA, the comet will directly hit the planet causing a global extinction event if nothing is done about it."
 show emera normal with dissolve
 c "Thankfully, because the generator Reza tried to take wasn't damaged, it should supply enough power to safely divert it."
 $ renpy.pause (2.3)
