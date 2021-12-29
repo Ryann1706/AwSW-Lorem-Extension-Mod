@@ -18,7 +18,7 @@ $ renpy.pause (1.0)
 scene town5 with dissolveslow
 
 
-m "I found myself outside the building where Emera worked, it was a bright and sunny day, too bad I wouldn't get to enjoy it."
+m "I found myself outside the building where Emera worked. It was a bright and sunny day. Too bad I wouldn't get to enjoy it."
 if katsuunplayed == False:
     m "Before I went inside I noticed Katsuharu on the other side of the park."
     c "..."
@@ -50,9 +50,9 @@ $ renpy.pause (1.0)
 Em normal "There was an in-depth investigation done over yesterday and the night before on the underground building, because of the... {w}situation with Reza."
 Em "Due to water pockets surrounding the building, only just beyond the entrance could be examined carefully."
 Em "The portal was examined as well, and it was found out that it is no longer functioning."
-c "You mean its broken?"
-Em "Not in the way you think, the portal itself is properly functioning, but the coordinates to the human world are missing."
-m "I obviously knew this already, but explaining how would definitely be difficult, {w}playing dumb however, wasn’t. "
+c "You mean it's broken?"
+Em "Not in the way you think. The portal itself is properly functioning, but the coordinates to the human world are missing."
+m "I obviously knew this already, but explaining how would definitely be difficult. {w}Playing dumb however, wasn’t. "
 c "Really? How did this happen?"
 Em ques "That is what we’re unsure of, and from that reaction, I'm assuming you are too."
 Em normal "Which brings us to the point of this meeting."
@@ -70,7 +70,7 @@ show emera normal with dissolve
 c "Thankfully, because the generator Reza tried to take wasn't damaged, it should supply enough power to safely divert it."
 $ renpy.pause (2.3)
 Em "I will have someone look into this matter, thank you for bringing it to my attention."
-Em "Anyway, I don’t want to keep you any longer, but as I said, there’s papers that must be filled."
+Em "Regardless, I do not want to keep you any longer, but as I said, there’s papers that must be filled."
 show emera normal at left with move
 $ renpy.pause (0.5)
 play sound "fx/rummage3.ogg"
@@ -79,21 +79,19 @@ c "(I thought she said {i}some,{/i} but that looks like an encyclopedia.)"
 show emera normal flip with dissolve
 $ renpy.pause (0.3)
 show emera at center with move
-Em "These are the essentials, citizenship, health forms, property ownership..."
+Em "These are the essentials: citizenship, health forms, property ownership..."
 stop music fadeout (2.0)
 scene black with dissolveslow
 hide emera with dissolveslow
 nvl clear
 $ renpy.pause (1.0)
-m "The next few hours were a blur, the only things I can recount is wrist pain, probably from the sheer amount of writing."
+m "The next few hours were a blur, the only things I can recall were wrist pain, probably from the sheer amount of writing."
 m "And a huge amount of trouble with health forms and citizenship, which clearly weren't meant for non-dragons."
 $ renpy.pause (1.5)
 
 scene town5 with dissolveslow
 play music "mx/elegant.ogg"
 m "Somehow, I managed to get it all done, but just as I was leaving..."
-
-# There's defiantly a better way to do this with labels but I can't be bothered, might improve at some point, might not idk
 
 if brycedead == False:
     if ryannwindowssmashed > 0:
