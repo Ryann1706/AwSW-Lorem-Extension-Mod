@@ -37,7 +37,7 @@ show maverick normal flip
 $ renpy.pause (8.5)
 hide rezashotsixtimes with dissolve
 
-m "I immediately went to check on Lorem. {w}They were unconscious, but didn't have any visible injuries which was a releif."
+m "I immediately went to check on Lorem. {w}They were unconscious, but didn't have any visible injuries which was a relief."
 m "Maverick hobbled over to me."
 Mv nice flip "Guess I was wrong about you."
 c "Are you okay?"
