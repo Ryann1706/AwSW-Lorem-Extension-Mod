@@ -630,7 +630,7 @@ $ renpy.pause (0.5)
 Lo normal fl "Well... how is it?"
 Ip normal fl flip "..."
 c "..."
-Lo shy fl "Uh... is it that bad...?"
+Lo shy fl "Uh... Is it that bad...?"
 Ip happy fl flip "Words can’t describe how absolutely adorable you are right now."
 c "It should be illegal for something to be that cute."
 Lo relieved fl "You two better not tell anyone about this..."
