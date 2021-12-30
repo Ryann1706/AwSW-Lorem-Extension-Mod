@@ -1550,6 +1550,7 @@ else:
 
 $ renpy.pause (1.0)
 scene black with dissolveslow 
+stop music fadeout 2.0
 $ renpy.pause (4.0)
 
 jump ryann_lorem2_lo8_start
