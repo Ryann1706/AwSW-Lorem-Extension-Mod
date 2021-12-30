@@ -41,14 +41,14 @@ play sound "fx/door/door_close.ogg"
 $ renpy.pause (1.0)
 
 c "So, is there any reason specifically you wanted to meet up again so soon?"
-Lo "Do I need a reason to hang to with you?"
+Lo "Do I need a reason to hang out with you?"
 c "I guess not."
 Lo think "By the way, Ipsum told me you two hung out yesterday, how did that go?"
 c "It was actually a lot more fun than I thought it would be."
 Lo normal "That's good to hear, I'm glad that you two are able to get along as well."
 Lo think "So, what did both of you get up to?"
 c "Well, Ipsum wanted to run a few tests on me and get some samples to study, so we met at the production facility before his shift."
-Lo normal "That’s explains why he didn’t leave his room at all of yesterday and today, and why he left pretty soon after you called him."
+Lo normal "That explains why he didn’t leave his room at all of yesterday and today, and why he left pretty soon after you called him."
 Lo relieved "But you didn’t have to agree to doing that, you know that right?"
 c "But I wanted to, it's not like he forced me, and it’s not the only thing we did anyway."
 Lo normal "Ah, did he involve you in one of his pranks?"
@@ -61,9 +61,9 @@ play sound "fx/paper.wav"
 m "Lorem unfolded one of their wings and took the menu out, putting it on the coffee table for us both to see."
 Lo "I think I’ll have salad again, what topping do you want this time?"
 c "Are we splitting this pizza too?"
-Lo relieved "Like I said, this is better quality, which means it more expensive, and the smallest size is still too big for me, so yes, we’re splitting it again."
+Lo relieved "Like I said, this is better quality, which means it's more expensive, and the smallest size is still too big for me, so yes, we’re splitting it again."
 show lorem normal with dissolve
-m "Just from looking at the menu and it's vast amount of topping I could tell this wasn’t cheaply made like Pantoli’s."
+m "Just from looking at the menu and it's vast amount of toppings I could tell this wasn’t cheaply made like Pantoli’s."
 m "Not knowing more than half the things on the menu, I decided to play it safe and order something I at least recognized."
 menu:
     "Peperoni":
@@ -105,7 +105,7 @@ Lo relieved "All I’ll say is, I'm happy I worked overtime the past two days to
 c "You didn’t have to spend that much for me."
 Lo normal "With how much you’ve done for me, it’s the least I could do."
 
-m "There was a moment of silence between us, then I noticed Lorem glancing around the room as if he was searching for something."
+m "There was a moment of silence between us, then I noticed Lorem glancing around the room as if they were searching for something."
 c "Are you looking for something?"
 Lo think "Yeah, do you not have a TV in your apartment?"
 c "No, it's been like this since the day I’ve arrived here, which included no TV."
@@ -116,7 +116,7 @@ Lo normal "You gave Ixomen back his Ipsum Sphere so they isn't much to do except
 $ renpy.pause (1.0)
 show lorem shy with dissolve 
 $ renpy.pause (1.0)
-Lo "Uh... Forget you head that."
+Lo "Uh... Forget you heard that."
 menu:
     "You’re adorable.":
         $ rnloremromance += 1
@@ -148,7 +148,7 @@ m "Lorem proceeded to tell me in depth about dragon video games, some descriptio
 play sound "fx/door/doorbell.wav"
 m "We got so in-depth we lost track of time, and before we knew it the doorbell rang."
 scene o with dissolve
-m "Lorem got up to answer it and retuned with the pizza."
+m "Lorem got up to answer it and returned with the pizza."
 show lorem normal flip with easeinleft
 $ renpy.pause (0.3)
 show lorem normal with dissolve
@@ -220,7 +220,7 @@ hide lorem normal with easeoutright
 $ renpy.pause (2.0)
 show lorem normal with easeinright
 $ renpy.pause (0.5)
-c "It's probably late enough to go the underground building now."
+c "It's probably late enough to go to the underground building now."
 Lo "Alright, let's go then..."
 hide lorem with dissolve
 
@@ -283,7 +283,7 @@ menu:
         Lo shy "..."
         $ renpy.pause (1.5)
         Lo normal blush "Okay..."
-        m "We continued walking, me holding Lorem’s small scaly hand to help comfort hthem."
+        m "We continued walking, me holding Lorem’s small scaly hand to help comfort them."
 
 
 $ renpy.pause(1.0)
@@ -291,7 +291,7 @@ stop music fadeout 2.0
 scene hallway with dissolveslow
 $ renpy.pause (1.5)
 show lorem think with dissolve
-m "We made our way into same corridor we confronted Reza in earlier, I took a look around and saw four rooms immediately around us."
+m "We made our way into the same corridor we confronted Reza in earlier, I took a look around and saw four rooms immediately around us."
 play music "mx/mysteryambience.ogg"
 
 # This is before the mini game starts, so the player can get the genreal layout
@@ -308,7 +308,7 @@ menu:
         label ryann_lorem2_lo7_before_maintenance:
         menu:
             "Look at generator.":
-                m "There was a very obvious sign next the generator, “DO NOT BRING LIQUIDS NEAR, RISK OF CATASTROPHIC FAILURE.”"
+                m "There was a very obvious sign next to the generator, “DO NOT BRING LIQUIDS NEAR, RISK OF CATASTROPHIC FAILURE.”"
                 show lorem think with dissolve
                 c "You’d think it’d be obvious enough not to bring liquids near anything electrical."
                 Lo relieved "Apparently not."
@@ -323,7 +323,7 @@ menu:
             "Look at toolbox.":
                 m "Unsurprisingly, the toolbox had lots of useful tools in it, a crowbar, a heavy-duty pipe wrench, a claw hammer, some flex tape and more miscellaneous things."
                 m "There was also a note on the toolbox, which said the following:"
-                m "“Someone keeps taking my tools without asking, so I'm keeping some my quarters. If you want something you’ll actually have to ask,” - Otomo "
+                m "“Someone keeps taking my tools without asking, so I'm keeping some in my quarters. If you want something you’ll actually have to ask,” - Otomo "
 
             "Go back to corridor.":
                 jump ryann_lorem2_lo7_before_coridor
@@ -338,7 +338,7 @@ menu:
         label ryann_lorem2_lo7_before_lab:
         menu:
             "Look at security locker.":
-                m "The security locker was very sturdy, it looked the only way to get in was a keycard scanner."
+                m "The security locker was very sturdy, it looked like the only way to get in was a keycard scanner."
                 m "I peeked inside through a small gap, but I couldn’t see much, there were random electrical components, an industrial valve, some storage boxes varying in size..."
 
             "Look at boxes." if not ryannlookedboxes:
@@ -377,7 +377,7 @@ menu:
     
     "Meeting room.":
         scene whiteroom with dissolve 
-        m "We stepped into the meeting room, and there wasn't really anything exciting, there was a set of cabinets, a row of lockers and, as expected a long table with chairs."
+        m "We stepped into the meeting room, and there wasn't really anything exciting, there was a set of cabinets, a row of lockers and as expected a long table with chairs."
         label ryann_lorem2_lo7_before_meeting:
         menu:
             "Look at table.":
@@ -394,7 +394,7 @@ menu:
 
             "Look at lockers.":
                 m "There were four lockers in a row, three of them were unlocked and had nothing on, or in them."
-                m "The fourth was labeled “I. Otomo” and had a study looking fingerprint lock."
+                m "The fourth was labeled “I. Otomo” and had a sturdy looking fingerprint lock."
                 show lorem think with dissolve 
                 Lo "Why is only one locker being used, and by who?"
                 c "..."
@@ -424,7 +424,7 @@ menu:
                 n " - The coupling on the backup generator is loose so it can easily be taken out, the others are saying it's not an issue, but I know it is, since when were they the maintenance crew?"
                 n "{b}Medium priority:{/b}"
                 n " - The pressure on the eye washing station in Lab A isn't optimal, I’ve disabled the drain and intake pipe with a pipe wrench for now until I fix it."
-                n " - One of those idiots put a crack in the casing of the primary generator, I put some duct tape on it for now as the risk for flooding, or coolant leaking is low enough."
+                n " - One of those idiots put a crack in the casing of the primary generator, I put some duct tape on it for now as the risk for flooding or coolant leaking is low enough."
                 n "{b}Low priority:{/b}"
                 n " - The Maintenance room pump is long overdue for scheduled maintenance, the risk of flooding is low enough and I have more urgent tasks before I can get to it."
                 window hide
@@ -443,8 +443,8 @@ menu:
                 Lo "Wait, that laptop works?"
                 stop music fadeout 2.0
                 play sound "fx/system3.wav"
-                s "ERROR: UNREGISTED USER DECTECTED, ACTIVATING LOCKDOWN."
-                Lo scared "[player_name] what’s happening?!"
+                s "ERROR: UNREGISTED USER DETECTED, ACTIVATING LOCKDOWN."
+                Lo scared "[player_name], what’s happening?!"
                 c "I don’t know!"
                 scene hallway with dissolve
                 show lorem scared with dissolve 
@@ -621,7 +621,7 @@ menu:
                 $ ryannactionsremaining -= 1
                 show lorem think with dissolve
                 m "I tried to turn the valve, but no matter how much effort I put behind it, it wouldn't budge."
-                Lo "[player_name], remember, right tighty, left loosey."
+                Lo "[player_name], remember, righty tighty, lefty loosey."
                 c "(Right, I'm trying to loosen the valve... {w}I think...)"
                 hide lorem with dissolve 
 
@@ -629,14 +629,14 @@ menu:
                 $ ryannactionsremaining -= 1
                 show lorem think with dissolve
                 m "I tried to turn the valve, but no matter how much effort I put behind it, it wouldn't budge."
-                Lo "[player_name], remember, right tighty, left loosey."
+                Lo "[player_name], remember, righty tighty, lefty loosey."
                 c "(Right, I'm trying to loosen the valve... {w}I think...)"
                 hide lorem with dissolve 
 
             "Turn the valve counterclockwise." if not ryannpumpused:
                 $ ryannactionsremaining -= 1
                 $ ryannpumpused = True
-                m "I tried to turn the valve, it took a lot force as it was stuck from the amount of rust on it, it eventually did give way though..."
+                m "I tried to turn the valve, it took a lot of force as it was stuck from the amount of rust on it, it eventually did give way though..."
                 $ renpy.pause (0.5)
                 play sound "fx/creak3.ogg"
                 $ renpy.pause (3.5)
@@ -645,7 +645,7 @@ menu:
                 show lorem scared with dissolve 
                 Lo "What are we supposed to do now?!"
                 c "Calm down Lorem, I'm sure we're able to fix this..."
-                m "I looked closer at where the pump where the valve had come off, and there seemed to be an indent in the pipe similar to the top of a flathead screw."
+                m "I looked closer at the pump where the valve had come off, and there seemed to be an indent in the pipe similar to the top of a flathead screw."
                 c "Maybe that's where a new valve could slot in, or something else could be used for leverage to turn it?"
                 hide lorem with dissolve 
 
@@ -814,7 +814,7 @@ menu:
             m "The small drain underneath the eye washing station was draining a small amount of water from the room, not much but it was better than nothing."
 
         else:
-            m "I tried to see if the eye washing station was working, but it wasn't, (it's not like we needed more water now anyway...)."
+            m "I tried to see if the eye washing station was working, but it wasn't, it's not like we needed more water now anyway..."
             m "But when I looked lower I saw the drain beneath it, yet it wasnt drainig any of the water flooding the room."
             c "(If we can get that drain working, it won't be enough to stop the water completely, but it might be better than nothing?)"
 
@@ -884,7 +884,7 @@ menu:
         if ryannhaskey == False:
             m "The only non-locked locker was labeled “I. Otomo” and it had a sturdy looking fingerprint lock on it."
             if ryanncurrentitem == "Crowbar":
-                m "I jammed the crowbar into the top corner of the locker and began to forec it open."
+                m "I jammed the crowbar into the top corner of the locker and began to force it open."
                 play sound "fx/ryannusecrowbar.mp3"
                 m "It was working for the most part and the locker door was begining to bend, {w}then suddenly the crowbar slipped."
                 play sound "fx/metalbox.ogg"
@@ -1267,7 +1267,7 @@ menu:
         play sound "fx/undress.ogg"
         m "I leaned over to the little dragon and put my arm around them, to help console them over what had just happened."
         m "They moved closer to me, resting at my side."
-        m "We sat together in silence, me listening to Lorem breathing slow as they gradually calmed down."
+        m "We sat together in silence, me listening to Lorem's breathing slow as they gradually calmed down."
         m "After a while they moved away and broke the silence."
 
     "[[Get the leftover pizza.] ":
@@ -1308,7 +1308,7 @@ if rnloremromance > 7:
     Lo "R-really...?"
     m "I gently put my hand under Lorem’s chin, guiding their lips to mine, pulling them into a passionate kiss."
     show lorem shy with dissolve 
-    m "Lorem was surprised by my action, but soon gave in, returning the kiss and subtly slipping in a small amount tongue, which I took as an invitation to return the favor."
+    m "Lorem was surprised by my action, but soon gave in, returning the kiss and subtly slipping in a small amount of tongue, which I took as an invitation to return the favor."
     show lorem sleep blush with dissolve 
     m "I moved my hand from their chin and started caressing their neck, while they held my shoulders pulling me closer."
     show lorem normal blush with dissolve 
@@ -1387,8 +1387,8 @@ if rnloremromance > 3:
     m "I wrapped my arms around them, careful not to injure their wings, and pulled them into a closer embrace."
     m "Lorem wrapped their arms around me too, eager to steal as much of my body heat as possible."
     m "I kissed the top of their muzzle, and rested my chin on their forehead, helping them drift into a peaceful slumber."
-    c "Goodnight, Lorem."
-    Lo "Goodnight, [player_name]."
+    c "Goodnight Lorem."
+    Lo "Goodnight [player_name]."
     $ renpy.pause (2.0)
     show lorem sleep with dissolveslow
     m "I listened to Lorem’s breathing gradually slow down, and their grip on me relaxed, as they fell asleep."
@@ -1398,8 +1398,8 @@ if rnloremromance > 3:
 
 else:
     m "I grabbed a spare blanket and turned to Lorem before leaving the room." 
-    c "Goodnight, Lorem."
-    Lo "Goodnight, [player_name]."
+    c "Goodnight Lorem."
+    Lo "Goodnight [player_name]."
     hide lorem with dissolve
     $ renpy.pause (0.5)
     m "I made my way to the living room and started to prepare my own bed, setting the blanket down on the couch."
@@ -1423,10 +1423,10 @@ if rnloremromance > 3:
     show lorem sleep with dissolveslow
     $ renpy.pause (0.5)
     m "The adorable small dragon clinging to me was a pretty good reminder though."
-    m "Me and Lorem had moved during the night, so they were now lying on top of me, their small tail wrapped around my leg and wings unfolded, covering me like a scaly blanket."
+    m "Me and Lorem had moved during the night, so they were now lying on top of me, their small tail wrapped around my leg, and wings unfolded, covering me like a scaly blanket."
     m "I hadn’t the heart to wake them."
     $ renpy.pause (3.5)
-    m "After a while of being Lorem’s personal pillow, I made sure my movements getting up were very slow and carful as not to wake Lorem."
+    m "After a while of being Lorem’s personal pillow, I made sure my movements getting up were very slow and careful as not to wake Lorem."
     Lo "Mmmhhh...?"
     m "Lorem’s still asleep mind tried to protest me getting up, but settled with lying on the part of the bed still warmed by my body heat."
     play sound "fx/undress.ogg"
@@ -1444,7 +1444,7 @@ else:
     m "I left just as quietly as I entered and made my way to the kitchen to prepare a breakfast for the two of us for when Lorem woke up."
 
 scene ryannkitchen with dissolveslow
-m "After making my way to the kitchen and scouring the fridge and cabinets I came up with the makings of a decent breakfast."
+m "After making my way to the kitchen and scouring the fridge and cabinets, I came up with the makings of a decent breakfast."
 m "As I began to prepare it, I heard a set of small footprints behind me."
 show lorem normal flip at left with easeinleft
 Lo "Hey [player_name]..."
@@ -1483,7 +1483,7 @@ if rnloremromance > 3:
         "Caress their side.":
             m "I moved my hand from Lorem’s shoulder and began to gently caress their side."
             play sound "fx/purr.ogg"
-            m "And in response Lorem started purring adorably, and moving closer to me, nuzzling their head onto my chest."
+            m "And in response Lorem started purring adorably, and moving closer to me, nuzzling their head into my chest."
             Lo sleep blush "Your hands feel amazing..."
             m "I continued to caress them for a while longer, enjoying listening to their contented purring."
             c "You’re really enjoying this, huh?"
@@ -1506,7 +1506,7 @@ if rnloremromance > 3:
     c "That’s convenient."
     play sound "fx/undress.ogg"
     $ renpy.pause (3.0)
-    m "I walked Lorem to the door, but just as they was about to leave, they tuned back around towards me. With an assisting flap of their wings, they jumped up to kiss my cheek before leaving."
+    m "I walked Lorem to the door, but just as they were about to leave, they tuned back around towards me. With an assisting flap of their wings, they jumped up to kiss my cheek before leaving."
     play sound "fx/kiss.wav"
     $ renpy.pause (0.5)
     Lo normal blush "I-I'll see you tomorrow!"
