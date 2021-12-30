@@ -54,7 +54,7 @@ if adinedead == True:
     waitress "Welcome, what can I get for you two?"
 
 else:
-    m "And soon after Adine made her way over to us."
+    m "And soon after, Adine made her way over to us."
     show lorem at right with move
     $ renpy.pause (0.5)
     if adinestatus == "bad" or adinestatus == "abandoned":
@@ -383,11 +383,11 @@ c "So, I’m curious, how did you find out about this place?"
 Lo think flip "Well, a few months ago I had to do a delivery to a fairly isolated farm south of here, my guess would be about 20 minutes worth of flying from here."
 Lo normal flip "Anyway, I obviously got tired from flying for so long and was looking for a place to rest, and just barely spotted this beach."
 Lo "I flew over and it was completely empty, no people, no trash, nothing at all."
-Lo think flip "I think because of the amount of trees, bushes and other stuff you have to go through to get here, no one comes here, me, you and Ipsum are the only ones who know."
+Lo think flip "I think because of the amount of trees, bushes and other stuff you have to go through to get here, no one comes here. Me, you and Ipsum are the only ones who know."
 c "So, we can pretty much have a private beach to ourselves whenever we want?"
-Lo normal flip "In all the times I’ve been here I haven't seen anyone else here, so most likely yes."
+Lo normal flip "In all the times I’ve been here I haven't seen anyone else, so most likely yes."
 $ renpy.pause (2.0)
-m "There was another moment of silence between us, but it didn’t last as long as Lorem had gotten the picnic basket and took out some snacks for the both of us."
+m "There was another moment of silence between us, but it didn’t last long as Lorem had gotten the picnic basket and took out some snacks for the both of us."
 m "They weren't too bad, they were definitely different from previous human snacks, but I figured I’d get more used to them over time."
 $ renpy.pause (1.0)
 if rnloremromance > 3:
@@ -434,11 +434,11 @@ if rnloremromance > 3:
     Lo normal flip "I have a fire breath weapon, remember?"
     c "Right, but couldn’t it be dangerous?"
     Lo "Like I said, it’s pretty small anyway, and I know how to control it, so I’m sure we’ll be fine."
-    m "A two small amounts of liquid came out of Lorem’s mouth, and on making contact with the candle, it was lit."
+    m "Two small amounts of liquid came out of Lorem’s mouth, and on making contact with the candle, it was lit."
     $ renpy.pause (0.5)
     Lo blush flip "So... um, do you like it...?"
     c "You’re so adorably precious."
-    m "I leaned over to Lorem and gave him a quick kiss on the nose."
+    m "I leaned over to Lorem and gave them a quick kiss on the nose."
     play sound "fx/kiss.wav"
     show lorem shy flip with dissolve
     $ renpy.pause (1.5)
