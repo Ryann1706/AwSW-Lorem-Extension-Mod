@@ -3,8 +3,8 @@ label ryann_lorem2_rezaconfrontation:
 
 
 $ renpy.pause (2.0)
-m "None of us said anything in respone, or even moved."
-m "I suddenly remember what Lorem said about the Ixomen Sphere."
+m "None of us said anything in response, or even moved."
+m "I suddenly remembered what Lorem said about the Ixomen Sphere."
 play sound "fx/snarl.ogg"
 show maverick rage flip with dissolve
 m "All of a sudden Maverick charged, followed by Lorem, and I took out the Ixomen Sphere and prepared to throw it."
@@ -18,7 +18,7 @@ show lorem at right with move
 show reza angry with dissolve
 play sound "fx/loremkick.ogg"
 hide lorem with dissolve
-m "He also doged Lorem's charge, hitting them with a well-placed kick knocking them into a wall, which they then fell to the ground."
+m "He also dodged Lorem's charge, hitting them with a well-placed kick knocking them into a wall, which they then fell to the ground."
 show loremwounded at Pan((1080, 0), (500, 350), 6) with fade
 $ renpy.pause (4.5)
 show reza gunself with dissolve
@@ -55,7 +55,7 @@ m "The sound of a door opening behind me snapped me out of my thoughts. {w}It wa
 hide izumi 
 show izumi normal with dissolve
 c "Hey Izumi, did you get lost on your way here, where were you?"
-As "It's interesting that you remeber her name, even though you were nerver told it in this timeline."
+As "It's interesting that you remeber her name, even though you were never told it in this timeline."
 c "{i}Her{/i} name? {w}What do you mean?"
 m "A muffled sigh came from behind their mask."
 As "You really haven't pieced it together yet? Height or voice not ring a bell?"
