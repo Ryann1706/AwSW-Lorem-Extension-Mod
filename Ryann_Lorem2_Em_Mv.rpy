@@ -112,7 +112,7 @@ if brycedead == False:
             Br "Hey [player_name]."
             c "Hey Bryce."
             Br stern b "I'll get straight to the point."
-            Br "Im sure you remember the incident with the window?"
+            Br "I.m sure you remember the incident with the window?"
             c "Yeah..."
             Br "We still need to talk about that, come on."
 
@@ -138,7 +138,7 @@ if brycedead == False:
         Br "So, since you’ve lost your ambassador status, I could charge you for anti-social behavior, disturbing the peace and vandalism."
         Br "But for stopping Reza, I’ll drop it this once."
         if brycestatus == "good" or brycestatus == "neutral" or brycestatus == "none":
-            Br "Look, I dont want to be speaking down to you like a child, but I still had to report what happened, so it's either this or getting arested."
+            Br "Look, I dont want to be speaking down to you like a child, but I still had to report what happened, so it's either this, or getting arrested."
             Br "So..."
             scene black with dissolveslow
             hide bryce with dissolve
