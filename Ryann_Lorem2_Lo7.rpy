@@ -91,7 +91,7 @@ menu:
 
     "Pineapple":
         $ ryannpizzatopping = "pineapple"
-        c "(I wonder if humans and dragons share the same view about pineapples on pizza?)"
+        c "(I wonder if humans and dragons share the same view about pineapple on pizza?)"
         c "I’ll have pineapple."
         Lo think "You actually like pineapples on pizza?"
         c "(Apparently, we do...)"
@@ -263,8 +263,8 @@ menu:
     "[[Make a joke.]":
         c "Lorem, why are you so nervous?"
         Lo think "Oh, you noticed...? It’s just... what if we get caught, we’re technically trespassing, right?"
-        c "Really, that’s what you’re worried about?"
-        c "Lorem, for someone to find us trespassing they’d also have to be down there, right?"
+        c "Really? That’s what you’re worried about?"
+        c "Lorem, for someone to find us trespassing, they’d also have to be down there, right?"
         Lo "Right..."
         c "So, if they’re also trespassing, they’ll get arrested too, so we’ll be fine."
         Lo relieved "But whoever arrested them would arrest us too."
@@ -1343,7 +1343,7 @@ elif rnloremromance > 3:
 
 
 else:
-    Lo normal "I know I’ve said it before but, I wanted you to know how much our friendship means to me."
+    Lo normal "I know I’ve said it before, but I wanted you to know how much our friendship means to me."
     Lo sad "I don’t really have many other friends other than you and Ipsum, and no one else who knows I’m a hermaphrodite."
     Lo normal "But I’m glad that after what just happened, I know that you’ll have my back no matter what."
     c "Of course, Lorem, that’s what friends do for each other, I'm glad to know you’ll be by my side no matter what too."
@@ -1439,9 +1439,9 @@ else:
     m "After a decent amount of stretching, I went to check on Lorem, I made my way to the bedroom and slowly peeked through the door."
     show lorem sleep with dissolveslow 
     $ renpy.pause (0.5)
-    m "Lorem was still asleep, comfortably sprawled across my bed, with a big dopey grin on his face. "
+    m "Lorem was still asleep, comfortably sprawled across my bed, with a big dopey grin on their face. "
     hide lorem with dissolveslow
-    m "I left just as quietly as I entered and made my way to the kitchen to prepare a breakfast for the two of us for when Lorem woke up."
+    m "I left just as quietly as I entered, and made my way to the kitchen to prepare a breakfast for the two of us for when Lorem woke up."
 
 scene ryannkitchen with dissolveslow
 m "After making my way to the kitchen and scouring the fridge and cabinets, I came up with the makings of a decent breakfast."
@@ -1532,7 +1532,7 @@ else:
     c "I just didn’t show it because I knew the impact of how I reacted would have had on you."
     Lo normal "Well, I'm glad you did, that whole situation definitely could have ended a lot worse."
     c "Yeah..."
-    Lo think "So, that’s... three times you’ve saved my life now? From Reza, in the underground building and soon enough, the comet."
+    Lo think "So, that’s... four times you’ve saved my life now? From Reza, the store when that shelf fell on me, in the underground building and soon enough, the comet."
     c "And you saved mine by telling me to throw the Ixomen Sphere at Reza."
     Lo normal "Heh, after saving each other that much we must be bonded for life then, huh?"
     c "I guess so."
