@@ -59,13 +59,13 @@ Em ques "That is what we’re unsure of, and from that reaction, I'm assuming yo
 Em normal "Which brings us to the point of this meeting."
 Em frown "Because we cannot contact humanity, we are forced to revoke your ambassador status."
 c "I see."
-Em normal "But to repay you for your service, we will allow you apply for citizenship, and let you keep your apartment, and have certain utilities subsidized."
+Em normal "But to repay you for your service, we will allow you to apply for citizenship, and let you keep your apartment, and have certain utilities subsidized."
 c "Thank you, that will definitely be satisfactory."
 Em "I'm glad it's to your liking, but you will have to fill in some paperwork before you leave."
 c "I expected that, but before I start there’s something crucially important I must warn you about."
 Em "What is it?"
 c "Have you heard at all about a comet lately?"
-Em ques "I am aware of it, its path is projected to pass by the planet safely, if that’s what you were worried about."
+Em ques "I am aware of it, it's path is projected to pass by the planet safely, if that’s what you were worried about."
 c "Actually, it won't, according to my PDA, the comet will directly hit the planet causing a global extinction event if nothing is done about it."
 show emera normal with dissolve
 c "Thankfully, because the generator Reza tried to take wasn't damaged, it should supply enough power to safely divert it."
@@ -231,7 +231,7 @@ if brycedead == False:
                 "Accept his apology.":
                     $ ryannmavapology = True
                     c "Honestly, I don’t blame you for acting the way you did, from your point of view I can see why you were suspicious of me."
-                    Mv nice "Im glad that we can move on from this."
+                    Mv nice "I'm glad that we can move on from this."
                     Br smirk b flip "See Maverick, it wasn't that hard."
                     Mv normal "Shut it Bryce."
                     Br laugh b flip "He's quite the charming fellow, isn't he [player_name]?"
