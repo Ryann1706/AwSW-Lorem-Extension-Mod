@@ -538,10 +538,10 @@ menu:
             m "I tried to find a spot on the door to leverage the crowbar, but the blast door was too close to the ground to even try to get it underneath, even if I could, the door is far too heavy to move by hand."
         elif ryanncurrentitem == "Pipe wrench":
             play sound "fx/ryannmetalhit.mp3"
-            m "I swung the pipe wrench at the door, but there wasn't even the slightest scratch or dent in it, I needed to try something else."
+            m "I swung the pipe wrench at the blast door, but there wasn't even the slightest scratch or dent in it. I needed to try something else."
         elif ryanncurrentitem == "Claw hammer":
             play sound "fx/ryannmetalhit.mp3"
-            m "I swung the claw hammer at the door, but there wasn't even the slightest scratch or dent in it, I needed to try something else."
+            m "I swung the claw hammer at the blast door, but there wasn't even the slightest scratch or dent in it. I needed to try something else."
         else:
             m "The blast door in the corridor was made of a thick sturdy metal, there was no way we were opening it by ourselves, we needed to find another way."
 
@@ -573,7 +573,7 @@ menu:
                 c "(That tape wont stop any water anytime soon anymore, maybe we could do something about it?)"
             
         else:
-            c "(If the water touches this, we're screwed... {w}I can't let Lorem know that, he seems scared enough already...)"
+            c "(If the water touches this, we're screwed... {w}I can't let Lorem know that, they seem scared enough already...)"
         
         jump ryann_lorem2_lo7_minigame_maintenance
 
@@ -707,7 +707,7 @@ menu:
 
 
     "Check toolbox.":
-        m "I looked throught the toolbox and found some things that could be useful, there was also a note on the toolbox."
+        m "I looked through the toolbox and found some things that could be useful, there was also a note on the toolbox."
         menu:
             m "Should I take anything?"
 
@@ -789,10 +789,10 @@ menu:
         $ ryannlookedboxes = True
         $ ryannactionsremaining -= 1
         play sound "fx/rummage.wav"
-        m "Me and Lorem searched through the boxes but they were either empty or full of useless junk."
+        m "Me and Lorem searched through the boxes, but they were either empty or full of useless junk."
         jump ryann_lorem2_lo7_minigame_lab
                 
-    "Move boxes" if ryannlookedboxes and not ryannmovedboxes:
+    "Move boxes." if ryannlookedboxes and not ryannmovedboxes:
         $ ryannmovedboxes = True
         $ ryannactionsremaining -= 1
         play sound "fx/box.wav"
@@ -803,9 +803,9 @@ menu:
         $ ryannactionsremaining -= 1
         if ryanncurrentitem == "Pipe wrench":
             m "I looked at the drain beneath the eye washing station yet it wasn't draining any water from the room."
-            m "After a bit of seaching I saw a pipe with a nut on it leading to the drain, I firmly tightend the pipe wrench around it and loosened it."
-            m "Some air bubbles came up from the drain, then a small stream of water started flowing down the pipe, not enough to stop the water but enough to buy us some time."
-            m "I tried to retrieve the pipe wrench from the pipe but it was stuck, probably from being tightened too much, we left it as we didnt have the time to spare getting it unstuck."
+            m "After a bit of seaching, I saw a pipe with a nut on it leading to the drain, I firmly tightend the pipe wrench around it and loosened it."
+            m "Some air bubbles came up from the drain, then a small stream of water started flowing down the pipe, not enough to stop the water, but enough to buy us some time."
+            m "I tried to retrieve the pipe wrench from the pipe, but it was stuck, probably from being tightened too much, we left it as we didnt have the time to spare getting it unstuck."
             $ ryanncurrentitem = "Nothing"
             $ ryannwrenchused = True 
             $ ryannactionsremaining += 10
@@ -842,7 +842,7 @@ if ryannactionsremaining == 0:
     jump ryann_lorem2_lo7_minigame_rip
 
 menu:
-    "Check table":
+    "Check table.":
         if ryannlookedtable == False: 
             $ ryannlookedtable = True
             $ ryannactionsremaining -= 1
@@ -854,7 +854,7 @@ menu:
 
         jump ryann_lorem2_lo7_minigame_meeting
 
-    "Search through papers" if ryannlookedtable:
+    "Search through papers." if ryannlookedtable:
         if ryannhaskeycard == False:
             $ ryannhaskeycard = True 
             m "I searched the papers more thoroughly isntead of skimming through them, but there wasn't really much that could help us."
@@ -868,7 +868,7 @@ menu:
         jump ryann_lorem2_lo7_minigame_meeting
 
 
-    "Search cabinet":
+    "Search cabinet.":
         if ryannlookedcabinet == True:
             m "I seached the cabinet again, yet there still wasn't anyhting that could help us."
 
@@ -880,7 +880,7 @@ menu:
         jump ryann_lorem2_lo7_minigame_meeting
 
 
-    "Search lockers":
+    "Search lockers.":
         if ryannhaskey == False:
             m "The only non-locked locker was labeled “I. Otomo” and it had a sturdy looking fingerprint lock on it."
             if ryanncurrentitem == "Crowbar":
@@ -909,7 +909,7 @@ menu:
                     if ryannwrenchlocker == False:
                         $ ryannwrenchlocker = True 
                         play sound "fx/ryannmetalhit.mp3"
-                        m "I swung the pipe wrench at the lock, but it didn't break it, it just indented the locker slightly."
+                        m "I swung the pipe wrench at the lock, but it didn't break, it just indented the locker slightly."
                         c "(I shouldn't try that again, if I cave the locker door in, I doubt we could get it open at all.)"
                         $ ryannactionsremaining -= 1
                         jump ryann_lorem2_lo7_minigame_meeting
@@ -996,14 +996,14 @@ menu:
                 $ ryannactionsremaining -= 1
                 play sound "fx/ryannmetalhit.mp3"
                 m "I swung the pipe wrench at the footlocker, but there was no noticable damage to it at all."
-                c "(That's made of solid steel, there's no way I can just bash it open, maybe finding the key would be easier?)"
+                c "(That's made of solid steel, there's no way I can just bash it open. Maybe finding the key would be easier?)"
                 jump ryann_lorem2_lo7_minigame_living
 
             elif ryanncurrentitem == "Claw hammer":
                 $ ryannactionsremaining -= 1
                 play sound "fx/ryannmetalhit.mp3"
                 m "I swung the claw hammer at the footlocker, but there was no noticable damage to it at all."
-                c "(That's made of solid steel, there's no way I can just bash it open, maybe finding the key would be easier?)"
+                c "(That's made of solid steel, there's no way I can just bash it open. Maybe finding the key would be easier?)"
                 jump ryann_lorem2_lo7_minigame_living
 
             elif ryanncurrentitem == "Crowbar":
@@ -1013,7 +1013,7 @@ menu:
                 jump ryann_lorem2_lo7_minigame_living
 
             else:
-                c "(I doubt the key would be too far from here, maybe I should look around for it?)"
+                c "(I doubt the key would be too far from here, maybe we should look around for it?)"
                 jump ryann_lorem2_lo7_minigame_living
 
 
@@ -1216,7 +1216,7 @@ play sound "fx/system3.wav"
 s "Primary pump active, draining system initiated."
 m "The water level in the room started to slowly, but surely decrease."
 show lorem think with dissolve 
-Lo think "D-did we do it...?"
+Lo think "D-Did we do it...?"
 c "I think we did!"
 Lo relieved "Thank goodness... But how do we get out now?"
 c "I think that laptop might be able to do something."
