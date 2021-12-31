@@ -652,7 +652,7 @@ c "See ya."
 
 scene black with dissolveslow
 $ renpy.pause (4.0)
-
+stop music fadeout 2.0
 
 jump ryann_lorem2_lo7_start
 
