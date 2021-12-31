@@ -112,7 +112,7 @@ if brycedead == False:
             Br "Hey [player_name]."
             c "Hey Bryce."
             Br stern b "I'll get straight to the point."
-            Br "I.m sure you remember the incident with the window?"
+            Br "I'm sure you remember the incident with the window?"
             c "Yeah..."
             Br "We still need to talk about that, come on."
 
