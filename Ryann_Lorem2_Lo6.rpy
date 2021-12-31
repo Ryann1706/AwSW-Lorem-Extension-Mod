@@ -150,7 +150,7 @@ else:
     pass
 
 menu:
-    "Look at shelf" if ryannlookatshelf < 2:
+    "Look at shelf." if ryannlookatshelf < 2:
         m "I looked at the bookshelf and there was mostly only video games and books."
         menu:
             "Look at video games." if not ryannlookgames:
@@ -171,14 +171,14 @@ menu:
                 c "(Wow, I wonder which side belongs to who. {w}Don’t know why I thought I'd find anything interesting on a shelf full of books.)"
                 jump ryann_lorem2_lorem6_aptsearch
             
-    "Look at the plant" if not ryannlookplant:
+    "Look at the plant." if not ryannlookplant:
         $ ryannlookatthings += 1
         $ ryannlookplant = True
         m "I didn’t recognize the plant, but it did seem to be thriving."
         c "(Ipsum wasn’t joking when he said Lorem loved plants.)"
         jump ryann_lorem2_lorem6_aptsearch
 
-    "Look at the TV" if not ryannlookTV:
+    "Look at the TV." if not ryannlookTV:
         $ ryannlookatthings += 1
         $ ryannlookTV = True
         m "The TV looked exactly like the ones back home, I looked closer and saw cables running from it and into the back of the stand it was on."
@@ -187,7 +187,7 @@ menu:
         jump ryann_lorem2_lorem6_aptsearch
 
 
-    "Wait for Lorem":
+    "Wait for Lorem.":
         if ryannlookatthings == 0:
             m "I decided to respect Lorem and Ipsum's privacy and just sat down and waited for Lorem instead."
             jump ryann_lorem2_lorem6_loremreturn
