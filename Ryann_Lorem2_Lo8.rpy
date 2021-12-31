@@ -29,12 +29,12 @@ if rnloremromance > 3:
 
 else:
     Lo "It’s just… I want to make up for the other day, it’s my fault we were down there, so I wanted to apologize by us doing something together."
-    c "No, you shouldn’t be apologizing, I was the one who insisted on going down there, it’s my fault."
+    c "No, you shouldn’t be apologizing. I was the one who insisted on going down there, it’s my fault."
     Lo "But you wouldn’t have insisted if I hadn't brought it up in the first place."
     $ renpy.pause (1.5)
     c "There's no point in us arguing over this, let's just say we’re both responsible for going down there, and leave it at that."
     Lo normal "Alright."
-    Lo think "Still, we could both really use today to help us de-stress from all that."
+    Lo think "Still, we could both really use today to help us destress from all that."
     c "How about going to a cafe first, and think of what else to do later?"
     Lo normal "Sure, let’s go then."
 
@@ -149,7 +149,7 @@ if rnloremromance > 3:
     Lo "Oh... T-Thank you..."
 
 else:
-    m "I saw the occasional dragon passing by, glacing or staring at me. I gave a friendly wave or nod, but secretly hoped they wouldn’t come in and interrupt me and Lorem."
+    m "I saw the occasional dragon passing by, glancing or staring at me. I gave a friendly wave or nod, but secretly hoped they wouldn’t come in and interrupt me and Lorem."
     m "Thankfully none did, but they didn’t go unnoticed by Lorem."
     Lo normal flip "Well, looks like someone is pretty popular, huh?"
     c "Do you really blame them for being interested in me? If I recall correctly, you were just as, if not more excited when you first met me."
@@ -405,9 +405,9 @@ if rnloremromance > 3:
 
 else:
     c "So, how often do you come to this beach?"
-    Lo normal flip "At least once every week or two, like I said, I don’t think many people know about this beach, so it’s a good place to find some privacy."
-    Lo "It’s also a great place to come to when I want to think or de-stress, it's just so peaceful and tranquil here."
-    c " I see what you mean, the sound of the waves, the view of the ocean and being surrounded by untouched nature, it’s perfect."
+    Lo normal flip "At least once every week or two. Like I said, I don’t think many people know about this beach, so it’s a good place to find some privacy."
+    Lo "It’s also a great place to come to when I want to think, or destress, it's just so peaceful and tranquil here."
+    c "I see what you mean, the sound of the waves, the view of the ocean and being surrounded by untouched nature, it’s perfect."
     Lo "I’m glad I was able to share it with you then."
 
 $ renpy.pause (2.0)
@@ -416,7 +416,7 @@ show lorem normal flip
 with dissolveslow
 m "Before we had even realised, the sun had set, revealing the breathtakingly beautiful night sky."
 c "Woah... Lorem look."
-Lo happy flip "Wow... that’s... I can’t find the words..."
+Lo happy flip "Wow... That’s... I can’t find the words..."
 c "So majestic... {w}So beautiful..." # Reference to Omori
 Lo "Yeah..."
 Lo think flip "You never usually see that back in the town."
@@ -497,7 +497,7 @@ else:
     Lo "Haha..."
     c "Seriously though, you don’t owe me anything, your friendship and loyalty is enough."
     $ renpy.pause (2.0)
-    Lo "[player_name], thank you, I really couldn’t ask for a better friend."
+    Lo "[player_name], truly, thank you, I really couldn’t ask for a better friend."
     c "Neither could I Lorem."
 
 $ renpy.pause (2.5)
