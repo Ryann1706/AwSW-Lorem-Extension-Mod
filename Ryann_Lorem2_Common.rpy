@@ -12,6 +12,8 @@ image ryannbeachevening = "bg/ryannbeachevening.jpg"
 image ryannbeachnight = "bg/ryannbeachnight.jpg"
 image ryannsecretforest = "bg/ryannsecretforest.jpg"
 
+# For the credits
+image ryannlorem2credits = "cg/ryannlorem2credits.png"
 
 # For Lorem's extra sprites
 image lorem blush = "cr/lorem_blush.png"
