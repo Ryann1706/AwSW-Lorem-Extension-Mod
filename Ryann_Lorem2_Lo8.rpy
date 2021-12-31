@@ -22,7 +22,7 @@ if rnloremromance > 3:
     c "You wanted us to go on our first proper date?"
     Lo normal blush "You read my mind."
     Lo think "Ipsum is also off work, he’s just in his room, so we can’t stay here."
-    c "Well, as long as we’re together it doesn’t really matter what we do, we can just make it up as we go along."
+    c "Well, as long as we’re together it doesn’t really matter what we do. We can just make it up as we go along."
     Lo "Right... But we do have to start somewhere."
     c "How about going to a cafe, and we can try to think of something else to do after?"
     Lo normal "Sounds good to me."
@@ -175,7 +175,7 @@ if adinedead == False:
         $ renpy.pause (0.3)
         play sound "fx/glasses.wav"
         Ad "Here."
-        Lo think "Uh... thank you..."
+        Lo think "Uh... Thank you..."
         show adine annoyed b with dissolve 
         $ renpy.pause (0.3)
         hide adine with easeoutleft 
@@ -223,7 +223,7 @@ Lo " There’s a store nearby here, and there’s a few things I wanted to get b
 c "Still keeping it a surprise?"
 Lo "Trust me, it’ll be worth it."
 m "After a bit of walking, we got to outside the store."
-Lo think "Actually, there’s something I forgot, I’ll be back in a few minutes, would you mind waiting here?"
+Lo think "Actually, there’s something I forgot. I’ll be back in a few minutes, would you mind waiting here?"
 c "Alright, just don’t take too long."
 Lo normal "I won’t."
 play sound "fx/flap1.ogg"
@@ -323,7 +323,7 @@ c "If you say so..."
 $ renpy.pause (1.0)
 stop music fadeout 3.0
 scene black with dissolveslow
-m "After a bit more walking, we headed into some denser foliage, not enough to slow or stop us, but enough to obscure what could possibly be behind it."
+m "After a bit more walking, we headed into some denser foliage. Not enough to slow or stop us, but enough to obscure what could possibly be behind it."
 m "Some light started to shine through to us soon enough though."
 Lo "I think this is it..."
 
@@ -554,7 +554,7 @@ Lo "Then where are we going?"
 Ip normal "You’re about to find out."
 $ renpy.pause (0.5)
 hide ipsum with easeoutleft
-m "Ipsum made a sharp turn off the trail and through some thick foliage, Lorem struggled, but managed to keep up with us."
+m "Ipsum made a sharp turn off the trail and through some thick foliage. Lorem struggled, but managed to keep up with us."
 scene black with dissolveslow
 m "After we got through the trees, bushes and whatnot, we came out to a clearing on the other side."
 scene ryannsecretforest with dissolve
