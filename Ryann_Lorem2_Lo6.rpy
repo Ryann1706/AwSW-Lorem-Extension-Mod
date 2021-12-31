@@ -252,8 +252,8 @@ menu:
             jump ryann_lorem2_lorem6_questions
         
         else:
-            c "I know that you're making your own game, but what kind of games do play normally?"
-            Lo normal flip "I play lots of different types, mostly adventure games, but there's this one game I love called Super Marco Bros, I highly recommend you check it out if can."
+            c "I know that you're making your own game, but what kind of games do you play normally?"
+            Lo normal flip "I play lots of different types, mostly adventure games, but there's this one game I love called Super Marco Brothers. I highly recommend you check it out if can."
             c "(Huh, that definitely doesn't sound familiar at all.)"
             $ ryannlo6ask += 1
             $ ryannaskgames = True
@@ -274,8 +274,8 @@ menu:
         else:
             c "Ipsum mentioned you loved plants, so how true is that?"
             Lo normal flip "Well, it's not just plants, it’s botany I love."
-            Lo "But yeah, I do love plants, I'm actually considering getting a few more, but Ipsum says I can have more plants when he can have more space for his tea."
-            Lo relieved flip "But that’ll never happen, he already has so much, seriously there's definitely over twelve different kinds and I can't taste any difference."
+            Lo "But yeah, I do love plants. I'm actually considering getting a few more, but Ipsum says I can have more plants when he can have more space for his tea."
+            Lo relieved flip "But that’ll never happen, he already has so much, seriously, there's definitely over twelve different kinds and I can't taste any difference."
             c "Did Ipsum give you permission to drink his tea?"
             Lo normal flip "What he doesn’t know can't hurt him."
             $ ryannlo6ask += 1
@@ -305,7 +305,7 @@ menu:
             $ ryannaskTV = True
             jump ryann_lorem2_lorem6_questions
 
-    "Foucus on eating.":
+    "Focus on eating.":
         if ryannlo6ask == 0:
             m "I decided to focus on eating the delicious sandwich in front of me instead of talking."
             jump ryann_lorem2_lorem6_ipsum
@@ -624,7 +624,7 @@ menu:
         Lo normal flip "{i}Sure{/i}, it wasn't."
         $ renpy.pause (1.0)
         show ipsum normal with dissolve
-        Ip "Ahem, well I have to go do stuff in my lab."
+        Ip "Ahem, well, I have to go do stuff in my lab."
         c "Of course you do."
 
 
