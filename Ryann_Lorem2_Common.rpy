@@ -197,6 +197,11 @@ label ryann_lorem2_credits:
 
 play sound "mx/nostalgia.ogg" 
 
+show ryannlorem2credits with dissolveslow
+
+$ renpy.pause (10.0)
+
+scene black with dissolvemed
 
 show black2 at left with dissolvemed
 
