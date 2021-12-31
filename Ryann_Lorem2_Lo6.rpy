@@ -84,7 +84,7 @@ n "Emera."
 window hide
 nvl clear
 $ renpy.pause (0.5)
-c "(Lovely, I knew this was inevitable but I didn’t think it'd be so soon.)"
+c "(Lovely, I knew this was inevitable, but I didn’t think it'd be so soon.)"
 c "(I don’t know how long this will take, and I don’t want to keep Lorem waiting...)"
 c "(I guess tomorrow will have to do.)"
 play sound "fx/door/door_close.ogg"
@@ -158,7 +158,7 @@ menu:
                 $ ryannlookgames = True
                 $ ryannlookatshelf += 1
                 m "I didn’t recognize anything there but a few things looked vaguely familiar."
-                m "There was a game which, according to the back of the box, was about two carpenter brothers called Marco and Louis, who had to go on an adventure to save Princess Apricot."
+                m "There was a game, which according to the back of the box, was about two carpenter brothers called Marco and Louis, who had to go on an adventure to save Princess Apricot."
                 c "(Huh... This definitely doesn't remind me of anything from back home.)"
                 jump ryann_lorem2_lorem6_aptsearch
 
@@ -167,8 +167,8 @@ menu:
                 $ ryannlookbooks = True
                 $ ryannlookatshelf +=1
                 m "The shelf for books was split into two parts, on one side was books about plant care, design, coding and an out of place novel called “The Exteriors”."
-                m "On the other side were books about biology and physics but there were also magazines, one about medicinal and flavored teas, and another about a dragon tech company I obviously didn’t recognize."
-                c "(Wow, I wonder which side belongs to who. {w}Don’t know why I thought I find anything interesting on a shelf full of books.)"
+                m "On the other side were books about biology and physics, but there were also magazines, one about medicinal and flavored teas, and another about a dragon tech company I obviously didn’t recognize."
+                c "(Wow, I wonder which side belongs to who. {w}Don’t know why I thought I'd find anything interesting on a shelf full of books.)"
                 jump ryann_lorem2_lorem6_aptsearch
             
     "Look at the plant" if not ryannlookplant:
@@ -182,8 +182,8 @@ menu:
         $ ryannlookatthings += 1
         $ ryannlookTV = True
         m "The TV looked exactly like the ones back home, I looked closer and saw cables running from it and into the back of the stand it was on."
-        m "I looked inside the cabinet it was on and saw what I assumed was a DVD player and a console, with its controllers lying next to it."
-        c "(I wonder how different movies and video game are between humans and dragons?)"
+        m "I looked inside the cabinet it was on and saw what I assumed was a DVD player and a console, with it's controllers lying next to it."
+        c "(I wonder how different movies and video games are between humans and dragons?)"
         jump ryann_lorem2_lorem6_aptsearch
 
 
@@ -198,7 +198,7 @@ menu:
 
 label ryann_lorem2_lorem6_loremreturn:
 
-m "After waiting for a bit Lorem came back out from the kitchen carrying two plates with some appetizing sandwiches."
+m "After waiting for a bit, Lorem came back out from the kitchen carrying two plates with some appetizing sandwiches."
 show lorem normal flip with easeinleft
 $ renpy.pause (0.5)
 Lo "I know it's not amazing, but I didn’t want to keep you waiting too long."
@@ -245,7 +245,7 @@ menu:
         if ryannlookgames == True:
             c "I saw a game over on the shelf, Super Marco Bros, what's it about?"
             Lo happy flip "Oh, that's one of my favorites! It’s a 2D side scroller where you have to jump to get powerups and avoid enemies and obstacles."
-            Lo "There are lots of different worlds and level in it too! it's fairly old, but it’s a classic, do you have anything similar in your world?"
+            Lo "There are lots of different worlds and levels in it too! it's fairly old, but it’s a classic, do you have anything similar in your world?"
             c "It does sound familiar but I can't quite seem to place it..."
             $ ryannlo6ask += 1
             $ ryannaskgames = True
@@ -261,7 +261,7 @@ menu:
         
     "Ask about plants." if not ryannaskplant:
         if ryannlookplant == True:
-            c "I looked at that plant and seems to be doing really well, Ipsum wasn’t joking when he said you loved plants."
+            c "I looked at that plant and it seems to be doing really well, Ipsum wasn’t joking when he said you loved plants."
             Lo normal flip "Well, it's not just plants, it’s botany I love."
             c "He also said you made a daisy crown. I'd love to see that. I bet you’d look so cute."
             Lo shy flip "Uhm... I-I..."
@@ -284,7 +284,7 @@ menu:
 
     "Ask about TV." if not ryannaskTV:
         if ryannlookTV == True:
-            c "I saw what looked like a console and a DVD player, but do you us the TV for anything else?"
+            c "I saw what looked like a console and a DVD player, but do you use the TV for anything else?"
             Lo normal flip "Well, there a subscription service you can pay for to watch shows, but most of them aren’t worth watching, except a show called Humans which is apparently pretty good, but not accurate to actual humans."
             Lo "Also, it's not DVD, its DDVD."
             c "What does the extra D stand for?"
@@ -369,9 +369,9 @@ else:
 
     else:
         if blood == True:
-            c "I never agreed for Anna to do any tests on me, she just took some of my blood and gave me her number and said we could discus biology."
+            c "I never agreed for Anna to do any tests on me, she just took some of my blood and gave me her number and said we could discuss biology."
         else:
-            c "I never agreed for Anna to do any tests on me, she just gave me her number and said we could discus biology."
+            c "I never agreed for Anna to do any tests on me, she just gave me her number and said we could discuss biology."
         
         Ip think "Really...? Maybe we could do it then, if you don’t mind, of course."
 
@@ -440,7 +440,7 @@ c "What did you have in mind?"
 Lo think flip "I'm not actually sure..."
 c "I have an idea of a human game we could play."
 Lo normal flip "Oooh, what is it?"
-c "It's called Would You Rather, The idea of it is you give someone two hypothetical situations, and they have to choose which of the two they’d rather."
+c "It's called Would You Rather. The idea of it is you give someone two hypothetical situations, and they have to choose which of the two they’d rather."
 Lo "Can they be good or bad?"
 c "Yeah, but you’d obviously want to choose two good or two bad, not one of each, because whoever would choose the good one."
 c "I can start so you two can properly understand."
@@ -523,7 +523,7 @@ menu:
                 $ rnwyrasked += 1
                 c "Would you rather, live in the world of your favorite book or favorite video game?"
                 Lo think flip "Hmm, probably my favorite game, my favorite book has a decent bit of violence, so I’ll avoid that."
-                Ip happy "I bet you favorite game is about farming."
+                Ip happy "I bet your favorite game is about farming."
                 Lo relieved flip "Ha ha..."
                 show lorem normal flip with dissolve
                 jump ryann_lorem2_lorem6_wyr
@@ -531,8 +531,8 @@ menu:
             "Trade your wings for strength and height or stay the same?" if not rnwyraskedlo2:
                 $ rnwyraskedlo2 = True
                 $ rnwyrasked += 1
-                c "Would you rather, trade you wings for strength and height or stay how you are now?"
-                Lo think flip "Well, height and strength are tempting, but I think I’d missing flying too much."
+                c "Would you rather, trade your wings for strength and height or stay how you are now?"
+                Lo think flip "Well, height and strength are tempting, but I think I’d miss flying too much."
                 Lo normal flip "Also, I wouldn’t have anything to rub in Ipsum’s face."
                 Ip think "We’ll see about that."
                 Lo happy flip "Keep up that attitude and I'll fly away with your glasses and hide them."
@@ -553,7 +553,7 @@ menu:
             "Live in the future or past?" if not rnwyraskedip1:
                 $ rnwyraskedip1 = True
                 $ rnwyrasked += 1
-                c "Would you rather live in the future or past?"
+                c "Would you rather, live in the future or past?"
                 Ip happy "The future, definitely, I love to see the advancements in technology and science."
                 Lo normal flip "You really just want an excuse to get another Ixomen Sphere."
                 jump ryann_lorem2_lorem6_wyr
@@ -561,9 +561,9 @@ menu:
             "Have no hair, or be completely covered in hair?" if not rnwyraskedip2:
                 $ rnwyraskedip2 = True
                 $ rnwyrasked += 1
-                c "Would you rather lose the hair you currently have, or be completely covered in hair?"
+                c "Would you rather, lose the hair you currently have, or be completely covered in hair?"
                 Ip "There actually are dragons that are completely covered in fur, they’re just less common."
-                Ip think "I think that could be interesting to have more fur like that though."
+                Ip think "I think that it could be interesting to have more fur like that though."
                 Lo happy flip "And you’d give way better hugs!"
                 c "It would be a pain to wash all that fur though, trust me."
                 jump ryann_lorem2_lorem6_wyr
@@ -615,12 +615,12 @@ menu:
     "Ipsum":
         c "I'd choose Ipsum."
         Ip "Really now, is there any specific reason?"
-        c "I wanted to see that smug grin dissapear from your face when your plan backfired."
+        c "I wanted to see that smug grin disappear from your face when your plan backfired."
         c "Unless, {w}this {i}is{/i} what you wanted to happen?"
         Lo think flip "[player_name], what do you mean?"
         c "Well, first Ipsum wondered what I looked like naked, now he wants to know if I'll kiss him?"
         c "You really do have ulterior motives, dont you?"
-        Ip sad "N-no, thats not what I meant at all!"
+        Ip sad "N-No, thats not what I meant at all!"
         Lo normal flip "{i}Sure{/i}, it wasn't."
         $ renpy.pause (1.0)
         show ipsum normal with dissolve
@@ -643,7 +643,7 @@ Lo think "Wait, did you bring Ipsum’s Ixomen Sphere?"
 c "Ah, I had a feeling I forgot something, I can bring it at some other point, he’s survived without it this long, he can wait a few more days."
 Lo normal "Heh, yeah."
 $ renpy.pause (1.0)
-c "I know I asked before when I invited you over for dinner but, how's your game going now?"
+c "I know I asked before when I invited you over for dinner, but how's your game going now?"
 Lo think "..."
 Lo "Well, ever since that talk you gave me, I've been feeling a lot more secure in what I'm doing."
 Lo "I'm doing the best I can for myself, and I'm not catering entirely to others so I don’t lose myself."
@@ -660,7 +660,7 @@ $ renpy.pause (0.5)
 Lo relieved "Thank you, I know I've said it before, but that means a lot."
 m "Lorem walked up to me and hugged me, but because of their height they just rested their head against my upper abdomen, I still returned the hug regardless."
 $ renpy.pause (2.5)
-m "After a good few seconds, Lorem let go and back off a bit."
+m "After a good few seconds, Lorem let go and backed off a bit."
 c "It's gotten fairly late and I might be pretty busy tomorrow, so I’ll see you later, okay?"
 Lo normal "Alright, see you soon!"
 
