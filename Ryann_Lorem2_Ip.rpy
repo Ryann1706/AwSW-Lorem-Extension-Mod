@@ -61,7 +61,7 @@ c "Alright."
 play sound "fx/spheretake.ogg"
 c "So, could you tell me more about these tests?"
 Ip normal "Don’t worry, I'm not doing anything too invasive, just taking a few samples and scans."
-Ip "I won't do anything if you’re not combatable with it though."
+Ip "I won't do anything if you’re not comfortable with it though."
 c "Alright, I’ll keep it in mind."
 $ renpy.pause (1.5)
 Ip think "Coming here wasn’t the only reason to do these tests though..."
@@ -87,7 +87,7 @@ $ renpy.pause (1.0)
 Ip normal "Anyway, sorry about rambling, now one thing before we start doing this."
 play sound "fx/ryanncurtainpull.mp3"
 m  "Ipsum walked over to the curtains in the room and pulled them fully out."
-Ip "I'm assuming because of the clothes you’re wearing, humas don’t like being exposed?"
+Ip "I'm assuming because of the clothes you’re wearing, humans don’t like being exposed?"
 c "Yes, that’s true."
 Ip think "If you don’t mind me asking, why?"
 c "Well, one reason is because human skin isn’t as good of an insulator as fur or scales, so in the past clothes were the solution."
@@ -179,9 +179,9 @@ else:
     else:
         An normal b flip "I just needed medical data."
         c "Thats vague."
-        An face b flip "And? Do want an entire list of things I've looked at?"
+        An face b flip "And? Do you want an entire list of things I've looked at?"
 
-    An disgust b flip "I'm going, but Ipsum I'm warning you, you’re on thin ice."
+    An disgust b flip "I'm going. But Ipsum I'm warning you. You’re on thin ice."
     show anna disgust b with dissolve 
     $ renpy.pause (0.3)
     hide anna with easeoutleft
@@ -203,7 +203,7 @@ if rndidannatest == True:
 
 else:
     c "What are you doing?"
-    Ip normal "This lets me see you muscles, bone and organs, not in much detail, it's more of a general overview."
+    Ip normal "This lets me see your muscles, bones and organs, not in much detail, it's more of a general overview."
 
 Ip normal "Just lie down here, you can still talk, but try not to move too much, it should only take a minute or two."
 c "Alright."
@@ -271,9 +271,9 @@ else:
 m "Afterwards some blood dropped into the vial, and Ipsum set it aside, taking another two smaller vials from a cupboard."
 Ip think "I don’t know your biology well enough yet, so you can take the other two samples."
 play sound "fx/ryannhaircut.mp3"
-m "I took the scissors a cut off a small cluster of hairs, and put it into one of the vials."
+m "I took the scissors and cut off a small cluster of hairs, and put it into one of the vials."
 play sound "fx/nail.ogg"
-m "Followed by a piece of nail too, in the other."
+m "Followed by a piece of nail, in the other."
 show ipsum normal flip with dissolve
 $ renpy.pause (0.2)
 show ipsum at right with move
@@ -286,7 +286,7 @@ Ip happy "Now that all that’s over with, we can have some fun."
 c "What do you mean?"
 Ip "You didn’t think these tests were going to be the only thing we’d do, did you?"
 c "I kinda did, but I'm assuming you had something else planned?"
-Ip "Of course, just doing those tests would have been really boring, so we going to do some good old-fashioned mischief too."
+Ip "Of course, just doing those tests would have been really boring, so we're going to do some good old-fashioned mischief too."
 c "What did you have in mind then?"
 Ip normal " Actually, I thought you could come up with something, that game you told us earlier was pretty fun, so maybe whatever you come up with will be good too."
 c "Alright, let me think..."
@@ -314,7 +314,7 @@ menu:
 
 label ryann_lorem2_ipsum_ipsumidea:
 
-c "I can’t really think of anything, do you have any ideas?"
+c "I can’t really think of anything. Do you have any ideas?"
 Ip think "Hmm..."
 $ renpy.pause (1.5)
 Ip happy "I got it."
@@ -343,7 +343,7 @@ m "After a minute he returned with two beakers and a piece of string, one of the
 c "What’s that?"
 Ip happy "Just some potassium."
 c "And what’s it for?"
-Ip "Well, I sure you’re aware of how reactive potassium is with water, and it sure would be a shame if something like that were to happen unexpectedly and scare someone."
+Ip "Well, I'm sure you’re aware of how reactive potassium is with water, and it sure would be a shame if something like that were to happen unexpectedly and scare someone."
 $ renpy.pause (1.0)
 play sound "fx/faucet2.ogg"
 $ renpy.pause (2.5)
@@ -368,7 +368,7 @@ Ip happy flip "Now we leave, and wait."
 scene testingroom with dissolveslow
 show ipsum normal with dissolve
 m "We made our way back to the testing room and eagerly waited."
-m "After not too long, we heard footsteps down the hallway followed by..."
+m "After not too long, we heard footsteps down the hallway, followed by..."
 play sound "fx/ryanndistantexplosion.mp3"
 $ renpy.pause (1.5)
 if annadead == True:
@@ -411,7 +411,7 @@ else:
     An "Don’t you dare play dumb now! Did you do it?"
     Ip think "I don’t even know what {i}it{/i} is."
     An "The explosion in my lab!"
-    Ip "We did hear that, but we’ve been in here the entire time, also you said I'm on thin ice, why would I then go and do something like that?"
+    Ip "We did hear that, but we’ve been in here the entire time. Also, you said I'm on thin ice, why would I then go and do something like that?"
     An face b flip "..."
     An disgust b flip "Who the hell was it then?"
     Ip normal "I'm not sure how we’re supposed to know that."
@@ -425,7 +425,7 @@ else:
     m "As soon as we were sure Anna was out of earshot, we burst out laughing. "
 
 c "I got to admit, it’s pretty impressive being able to lie on the spot like that."
-Ip happy "This isn't my first time doing something like this, I’ve never been caught, and I never will."
+Ip happy "This isn't my first time doing something like this. I’ve never been caught, and I never will."
 c "I don’t doubt it."
 
 jump ryann_lorem2_ipsum_end
@@ -447,7 +447,7 @@ Ip "Now we just need to find our victim."
 c "Wait, wouldn’t they see or hear it though?"
 Ip normal "Not if it was silently floating above the doorway."
 c "It can float silently?"
-Ip "It really drains the battery, but yes, we’re not going to be doing this for too long and you brought the charger with you, so we’re fine."
+Ip "It really drains the battery, but yes. We’re not going to be doing this for too long and you brought the charger with you, so we’re fine."
 Ip "Speaking of the charger, it also doubles as a controller, so we don’t even need to be near the door."
 c "I might need to get one of these for myself... "
 Ip happy "It will be completely worth it, trust me."
@@ -456,7 +456,7 @@ Ip "Now, let's have some fun."
 hide ipsum with dissolve
 scene facin2 with dissolveslow
 m "Ipsum and I stood in the doorway of the testing room with the door slightly ajar, peeking out of it, watching the sphere make its way down the corridor."
-m "It got to Infront of the door and starting floating higher, out of eyeshot of anyone in the room."
+m "It got to infront of the door and started floating higher, out of eyeshot of anyone in the room."
 play sound "fx/knocking1.ogg"
 $ renpy.pause (2.5)
 play sound "fx/door/door_open.wav"
@@ -547,7 +547,7 @@ else:
     stop sound
     play sound "fx/ryanndoorslam.mp3"
     show anna rage b at right with easeinright
-    m "As soon as the sound played from the sphere, Anna swung the door open expecting to find the culprit, but found only found an empty corridor."
+    m "As soon as the sound played from the sphere, Anna swung the door open expecting to find the culprit, but only found an empty corridor."
     An "You better get out here now or I’ll slit your neck when I find you!" with vpunch
     c "How is she this mad already?"
     Ip "That’s just how she is, be glad you don’t work with her."
@@ -557,7 +557,7 @@ else:
     m "In fear of Anna reaching her mental limit and snapping completely, we slowly retrieved the Sphere."
 
 Ip happy "Again, that was a lot more fun that I thought, I might just do this again at some point."
-c "I’ve said it before but that Sphere really is useful."
+c "I’ve said it before, but that Sphere really is useful."
 Ip normal "Can you say that more often in front of Lorem so they’ll stop saying it’s a toy for grown-ups?"
 c "I will if I remember."
 Ip "Thank you."
@@ -613,7 +613,7 @@ if ryannmavapology == True:
     Ip "It is pretty funny when that happens though."
 
 else:
-    show maverick angry b flip
+    show maverick angry b flip with dissolve
     $ renpy.pause (0.7)
     Mv "Is this a joke?"
     c "Yeah kinda."
