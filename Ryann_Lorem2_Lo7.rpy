@@ -54,16 +54,16 @@ c "But I wanted to, it's not like he forced me, and it’s not the only thing w
 Lo normal "Ah, did he involve you in one of his pranks?"
 c "Yeah."
 Lo "He’s infamous for doing stuff like that, yet he never gets caught, it's honestly pretty impressive."
-Lo "Anyway, there is something I wanted to do though, I wanted you to experience what actually good quality pizza is like, not that cheap Pantoli’s stuff."
+Lo "Anyway, there is something I wanted to do though. I wanted you to experience what actually good quality pizza is like, not that cheap Pantoli’s stuff."
 c "Alright, but I gave Ipsum his Ixomen Sphere yesterday too, so how are you gonna order it?"
-Lo think "Ipsum told me that too, so I brought one of their menus with me."
+Lo think "Ipsum also told me that, so I brought one of their menus with me."
 play sound "fx/paper.wav"
 m "Lorem unfolded one of their wings and took the menu out, putting it on the coffee table for us both to see."
 Lo "I think I’ll have salad again, what topping do you want this time?"
 c "Are we splitting this pizza too?"
 Lo relieved "Like I said, this is better quality, which means it's more expensive, and the smallest size is still too big for me, so yes, we’re splitting it again."
 show lorem normal with dissolve
-m "Just from looking at the menu and it's vast amount of toppings I could tell this wasn’t cheaply made like Pantoli’s."
+m "Just from looking at the menu and it's vast amount of toppings, I could tell this wasn’t cheaply made like Pantoli’s."
 m "Not knowing more than half the things on the menu, I decided to play it safe and order something I at least recognized."
 menu:
     "Peperoni":
@@ -121,7 +121,7 @@ menu:
     "You’re adorable.":
         $ rnloremromance += 1
         c "You’re so adorable."
-        Lo "R-really...?"
+        Lo "R-Really...?"
         $ renpy.pause (1.0)
     
     "Forget you said what?":
@@ -1305,7 +1305,7 @@ if rnloremromance > 7:
     c "Lorem..."
     $ renpy.pause (1.5)
     c "I feel the same, I like you as more than a friend too."
-    Lo "R-really...?"
+    Lo "R-Really...?"
     m "I gently put my hand under Lorem’s chin, guiding their lips to mine, pulling them into a passionate kiss."
     show lorem shy with dissolve 
     m "Lorem was surprised by my action, but soon gave in, returning the kiss and subtly slipping in a small amount of tongue, which I took as an invitation to return the favor."
@@ -1370,8 +1370,8 @@ if rnloremromance > 3:
     m "I started to turn around and head to the living room to go and sleep on the couch, but I was stopped by a small scaly hand tugging my arm."
     Lo relieved "[player_name], wait."
     c "Yes?"
-    Lo normal blush "Well, after what happened in the underground building I don't really want to be alone right now, and I’m pretty small, so, um..."
-    Lo blush "D-do you want to... {w}share the bed...?"
+    Lo normal blush "Well, after what happened in the underground building, I don't really want to be alone right now, and I’m pretty small, so, um..."
+    Lo blush "D-Do you want to... {w}share the bed...?"
     m "I turned back around and faced Lorem."
     $ renpy.pause (1.5)
     c "Sure Lorem."
@@ -1496,9 +1496,9 @@ if rnloremromance > 3:
         "Just cuddle.":
             m "I didn’t want to rush things and possibly make Lorem uncomfortable, so we continued to cuddle together on the couch."
             m "Their small tail subtly wrapped itself around my back even further, and one of their hands rested on my thigh."
-            c "(I don’t expect Lorem to be this comfortable already, given how nervous they were before, but I'm definitely not complaining.)"
+            c "(I didn’t expect Lorem to be this comfortable already, given how nervous they were before, but I'm definitely not complaining.)"
             $ renpy.pause (2.5)
-            m "After cuddling for a while longer, Lorem sighed and moved away slightly to look up at me."
+            m "After cuddling for a while longer, Lorem sighed, then moved away slightly to look up at me."
 
     Lo sad "I wish we could stay like this for longer, but I have work later..."
     c "Well, when are you next free?"
@@ -1506,7 +1506,7 @@ if rnloremromance > 3:
     c "That’s convenient."
     play sound "fx/undress.ogg"
     $ renpy.pause (3.0)
-    m "I walked Lorem to the door, but just as they were about to leave, they tuned back around towards me. With an assisting flap of their wings, they jumped up to kiss my cheek before leaving."
+    m "I walked Lorem to the door, but just as they were about to leave, they turned back around towards me. With an assisting flap of their wings, they jumped up to kiss my cheek before leaving."
     play sound "fx/kiss.wav"
     $ renpy.pause (0.5)
     Lo normal blush "I-I'll see you tomorrow!"
