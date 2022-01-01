@@ -219,7 +219,7 @@ scene town3 with dissolveslow
 show lorem normal with dissolve
 $ renpy.pause (0.5)
 c "So, where are we going?"
-Lo " There’s a store nearby here, and there’s a few things I wanted to get before we go to where I was thinking of."
+Lo "There’s a store nearby here, and there’s a few things I wanted to get before we go to where I was thinking of."
 c "Still keeping it a surprise?"
 Lo "Trust me, it’ll be worth it."
 m "After a bit of walking, we got to outside the store."
@@ -333,7 +333,7 @@ $ renpy.pause (1.5)
 show lorem think flip at left with easeinleft
 Lo happy flip "Yes, it is!"
 c "Woah..."
-Lo "I know, it’s beautiful, right?"
+Lo "I know. It’s beautiful, right?"
 if rnloremromance > 3:
     c "It looks like the perfect scene for a romantic date."
     Lo blush flip "That’s exactly what I thought too..."
@@ -352,7 +352,7 @@ if rnloremromance > 3:
         "Sit beside Lorem.":
             play sound "fx/undress.ogg"
             m "I moved it out of the way slightly so we could sit together, and Lorem didn’t hesitate this time to start cuddling up to me."
-            Lo normal blush flip "I still can’t get over how warm you are, especially with us behind out here."
+            Lo normal blush flip "I still can’t get over how warm you are, especially with us being out here."
             c "Well, feel free to cuddle with me anytime you want."
             Lo "I’m definitely taking advantage of that."
 
