@@ -214,8 +214,8 @@ if brycedead == False:
             m "I saw Bryce and Maverick, and they both walked over to me."
             $ renpy.pause (1.5)
             show bryce normal b at Position(xpos = 0.15) with easeinright
-            show maverick normal at Position(xpos=0.825) with easeinright
             show bryce normal b flip with dissolve
+            show maverick normal at Position(xpos=0.825) with easeinright
             Br "Hey [player_name]."
             c "Hey Bryce, and Maverick."
             Mv "Hey."
