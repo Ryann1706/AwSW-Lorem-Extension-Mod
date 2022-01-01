@@ -157,7 +157,7 @@ menu:
                 $ ryannlookatthings += 1
                 $ ryannlookgames = True
                 $ ryannlookatshelf += 1
-                m "I didn’t recognize anything there but a few things looked vaguely familiar."
+                m "I didn’t recognize anything there, but a few things looked vaguely familiar."
                 m "There was a game, which according to the back of the box, was about two carpenter brothers called Marco and Louis, who had to go on an adventure to save Princess Apricot."
                 c "(Huh... This definitely doesn't remind me of anything from back home.)"
                 jump ryann_lorem2_lorem6_aptsearch
@@ -243,10 +243,10 @@ menu:
     
     "Ask about games." if not ryannaskgames:
         if ryannlookgames == True:
-            c "I saw a game over on the shelf, Super Marco Bros, what's it about?"
+            c "I saw a game over on the shelf, Super Marco Brothers, what's it about?"
             Lo happy flip "Oh, that's one of my favorites! It’s a 2D side scroller where you have to jump to get powerups and avoid enemies and obstacles."
             Lo "There are lots of different worlds and levels in it too! it's fairly old, but it’s a classic, do you have anything similar in your world?"
-            c "It does sound familiar but I can't quite seem to place it..."
+            c "It does sound familiar, but I can't quite seem to place it..."
             $ ryannlo6ask += 1
             $ ryannaskgames = True
             jump ryann_lorem2_lorem6_questions
@@ -469,7 +469,7 @@ elif rnwyrasked == 1:
             Ip happy "Now the real question is, what species of dragon?"
             c "I don’t know many dragon species, so I’ll pass on that question for now."
 
-    c "So, if we’re going anti-clockwise its Lorem’s turn now."
+    c "So, if we’re going anti-clockwise it's Lorem’s turn now."
     Lo think flip "Alright, so..."
     Lo normal flip "Ipsum, would you rather, never own an Ixomen Sphere or give up on your tea collection?"
     Ip sad "That’s just unfair, how could I choose between those two?"
@@ -554,7 +554,7 @@ menu:
                 $ rnwyraskedip1 = True
                 $ rnwyrasked += 1
                 c "Would you rather, live in the future or past?"
-                Ip happy "The future, definitely, I love to see the advancements in technology and science."
+                Ip happy "The future, definitely, I'd love to see the advancements in technology and science."
                 Lo normal flip "You really just want an excuse to get another Ixomen Sphere."
                 jump ryann_lorem2_lorem6_wyr
 
@@ -619,7 +619,7 @@ menu:
         c "Unless, {w}this {i}is{/i} what you wanted to happen?"
         Lo think flip "[player_name], what do you mean?"
         c "Well, first Ipsum wondered what I looked like naked, now he wants to know if I'll kiss him?"
-        c "You really do have ulterior motives, dont you?"
+        c "You really do have ulterior motives, don't you?"
         Ip sad "N-No, thats not what I meant at all!"
         Lo normal flip "{i}Sure{/i}, it wasn't."
         $ renpy.pause (1.0)
@@ -649,7 +649,7 @@ Lo "Well, ever since that talk you gave me, I've been feeling a lot more secure 
 Lo "I'm doing the best I can for myself, and I'm not catering entirely to others so I don’t lose myself."
 Lo "I know that now, but I also still need help, I can't do this on my own."
 c "You know you can always count on me and Ipsum to be there for you."
-Lo normal "Yeah, I know and I really do appreciate that, but I need to put myself out there and be better."
+Lo normal "Yeah, I know, and I really do appreciate that, but I need to put myself out there and be better."
 Lo think "You and Ipsum can't be the only people who accept me for me, right?"
 c "Of course not, anyone who doesn't accept you is the one losing out, not you."
 $ renpy.pause (1.0)
@@ -674,7 +674,7 @@ if rnloremromance > 0:
             $ renpy.pause (0.7)
             c "See ya."
             Lo "[player_name], I-"
-            m "Before Lorem could continue I had alredy started leaving."
+            m "Before Lorem could continue I had already started leaving."
 
         "Do nothing.":
             pass
