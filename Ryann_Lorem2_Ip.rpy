@@ -407,7 +407,7 @@ else:
     show ipsum at right with move
     show anna rage b flip at left with easeinleft
     An "IPSUM!" with vpunch
-    Ip "Welcome back Anna, did you-{w=0.25}{nw}"
+    Ip "Welcome back Anna, did you-{w=0.15}{nw}"
     An "Don’t you dare play dumb now! Did you do it?"
     Ip think "I don’t even know what {i}it{/i} is."
     An "The explosion in my lab!"
