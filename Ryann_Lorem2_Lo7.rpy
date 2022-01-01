@@ -1347,7 +1347,6 @@ else:
     Lo sad "I don’t really have many other friends other than you and Ipsum, and no one else who knows I’m a hermaphrodite."
     Lo normal "But I’m glad that after what just happened, I know that you’ll have my back no matter what."
     c "Of course, Lorem, that’s what friends do for each other, I'm glad to know you’ll be by my side no matter what too."
-    Lo "Again, thank you for everything, I really couldn’t ask for a better friend."
     c "One question though, does this mean I outrank Ipsum now?"
     Lo think "Hmm..."
     Lo normal "To stop anyone from being jealous, I’ll say you’re on par."
@@ -1436,7 +1435,7 @@ if rnloremromance > 3:
 else:
     m "My stiff back and neck pain didn’t hesitate to remind me though."
     c "(Damn, this couch is unbearable to sleep on, I'm glad I did and not Lorem.)"
-    m "After a decent amount of stretching, I went to check on Lorem, I made my way to the bedroom and slowly peeked through the door."
+    m "After a decent amount of stretching, I went to check on Lorem. I made my way to the bedroom and slowly peeked through the door."
     show lorem sleep with dissolveslow 
     $ renpy.pause (0.5)
     m "Lorem was still asleep, comfortably sprawled across my bed, with a big dopey grin on their face. "
