@@ -407,7 +407,7 @@ else:
     c "So, how often do you come to this beach?"
     Lo normal flip "At least once every week or two. Like I said, I don’t think many people know about this beach, so it’s a good place to find some privacy."
     Lo "It’s also a great place to come to when I want to think, or destress, it's just so peaceful and tranquil here."
-    c "I see what you mean, the sound of the waves, the view of the ocean and being surrounded by untouched nature, it’s perfect."
+    c "I see what you mean, the sound of the waves, the view of the ocean and being surrounded by untouched nature. It’s perfect."
     Lo "I’m glad I was able to share it with you then."
 
 $ renpy.pause (2.0)
@@ -448,7 +448,7 @@ if rnloremromance > 3:
     m "Lorem then proceeded to lie down on their back on the blanket, and I copied, so we could both get a better look at the night sky."
 
 else:
-    m "Lorem then laid down on their back on the blanket to get a better look at the night sky, I copied them, lying down too."
+    m "Lorem then laid down on their back on the blanket to get a better look at the night sky. I copied them, lying down too."
 
 scene stars with dissolveslow 
 if rnloremromance > 3:
@@ -497,7 +497,7 @@ else:
     Lo "Haha..."
     c "Seriously though, you don’t owe me anything, your friendship and loyalty is enough."
     $ renpy.pause (2.0)
-    Lo "[player_name], truly, thank you, I really couldn’t ask for a better friend."
+    Lo "[player_name], truly, thank you. I really couldn’t ask for a better friend."
     c "Neither could I Lorem."
 
 $ renpy.pause (2.5)
