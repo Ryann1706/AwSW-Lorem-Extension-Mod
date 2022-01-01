@@ -47,13 +47,13 @@ $ renpy.pause (1.5)
 play sound "fx/spheretake.ogg"
 m "I went to move Ipsum's Ixomen Sphere so I wouldn't accidentally damage it, but when I picked it up, I noticed it was still unlocked."
 play sound "fx/sphereboot.ogg"
-m "I saw some of the features Lorem has shown me earlier, but the main thing I saw was an obnoxious flashing battery symbol."
+m "I saw some of the features Lorem had shown me earlier, but the main thing I saw was an obnoxious flashing battery symbol."
 c "(Huh, Lorem must have forgotten to put it back on the charger after showing off the other things it could do.)"
 
 menu:
     "[[Leave it alone.]":
         $ SphereCharged = False
-        m "I decided it wasn't a good idea to try and charge it since I didnt properly understand how it worked."
+        m "I decided it wasn't a good idea to try and charge it, since I didnt properly understand how it worked."
         if  ryannixomenbook == True:
             m "And I didn't really want to read through that book about Ixomen Spheres again."
         else:
