@@ -17,13 +17,13 @@ stop sound
 Lo "Hello?"
 c "Hey Lorem, is Ipsum there?"
 if rnloremromance > 3:
-    Lo "O-oh, hey [player_name], I’ll... uh, get him for you now..."
+    Lo "O-Oh, hey [player_name], I’ll... uh, get him for you now..."
 else:
     Lo "Hey [player_name], I can get him now for you."
 
 $ renpy.pause (2.0)
 Ip "Hey [player_name], what is it?"
-c "I know it’s a bit short notice but, I can come in for those tests you wanted to do."
+c "I know it’s a bit short notice, but I can come in for those tests you wanted to do."
 Ip "Actually, it’s perfect timing, I don’t start work for a while, so we can do it in... roughly an hour?"
 c "Sounds good to me."
 Ip "I’ll meet you outside and bring you to the testing room."
@@ -55,7 +55,7 @@ show ipsum normal with dissolve
 
 Ip "We’re actually pretty lucky to have gotten this room. Usually it has to be reserved days in advance."
 c "I see."
-c "Also, before I forget I brought your Ixomen Sphere with me."
+c "Also, before I forget, I brought your Ixomen Sphere with me."
 Ip happy "Great, you can leave it there and I’ll bring it home after my shift."
 c "Alright."
 play sound "fx/spheretake.ogg"
@@ -92,8 +92,8 @@ c "Yes, that’s true."
 Ip think "If you don’t mind me asking, why?"
 c "Well, one reason is because human skin isn’t as good of an insulator as fur or scales, so in the past clothes were the solution."
 c "Also, as our society was developed it became a social norm and law to wear clothes."
-c "For humans, wearing little or no clothes infront of someone, is either seen as inappropriate or shameless, or as a sign of affection, and an implication of something more... intimate."
-Ip sad "Ah, I’m sorry if I made you feel uncomfortable or offended you when I said I was curious what was under you clothes earlier then."
+c "For humans, wearing little or no clothes infront of someone, is either seen as inappropriate and shameless, or as a sign of affection, and an implication of something more... intimate."
+Ip sad "Ah, I’m sorry if I made you feel uncomfortable or offended you when I said I was curious what was under your clothes earlier then."
 c "It’s fine, you didn’t know."
 $ renpy.pause (0.5)
 show ipsum think with dissolve
@@ -223,7 +223,7 @@ Ip "Stuff like that is a lot more interesting to me than you’d think, for drag
 c "Interesting."
 Ip "Also, about nails, all dragons have claws, most other mammals and reptiles here too, so why you still have nails from an evolutionary perspective bewilders me."
 c "Well, claws are better for things like slashing and puncturing, but nails are better for grabbing and climbing, which were more beneficial to humans in the past."
-c "Speaking of past humans, we used to have tails but lost them to evolution and got our upright stance, all we have left is a bone called the coccyx."
+c "Speaking of past humans, we used to have tails, but lost them to evolution and got our upright stance, all we have left is a bone called the coccyx."
 Ip "I see."
 stop soundloop fadeout 2.0
 $ renpy.pause (1.5)
@@ -288,7 +288,7 @@ Ip "You didn’t think these tests were going to be the only thing we’d do, di
 c "I kinda did, but I'm assuming you had something else planned?"
 Ip "Of course, just doing those tests would have been really boring, so we're going to do some good old-fashioned mischief too."
 c "What did you have in mind then?"
-Ip normal " Actually, I thought you could come up with something, that game you told us earlier was pretty fun, so maybe whatever you come up with will be good too."
+Ip normal " Actually, I thought you could come up with something. That game you told us earlier was pretty fun, so maybe whatever you come up with will be good too."
 c "Alright, let me think..."
 
 label ryann_lorem2_ipsum_prank:
@@ -407,7 +407,7 @@ else:
     show ipsum at right with move
     show anna rage b flip at left with easeinleft
     An "IPSUM!" with vpunch
-    Ip "Welcome back Anna, did you-{nw}"
+    Ip "Welcome back Anna, did you-{w=0.5}{nw}"
     An "Don’t you dare play dumb now! Did you do it?"
     Ip think "I don’t even know what {i}it{/i} is."
     An "The explosion in my lab!"
@@ -455,7 +455,7 @@ Ip "Now, let's have some fun."
 
 hide ipsum with dissolve
 scene facin2 with dissolveslow
-m "Ipsum and I stood in the doorway of the testing room with the door slightly ajar, peeking out of it, watching the sphere make its way down the corridor."
+m "Ipsum and I stood in the doorway of the testing room with the door slightly ajar, peeking out of it, watching the sphere make it's way down the corridor."
 m "It got to infront of the door and started floating higher, out of eyeshot of anyone in the room."
 play sound "fx/knocking1.ogg"
 $ renpy.pause (2.5)
@@ -556,7 +556,7 @@ else:
     show ipsum normal with dissolve
     m "In fear of Anna reaching her mental limit and snapping completely, we slowly retrieved the Sphere."
 
-Ip happy "Again, that was a lot more fun that I thought, I might just do this again at some point."
+Ip happy "Again, that was a lot more fun than I thought. I might just do this again at some point."
 c "I’ve said it before, but that Sphere really is useful."
 Ip normal "Can you say that more often in front of Lorem so they’ll stop saying it’s a toy for grown-ups?"
 c "I will if I remember."
@@ -566,8 +566,8 @@ jump ryann_lorem2_ipsum_end
 
 label ryann_lorem2_ipsum_scare:
 
-c "It’s pretty simple but, we could just scare someone?"
-Ip normal "Ah, a classic, it is pretty simple but who said it needed to be complex?"
+c "It’s pretty simple, but we could just scare someone?"
+Ip normal "Ah, a classic, it is pretty simple, but who said it needed to be complex?"
 Ip "Now we just need to find our victim."
 show ipsum at left with move
 m "Ipsum stepped into the hall and looked around, then suddenly came back in the room."
@@ -595,7 +595,8 @@ $ renpy.pause (0.7)
 if ryannmavapology == True:
     show maverick nice b flip with dissolve
     $ renpy.pause (0.7)
-    Mv laugh b flip "{i}HA.{/i}" with vpunch
+    show maverick laugh b flip with dissolve
+    Mv "{i}HA.{/i}" with vpunch
     Mv "For you, of all people, to be able to scare someone like me? That’s amazing."
     Mv nice b flip "I see you really have put all that behind us."
     c "Shouldn’t you be on sick leave?"
@@ -610,7 +611,7 @@ if ryannmavapology == True:
     hide maverick with easeoutright
     $ renpy.pause (1.5)
     Ip "It’s refreshing to find someone who can actually take a joke instead of getting unreasonably angry."
-    Ip "It is pretty funny when that happens though."
+    Ip happy "It is pretty funny when that happens though."
 
 else:
     show maverick angry b flip with dissolve
@@ -630,7 +631,7 @@ else:
 
 show ipsum at center with move 
 c "Well, that deffinetly could have gone worse."
-Ip "I at least thought it was a bit funny."
+Ip normal "I at least thought it was a bit funny."
 
 jump ryann_lorem2_ipsum_end
 
