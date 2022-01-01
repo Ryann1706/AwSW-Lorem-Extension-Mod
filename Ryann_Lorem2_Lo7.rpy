@@ -1326,15 +1326,15 @@ elif rnloremromance > 3:
     Lo blush "Do... Do you see me as more than just a friend...?"
     $ renpy.pause (2.0)
     c "Yes, I do, I see you as more than a friend."
-    Lo shy "W-wait, really...?"
-    Lo "B-but what about me being a hermaphrodite?"
+    Lo shy "W-Wait, really...?"
+    Lo "B-But what about me being a hermaphrodite?"
     c "Remember what I said when you told me? I don’t mind at all."
     show lorem normal blush with dissolve 
     m "We stared into each other's eyes for what felt like several long minutes, I tilted my head to the side and started moving closer."
     show lorem shy with dissolve 
     m "Lorem seemed flustered, yet still copied my actions, the two of us getting closer to each other by the second."
     show lorem sleep blush with dissolve 
-    m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck as they grabbed my shoulder, pulling me closer."
+    m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck, as they grabbed my shoulder, pulling me closer."
     show lorem normal blush with dissolve
     m "We stayed like that for several long seconds, until we both slowly pulled away, still staring into each other's eyes."
     c "Do you believe me now?"
