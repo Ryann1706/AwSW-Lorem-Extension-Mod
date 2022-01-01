@@ -18,7 +18,7 @@ show lorem at right with move
 show reza angry with dissolve
 play sound "fx/loremkick.ogg"
 hide lorem with dissolve
-m "He also dodged Lorem's charge, hitting them with a well-placed kick knocking them into a wall, which they then fell to the ground."
+m "He also dodged Lorem's charge, hitting them with a well-placed kick, knocking them into a wall, which they then fell to the ground."
 show loremwounded at Pan((1080, 0), (500, 350), 6) with fade
 $ renpy.pause (4.5)
 show reza gunself with dissolve
