@@ -178,7 +178,7 @@ else:
 
     else:
         An normal b flip "I just needed medical data."
-        c "Thats vague."
+        c "That's vague."
         An face b flip "And? Do you want an entire list of things I've looked at?"
 
     An disgust b flip "I'm going. But Ipsum I'm warning you. You’re on thin ice."
@@ -221,7 +221,7 @@ Ip "Well, obviously I have hair too, but it’s actually pretty uncommon for dra
 c "Well, most humans have hair on their head, and some people have hair on more parts of their body, but that depends on gender and genetics."
 Ip "Stuff like that is a lot more interesting to me than you’d think, for dragons, gender has no influence on hair."
 c "Interesting."
-Ip "Also, about nails, all dragons have claws, most other mammals and reptiles here too, so why you still have nails from an evolutionary perspective bewilders me."
+Ip "Also, about nails. All dragons have claws, most other mammals and reptiles here too, so why you still have nails from an evolutionary perspective bewilders me."
 c "Well, claws are better for things like slashing and puncturing, but nails are better for grabbing and climbing, which were more beneficial to humans in the past."
 c "Speaking of past humans, we used to have tails, but lost them to evolution and got our upright stance, all we have left is a bone called the coccyx."
 Ip "I see."
