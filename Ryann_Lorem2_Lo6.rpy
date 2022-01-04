@@ -6,11 +6,11 @@ $ save_name = (_("LI - Lorem 6"))
 $ renpy.pause (3.0)
 play music "mx/basicguitar.ogg"
 scene o4 with dissolveslow
-m "I woke up looking at the ceiling I was now well-acquainted with, but without the normal nightmares I usually got."
+m "I woke up looking at the ceiling I was now well-acquainted with, but without the nightmares I usually got."
 m "I got up and did my daily morning routine as best I could, given the lack of certain things that dragons didn’t need, but humans did."
 m "With the threat of Reza eliminated, and the other me going through the portal, I had the chance to reflect on me staying in the dragon's world permanently."
 m "There were pros and cons, and I knew I’d have to deal with some sooner then I liked, but I tried to focus on the positive things, like getting to stay with Lorem."
-m "After the confrontation with Reza, they were told to take it easy, and was let off work, but with Ipsum still working I decided to visit so they wouldn’t get lonely."
+m "After the confrontation with Reza, they were told to take it easy, and were let off work, but with Ipsum still working I decided to visit so they wouldn’t get lonely."
 m "But just as I was about to leave..."
 play sound "fx/door/doorbell.wav"
 $ renpy.pause (2.0)
@@ -24,7 +24,7 @@ if remydead == False:
         show remy normal with dissolve
         Ry "Good morning [player_name]."
         c "Oh, hey Remy, how are you doing?"
-        Ry "I'm doing better than usual actually, but anyway I'm here to deliver this letter."
+        Ry "I'm doing better than usual, actually. But anyway, I'm here to deliver this letter."
         c "Who's it from?"
         Ry "It’s from Emera, she said she wanted to talk to you about something, there's more about it in the letter."
         c "Alright, well it was nice seeing you."
@@ -122,7 +122,7 @@ Lo "Actually, you don’t have to talk about it if you don’t want to... It mus
 c "It’s okay Lorem, but there's one last thing. Have you heard anything about a comet lately?"
 Lo think flip "Ipsum offhandedly mentioned it at some point, but with everything else you’ve said I don’t think it's good news."
 c "Well, yes and no, the important part is that us stopping Reza from escaping through the portal with the generator saved your entire species from extinction."
-Lo sad flip "I don’t follow, but I'm not sure I want to think about what would have happened if we didn’t stop him, if us stopping him saved dragon kind."
+Lo sad flip "I don’t follow, but I'm not sure I want to think about what would have happened if we didn’t stop him, if us stopping him saved dragonkind."
 Lo "..."
 c "Maybe we should talk about something less depressing, considering I came over so we could have a good time."
 Lo "Yeah..."
@@ -131,11 +131,11 @@ Lo "Actually, I still owe you dinner from you letting me draw you."
 c "It’s a bit early for dinner."
 Lo normal flip "I can make you lunch then, is there anything specific you want?"
 c "As long as it's not Pantoli’s Pizza, I'll be happy with it."
-Lo "Ha! Good one, {w}you can wait here, I shouldn’t be that long."
+Lo "Ha! Good one. {w}You can wait here, I shouldn’t be that long."
 show lorem normal with dissolve
 $ renpy.pause (0.2)
 hide lorem with easeoutleft
-m "Lorem strolled into the kitchen leaving me in the living room."
+m "Lorem strolled into the kitchen, leaving me in the living room."
 c "(I guess I could look around and see what kind of stuff Lorem and Ipsum have.)"
 jump ryann_lorem2_lorem6_aptsearch
 
@@ -181,8 +181,8 @@ menu:
     "Look at the TV." if not ryannlookTV:
         $ ryannlookatthings += 1
         $ ryannlookTV = True
-        m "The TV looked exactly like the ones back home, I looked closer and saw cables running from it and into the back of the stand it was on."
-        m "I looked inside the cabinet it was on and saw what I assumed was a DVD player and a console, with it's controllers lying next to it."
+        m "The TV looked exactly like the ones back home. I looked closer and saw cables running from it and into the back of the stand it was on."
+        m "I looked inside the cabinet it was on and saw what I assumed was a DVD player and a console, with its controllers lying next to it."
         c "(I wonder how different movies and video games are between humans and dragons?)"
         jump ryann_lorem2_lorem6_aptsearch
 
@@ -204,8 +204,8 @@ $ renpy.pause (0.5)
 Lo "I know it's not amazing, but I didn’t want to keep you waiting too long."
 m "They set one down in front of me and sat next to me with the other."
 m "I bit into the sandwich, {w}and it was delicious! {w}The combination of the unknown meat, vegetables and uniquely flavored bread was an entirely different experience, but not unwelcome."
-c "Wow Lorem, this is amazing!"
-Lo shy flip "O-oh, thanks [player_name], it's really nothing special..."
+c "Wow, Lorem, this is amazing!"
+Lo shy flip "O-Oh, thanks, [player_name], it's really nothing special..."
 Lo "..."
 c "(Maybe I should break this awkward silence?)"
 
@@ -232,7 +232,7 @@ menu:
         c "I was looking at the book shelf there, and I saw a book called The Exteriors, what's it about?"
         Lo think flip "Well, I don’t want to spoil it in case you want to read it, but it's about two rival teenage gangs called the Oilers and the Glovs."
         Lo normal flip "I thought it was really good, but it doesn't have an entirely happy ending."
-        c "Well, nothing gold can stay Ponyboy."
+        c "Well, nothing gold can stay, Ponyboy."
         Lo think flip "What?"
         c "It was a reference to... {w}Nevermind."
         $ ryannlo6ask += 1
@@ -357,7 +357,7 @@ else:
         Ip think "Really...? Maybe we could do it then, if you don’t mind, of course."
 
     elif rncancelannatest == True:
-        c "Well, I agreed to Anna doing tests on me we had to cancel because something happened to her lab."
+        c "Well, I agreed to Anna doing tests on me, but we had to cancel because something happened to her lab."
         Ip think "I heard about that happening, but I didn’t know it was Anna’s lab."
         Ip "If you canceled, maybe we could do it then, if you don’t mind, of course."
 
@@ -442,7 +442,7 @@ c "I have an idea of a human game we could play."
 Lo normal flip "Oooh, what is it?"
 c "It's called Would You Rather. The idea of it is you give someone two hypothetical situations, and they have to choose which of the two they’d rather."
 Lo "Can they be good or bad?"
-c "Yeah, but you’d obviously want to choose two good or two bad, not one of each, because whoever would choose the good one."
+c "Yeah, but you’d obviously want to choose two good or two bad, not one of each, because whoever you're asking would choose the good option."
 c "I can start so you two can properly understand."
 c "So..."
 
@@ -495,7 +495,7 @@ elif rnwyrasked == 2:
             c "I’d have to go with ice cream."
             Lo normal flip "But what flavor?"
             c "I guess that depends on what flavors are available."
-            c "Speaking of availability I've noticed a lack of certain flavors that were in the human world."
+            c "Speaking of availability, I've noticed a lack of certain flavors that were in the human world."
             c "Well, it's most of them, but mainly strawberry."
             Lo think flip "When did you see what flavors we had?"
             c "I did have to buy food at some point while I’ve been here."
@@ -640,7 +640,7 @@ show lorem normal with dissolve
 Lo normal "And once again, there he goes, off to {i}hopefully{/i} not blow up the apartment."
 $ renpy.pause (1.0)
 Lo think "Wait, did you bring Ipsum’s Ixomen Sphere?"
-c "Ah, I had a feeling I forgot something, I can bring it at some other point, he’s survived without it this long, he can wait a few more days."
+c "Ah, I had a feeling I forgot something. I can bring it at some other point, he’s survived without it this long, he can wait a few more days."
 Lo normal "Heh, yeah."
 $ renpy.pause (1.0)
 c "I know I asked before when I invited you over for dinner, but how's your game going now?"
