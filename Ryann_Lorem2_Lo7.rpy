@@ -857,7 +857,7 @@ menu:
     "Search through papers." if ryannlookedtable:
         if ryannhaskeycard == False:
             $ ryannhaskeycard = True 
-            m "I searched the papers more thoroughly isntead of skimming through them, but there wasn't really much that could help us."
+            m "I searched the papers more thoroughly instead of skimming through them, but there wasn't really much that could help us."
             m "Just as I was about to put the papers down, a keycard fell out between them and fell to the floor."
             m "I picked it up, hoping to find a use for it."
 
