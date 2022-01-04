@@ -50,11 +50,11 @@ Lo think "So, what did both of you get up to?"
 c "Well, Ipsum wanted to run a few tests on me and get some samples to study, so we met at the production facility before his shift."
 Lo normal "That explains why he didn’t leave his room at all of yesterday and today, and why he left pretty soon after you called him."
 Lo relieved "But you didn’t have to agree to doing that, you know that right?"
-c "But I wanted to, it's not like he forced me, and it’s not the only thing we did anyway."
+c "But I wanted to. It's not like he forced me, and it’s not the only thing we did anyway."
 Lo normal "Ah, did he involve you in one of his pranks?"
 c "Yeah."
 Lo "He’s infamous for doing stuff like that, yet he never gets caught, it's honestly pretty impressive."
-Lo "Anyway, there is something I wanted to do though. I wanted you to experience what actually good quality pizza is like, not that cheap Pantoli’s stuff."
+Lo "Anyway, there is something I wanted to do though. I wanted you to experience what actually good-quality pizza is like, not that cheap Pantoli’s stuff."
 c "Alright, but I gave Ipsum his Ixomen Sphere yesterday too, so how are you gonna order it?"
 Lo think "Ipsum also told me that, so I brought one of their menus with me."
 play sound "fx/paper.wav"
@@ -66,9 +66,9 @@ show lorem normal with dissolve
 m "Just from looking at the menu and it's vast amount of toppings, I could tell this wasn’t cheaply made like Pantoli’s."
 m "Not knowing more than half the things on the menu, I decided to play it safe and order something I at least recognized."
 menu:
-    "Peperoni":
-        $ ryannpizzatopping = "peperoni"
-        c "(Can't go wrong with peperoni.)"
+    "Pepperoni":
+        $ ryannpizzatopping = "pepperoni"
+        c "(Can't go wrong with pepperoni.)"
         c "I’ll have peperoni."
         Lo normal "Ah, a classic, I'm tempted to get that now too."
         c "Will you?"
@@ -112,7 +112,7 @@ c "No, it's been like this since the day I’ve arrived here, which included no 
 Lo "That seems a bit odd, pretty much every apartment here has a TV, why not yours?"
 c "Maybe to avoid culture shock, but they still gave me books, so I don’t really know."
 Lo "I don’t think we’ll know for certain, the reason I was looking was because the pizza might take a while to get here."
-Lo normal "You gave Ixomen back his Ipsum Sphere so they isn't much to do except read, huh?"
+Lo normal "You gave Ixomen back his Ipsum Sphere, so there isn't much to do except read, huh?"
 $ renpy.pause (1.0)
 show lorem shy with dissolve 
 $ renpy.pause (1.0)
@@ -164,7 +164,7 @@ else:
 play sound "fx/pizzabite.ogg"
 m "Me and Lorem bit into our pizza at the same time..."
 
-if ryannpizzatopping == "peperoni":
+if ryannpizzatopping == "pepperoni":
     m "And it was amazing! The juiciness of the pepperoni mixed with the freshness of the cheese and sauce, and the crust toasted to perfection was on a whole other level."
 
 elif ryannpizzatopping == "chicken":
@@ -596,7 +596,7 @@ menu:
 
                 else:
                     $ ryannpumpfixed = True
-                    m "I put the valve back into it's slot, and now with the screwdriver I tightned the value into place."
+                    m "I put the valve back into its slot, and now with the screwdriver I tightened the valve into place."
                     m "After a slight shake to make sure it was fitted properly, I was confident enough that it would work."
                     $ ryanncurrentitem = "Nothing"
 
@@ -610,7 +610,7 @@ menu:
 
                 else:
                     $ ryannpumpfixed = True
-                    m "As I put the valve into its slot, I noticed another flathead like slot on the valve, I took the scredriver and tightened it."
+                    m "As I put the valve into its slot, I noticed another flathead like slot on the valve, I took the screwdriver and tightened it."
                     m "After a slight shake to make sure it was fitted properly, I was confident enought that it would work."
                     $ ryanncurrentitem = "Nothing"
 
@@ -744,7 +744,7 @@ menu:
                 
         jump ryann_lorem2_lo7_minigame_maintenance
 
-    "Go back to coridor.":
+    "Go back to corridor.":
         jump ryann_lorem2_lo7_minigame_coridor
          
 
@@ -814,8 +814,8 @@ menu:
             m "The small drain underneath the eye washing station was draining a small amount of water from the room, not much but it was better than nothing."
 
         else:
-            m "I tried to see if the eye washing station was working, but it wasn't, it's not like we needed more water now anyway..."
-            m "But when I looked lower I saw the drain beneath it, yet it wasnt drainig any of the water flooding the room."
+            m "I tried to see if the eye washing station was working, but it wasn't. It's not like we needed more water now anyway..."
+            m "But when I looked lower I saw the drain beneath it, yet it wasnt draining any of the water flooding the room."
             c "(If we can get that drain working, it won't be enough to stop the water completely, but it might be better than nothing?)"
 
         jump ryann_lorem2_lo7_minigame_lab
@@ -823,7 +823,7 @@ menu:
 
     "Look at wall indent":
         $ ryannactionsremaining -= 1
-        m "There were wires comeing out of the indent, and the sign next to it said the space was for the backup generator, thankfully it wasn't here now."
+        m "There were wires coming out of the indent, and the sign next to it said the space was for the backup generator. Thankfully it wasn't here now."
         m "But there was nothing helpful there for us right now."
         jump ryann_lorem2_lo7_minigame_lab
 
@@ -958,12 +958,12 @@ menu:
         menu:
             "Look at blueprint.":
                 $ ryannactionsremaining -= 1
-                m "There was a blueprint of the underground building, at first I was expecting to learn something useful from it, but I was surely dissapointed."
+                m "There was a blueprint of the underground building, at first I was expecting to learn something useful from it, but I was surely disappointed."
                 m "It either showed us stuff we already knew, like the four rooms connected to the coridor, or something that we couldn't access, like an exit ladder behind the second blast door."
 
             "Check folders.":
                 $ ryannactionsremaining -= 1
-                m "There was an entire shelf decicated just to foldres, just from skimming the labels on them, I doubted they could help us."
+                m "There was an entire shelf decicated just to folders, just from skimming the labels on them, I doubted they could help us."
 
             "Look at maintenance list.":
                 $ ryannlookedlist = True 
@@ -1027,7 +1027,7 @@ menu:
                 if rnunlockedfootlocker == False:
                     $ rnunlockedfootlocker = True
                     m "Using the key I got earlier I unlocked the footlocker, inside it were some personal items and some tools."
-                    m "Out of all the tools only the scredriver seemed useful."
+                    m "Out of all the tools only the screwdriver seemed useful."
                     $ ryanncurrentitem = "Screwdriver"
                     $ ryannactionsremaining -= 1
 
@@ -1094,22 +1094,22 @@ menu:
                     menu:
                         "Introduction":
                             s "User eManual is to provide information to users and crew when requested."
-                            s "Information available includes, lockdown procedure, emergeny situations and more. "
+                            s "Information available includes, lockdown procedure, emergency situations and more. "
                             s "For more information or accessibility contact a maintenance crew member or administrator."
                             $ ryannactionsremaining -=1
                             jump ryann_lorem2_lo7_minigame_manual
 
                         "Lockdown":
-                            s "In an emergeny situation a lockdown order can be given manually, or in certain circumstances trigger automatically."
+                            s "In an emergency situation a lockdown order can be given manually, or in certain circumstances trigger automatically."
                             s "Automatic triggers include: flood, fire, severe structural damage, unregistered users and more."
                             s "Lockdown triggers can be added, removed or modified by qualified maintenance crew and administrators."
-                            s "Lockdowns can be dissabled after an active emergeny has been resolved."
+                            s "Lockdowns can be disabled after an active emergency has been resolved."
                             $ ryannactionsremaining -=1
                             jump ryann_lorem2_lo7_minigame_manual
 
-                        "Emergencys":
-                            s "In the case of an emergeny, an automatic lockdown will engage, see \"Lockdown\" for more information."
-                            s "Nessasary equipment, machinery and tools can be found per conpartment to resolve an emergency."
+                        "Emergencies":
+                            s "In the case of an emergency, an automatic lockdown will engage, see \"Lockdown\" for more information."
+                            s "Necessary equipment, machinery and tools can be found per compartment to resolve an emergency."
                             s "If not, contact a maintenance crew member."
                             $ ryannactionsremaining -=1
                             jump ryann_lorem2_lo7_minigame_manual
@@ -1142,7 +1142,7 @@ menu:
                 elif ryannsearchterm == "status":
                     play sound "fx/system3.wav"
                     s "Prossesing..."
-                    s "Water detected in [[Compartment A], contact maintenance crew mamber immediately."
+                    s "Water detected in [[Compartment A], contact maintenance crew member immediately."
 
                 else:
                     play sound "fx/system3.wav"
@@ -1392,7 +1392,7 @@ if rnloremromance > 3:
     show lorem sleep with dissolveslow
     m "I listened to Lorem’s breathing gradually slow down, and their grip on me relaxed, as they fell asleep."
     m "I held Lorem in my embrace, and closed my eyes too."
-    m "For the first time in a while of being in the dragons world, I finally felt at peace, and was filled with a wave of contentedness."
+    m "For the first time in a while of being in the dragon's world, I finally felt at peace, and was filled with a wave of contentedness."
     m "I slowly drifted off to sleep as well."
 
 else:
@@ -1405,9 +1405,9 @@ else:
     play sound "fx/undress.ogg"
     m "I settled down, and after struggling for a while I eventually found a comfortable sleeping position."
     m "I looked out the window, and was alone with my thoughts."
-    c "(I really am staying in the dragons world permanently...)"
+    c "(I really am staying in the dragon's world permanently...)"
     c "(The thought alone would upset me... {w}But I'm glad I don't have to say goodbye to Lorem...)"
-    m "For the first time in a while of being in the dragons world, I finally felt at peace, and was filled with a wave of contentedness."
+    m "For the first time in a while of being in the dragon's world, I finally felt at peace, and was filled with a wave of contentedness."
     m "I closed my eyes and slowly drifted off to sleep."
 
 $ renpy.pause (1.5)
@@ -1444,7 +1444,7 @@ else:
 
 scene ryannkitchen with dissolveslow
 m "After making my way to the kitchen and scouring the fridge and cabinets, I came up with the makings of a decent breakfast."
-m "As I began to prepare it, I heard a set of small footprints behind me."
+m "As I began to prepare it, I heard a set of small footsteps behind me."
 show lorem normal flip at left with easeinleft
 Lo "Hey [player_name]..."
 c "Morning Lorem, you can wait in the living room, I’ll be out in a few minutes."
