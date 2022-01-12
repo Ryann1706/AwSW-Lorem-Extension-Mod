@@ -9,8 +9,8 @@ scene o4 with dissolveslow
 m "I woke up looking at the ceiling I was now well-acquainted with, but without the nightmares I usually got."
 m "I got up and did my daily morning routine as best I could, given the lack of certain things that dragons didn’t need, but humans did."
 m "With the threat of Reza eliminated, and the other me going through the portal, I had the chance to reflect on me staying in the dragon's world permanently."
-m "There were pros and cons, and I knew I’d have to deal with some sooner then I liked, but I tried to focus on the positive things, like getting to stay with Lorem."
-m "After the confrontation with Reza, they were told to take it easy, and were let off work, but with Ipsum still working I decided to visit so they wouldn’t get lonely."
+m "There were pros and cons, and I knew I’d have to deal with some sooner then I liked. But I tried to focus on the positive things, like getting to stay with Lorem."
+m "After the confrontation with Reza, they were told to take it easy, and were let off work. But with Ipsum still working I decided to visit so they wouldn’t get lonely."
 m "But just as I was about to leave..."
 play sound "fx/door/doorbell.wav"
 $ renpy.pause (2.0)
