@@ -142,7 +142,7 @@ else:
 
     elif rndidannatest == True:
         # If did the tests
-        c "You already did your tests on me, we agreed you could do tests on me, not {i}only{/i} you could do tests on me."
+        c "You already did your tests on me. We agreed you could do tests on me, not {i}only{/i} you could do tests on me."
         c "This is something completely separate from what you wanted to do, so why are you mad?"
 
     elif rncancelannatest == True:
@@ -483,14 +483,14 @@ if annadead == True:
     $ renpy.pause (0.3)
     hide damion with easeoutright
     play sound "fx/door/door_close.ogg"
-    Ip "Seems like he’s getting annoyed already, heh, but for how arrogant he is, he deserves it."
+    Ip "Seems like he’s getting annoyed already, heh. But for how arrogant he is, he deserves it."
     play sound "fx/knocking1.ogg"
     $ renpy.pause (2.0)
     play sound "fx/door/door_open.wav"
     $ renpy.pause (0.5)
     show damion arrogant at right with easeinright
-    Dm "This is childish at this point, just stop it or else I’ll find who this is."
-    c "“Just stop it”, he sounds like a whiney child."
+    Dm "This is childish at this point. Just stop it or else I’ll find who this is."
+    c "“Just stop it”. He sounds like a whiney child."
     Ip "He definitely has the same scene of self-importance as one."
     show damion arrogant flip with dissolve
     hide damion with easeoutright
@@ -504,7 +504,7 @@ if annadead == True:
     Dm "Seriously, this isn't funny, grow up."
     m "It was hard for us to continue without chuckling pretty hard at this point."
     c "Why does he keep falling for it?"
-    Ip "I don’t know, but I'm not complaining, we should stop before he starts crying though."
+    Ip "I don’t know, but I'm not complaining. We should stop before he starts crying though."
     c "Judging by how he’s acting he's not far from it "
     scene testingroom with dissolveslow
     show ipsum normal with dissolve
