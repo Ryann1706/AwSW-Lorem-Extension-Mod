@@ -827,7 +827,7 @@ menu:
         m "But there was nothing helpful there for us right now."
         jump ryann_lorem2_lo7_minigame_lab
 
-    "Go back to coridor.":
+    "Go back to corridor.":
         jump ryann_lorem2_lo7_minigame_coridor
 
 
@@ -940,7 +940,7 @@ menu:
         $ ryannactionsremaining -= 1
         jump ryann_lorem2_lo7_minigame_meeting
 
-    "Go back to coridor.":
+    "Go back to corridor.":
         jump ryann_lorem2_lo7_minigame_coridor
 
 
@@ -1154,7 +1154,7 @@ menu:
             "Log off.":
                 jump ryann_lorem2_lo7_minigame_living
 
-    "Go back to coridor.":
+    "Go back to corridor.":
         jump ryann_lorem2_lo7_minigame_coridor
         
      
