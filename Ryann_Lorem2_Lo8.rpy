@@ -532,7 +532,7 @@ play sound "fx/steps/rough_gravel.wav"
 $ renpy.pause (2.0)
 scene np3x
 show ipsum normal flip at left
-show lorem think at right 
+show lorem think at Position(zpos=0.8) 
 with dissolveslow
 $ renpy.pause (1.5)
 Lo "Ipsum, can you tell us where you’re taking us now?"
@@ -544,7 +544,7 @@ c "I guess unclear surprises are something you two have in common..."
 $ renpy.pause (0.5)
 scene forest1 
 show ipsum normal flip at left
-show lorem think at right
+show lorem think at Position(xpos=0.8)
 with dissolveslow
 m "We started to make our way into a forest, and a sense of déjà vu came over me."
 c "Surprises that take place in forests too apparently..."
@@ -560,7 +560,7 @@ m "After we got through the trees, bushes and whatnot, we came out to a clearing
 scene ryannsecretforest with dissolve
 show ipsum normal at left with easeinright
 show ipsum normal flip with dissolve
-show lorem normal at right with easeinright
+show lorem normal at Position(xpos=0.8) with easeinright
 $ renpy.pause (0.5)
 Ip happy flip "Here we are."
 c "And what exactly are we doing here?"
@@ -587,8 +587,15 @@ m "Lorem sighed."
 Lo "Alright..."
 c "Come on Lorem, try to lighten up, it’ll be fun."
 Lo shy "Yeah, we might as well get started then..."
-c "We could, if I actually knew how to make a daisy crown..."
-Ip think flip "You never showed me how to either. So, it looks like you’ll have to teach us, with you being the master at this and all."
+if ryann_adatp_played == True:
+    c "Well, I know the basics of making flower crowns, but does Ipsum know?"
+    Ip think flip " No, I do not."
+    c "Well, I think it’s better if Lorem teaches you, given they're the master here and all."
+
+else:
+    c "We could, if I actually knew how to make a daisy crown..."
+    Ip think flip "You never showed me how to either. So, it looks like you’ll have to teach us, with you being the master at this and all."
+    
 Lo normal "Alright… {w}So first, obviously you’ll need some daisies, and next, make sure they’re at least roughly the same length..."
 m "After a tutorial from Lorem, me and Ipsum were slowly, but surely on our way to having flower crowns, albeit with Ipsum’s slightly less dexterous hands, I was getting there sooner."
 m "We both did finish soon enough though."
