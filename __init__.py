@@ -36,7 +36,7 @@ class AWSWMod(Mod):
 
         ml.find_label("lorem4") \
             .search_say("See ya.", depth=700) \
-            .hook_to("ryann_lorem2_spherecharge") \
+            .hook_to("ryann_lorem2_spherecharge", condition="persistent.ixomenassembled == True") \
             .search_python("renpy.pause (2.0)") \
             .link_from("ryann_lorem2_spherecharge_end")
         
