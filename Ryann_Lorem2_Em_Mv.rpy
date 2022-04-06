@@ -3,7 +3,7 @@ label Ryann_Lorem2_Emera_Mav:
 
 $ save_name = (_("LI - Emera"))
 
-scene o4 with dissolveslow
+scene o4 at Pan((0, 0), (0, 250), 5.0) with dissolveslow
 $ renpy.pause (2.0)
 play music "mx/basicguitar.ogg"
 m "I woke up to sunlight on my face, but I refused to get up as I roughly knew what awaited me later."
@@ -72,14 +72,14 @@ c "Thankfully, because the generator Reza tried to take wasn't damaged, it shoul
 $ renpy.pause (2.3)
 Em "I will have someone look into this matter, thank you for bringing it to my attention."
 Em "Regardless, I do not want to keep you any longer, but as I said, there’s papers that must be filled."
-show emera normal at left with move
+show emera normal at left with ease
 $ renpy.pause (0.5)
 play sound "fx/rummage3.ogg"
 m "She walked over to a cabinet, and pulled out a huge stack of papers."
 c "(I thought she said {i}some,{/i} but that looks like an encyclopedia.)"
 show emera normal flip with dissolve
 $ renpy.pause (0.3)
-show emera at center with move
+show emera at center with ease
 Em "These are the essentials: citizenship, health forms, property ownership..."
 stop music fadeout (2.0)
 scene black with dissolveslow
@@ -291,11 +291,9 @@ stop music fadeout (1.0)
 $ renpy.pause (1.0)
 scene np5e with dissolveslow
 m "I proceeded to slowly make my way home, completely out of energy."
-scene o3 with dissolveslow
+scene o3 at Pan((0, 0), (0, 250), 4.0) with dissolveslow
 m "I just collapsed onto the bed, not even attempting to get undressed or find a comfortable sleeping position."
 scene black with dissolveslow
 $ renpy.pause (3.0)
 
 jump ryann_lorem2_ipsum
-
-
