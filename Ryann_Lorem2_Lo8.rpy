@@ -532,7 +532,7 @@ play sound "fx/steps/rough_gravel.wav"
 $ renpy.pause (2.0)
 scene np3x
 show ipsum normal flip at left
-show lorem think at Position(zpos=0.8) 
+show lorem think at Position(xpos=0.8) 
 with dissolveslow
 $ renpy.pause (1.5)
 Lo "Ipsum, can you tell us where you’re taking us now?"
