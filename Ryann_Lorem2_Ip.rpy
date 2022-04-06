@@ -3,7 +3,7 @@ label ryann_lorem2_ipsum:
 
 $ save_name = (_("LI - Ipsum"))
 
-scene o4 with dissolveslow
+scene o4 at Pan((0, 0), (0, 250), 4.0) with dissolveslow
 play music "mx/sail.ogg"
 m "I woke up like any other day, but still adjusting to not having any pressure or worry about Reza."
 m "I pondered what I could do for the day, then I remembered Ipsum asking to do some tests on me."
@@ -117,10 +117,10 @@ else:
     m "I was about to ask something when I heard loud angry footsteps approaching the room."
     play sound "fx/ryanndoorslam.mp3"
     show ipsum normal with dissolve
-    show ipsum at right with move 
+    show ipsum at right with ease 
     show anna rage b flip at left with easeinleft
     An "Ipsum!" with vpunch
-    Ip "Oh, hello Anna, what a pleasant surprise it is for you to visit."
+    Ip "Oh, hello Anna. What a pleasant surprise it is for you to visit."
     An "Don’t you dare test me right now! I just saw you booked this room to test on [player_name], when I {i}specifically{/i} told you I was the only one allowed to do that."
     m "I stepped out from behind the curtains."
     c "You know I'm right here, right?"
@@ -186,7 +186,7 @@ else:
     $ renpy.pause (0.3)
     hide anna with easeoutleft
     $ renpy.pause (1.0)
-    show ipsum at center with move
+    show ipsum at center with ease
 
     Ip think "Well, that was... interesting."
     c "So much for this room having privacy."
@@ -276,12 +276,12 @@ play sound "fx/nail.ogg"
 m "Followed by a piece of nail, in the other."
 show ipsum normal flip with dissolve
 $ renpy.pause (0.2)
-show ipsum at right with move
+show ipsum at right with ease
 play sound "fx/clink2.ogg"
 m "I gave Ipsum the two vials, which he then took the three of and put in the back of a cupboard."
 Ip think "They should be safe there until I get them later."
 show ipsum normal with dissolve
-show ipsum at center with move
+show ipsum at center with ease
 Ip happy "Now that all that’s over with, we can have some fun."
 c "What do you mean?"
 Ip "You didn’t think these tests were going to be the only thing we’d do, did you?"
@@ -349,14 +349,14 @@ play sound "fx/faucet2.ogg"
 $ renpy.pause (2.5)
 stop sound fadeout (1.0)
 $ renpy.pause (1.0)
-show ipsum at left with move
+show ipsum at left with ease
 m "He walked over to a sink and mostly filled one beaker with water and brought it over to the door we came through."
 play sound "fx/glassdown.wav"
 m "He put the empty beaker upside down with the potassium on top of it, and the water filled beaker next to it."
 m "The door was fully opened with the string tied to the handle, then loosely put around the potassium, the slightest movement ready to nudge it into the water."
 show ipsum normal flip with dissolve
 $ renpy.pause (0.3)
-show ipsum at center with move
+show ipsum at center with ease
 Ip think flip "Now we just need to conceal it in some way."
 m "We looked around the room looking for something to hide the newly built trap, when I spotted a filing cabinet at the back of the room."
 play sound "fx/rummage3.ogg"
@@ -382,7 +382,7 @@ if annadead == True:
     m "Damion almost walked by, but came in when he saw us in the room."
     play sound "fx/door/door_open.wav"
     show ipsum normal with dissolve
-    show ipsum at right with move
+    show ipsum at right with ease
     show damion arrogant flip at left with easeinleft
     Dm "Ipsum, would you care to explain the explosion that just happened in my lab?"
     Ip think "Well, we heard it, but we’ve been in here the whole time."
@@ -397,14 +397,14 @@ if annadead == True:
     $ renpy.pause (0.3)
     hide damion with easeoutleft
     $ renpy.pause (1.0)
-    show ipsum at center with move
+    show ipsum at center with ease
     m "As soon as Damion left our earshot, we started chuckling."
 
 else:
     m "Anna stormed in again, just as she did earlier."
     play sound "fx/ryanndoorslam.mp3"
     show ipsum normal with dissolve
-    show ipsum at right with move
+    show ipsum at right with ease
     show anna rage b flip at left with easeinleft
     An "IPSUM!" with vpunch
     Ip "Welcome back Anna, did you-{w=0.15}{nw}"
@@ -421,7 +421,7 @@ else:
     $ renpy.pause (0.3)
     hide anna with easeoutleft
     $ renpy.pause (1.0)
-    show ipsum at center with move 
+    show ipsum at center with ease
     m "As soon as we were sure Anna was out of earshot, we burst out laughing. "
 
 c "I got to admit, it’s pretty impressive being able to lie on the spot like that."
@@ -433,7 +433,7 @@ jump ryann_lorem2_ipsum_end
 label ryann_lorem2_ipsum_sphere:
 
 c "Maybe we could use your Ixomen Sphere to do something?"
-Ip happy "See, that’s the kind of thing I never would have thought of, the question is what to do with it."
+Ip happy "See, that’s the kind of thing I never would have thought of. The question now is, what to do with it."
 c "You know it way better than I do."
 Ip normal "True, and I have an idea that just might work."
 play sound "fx/spheretake.ogg"
@@ -527,7 +527,7 @@ else:
     play sound "fx/door/door_open.wav"
     $ renpy.pause (0.5)
     show anna disgust b at right with easeinright
-    An "Really mature, I bet you’re finding it hilarious that you’re wasting both of our time here, grow up!"
+    An "Really mature, I bet you’re finding it hilarious that you’re wasting both of our time here. Grow up!"
     show anna disgust b flip with dissolve
     hide anna with easeoutright
     c "She really is hot headed, huh?"
@@ -569,7 +569,7 @@ label ryann_lorem2_ipsum_scare:
 c "It’s pretty simple, but we could just scare someone?"
 Ip normal "Ah, a classic, it is pretty simple, but who said it needed to be complex?"
 Ip "Now we just need to find our victim."
-show ipsum at left with move
+show ipsum at left with ease
 m "Ipsum stepped into the hall and looked around, then suddenly came back in the room."
 show ipsum normal flip with dissolve
 Ip "There’s someone down the hall, I’ll call them over here then you can jump out and scare them."
