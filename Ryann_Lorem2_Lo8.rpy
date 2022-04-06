@@ -294,7 +294,7 @@ m "After doing some searching, comparing and questioning on whether things would
 m "We had soda, chocolate, crisps, and pretty much any other kind of sweets you could want. {w}Of course we had actual proper food too, nuts, grains, you know, healthy stuff."
 m "After getting everything we thought we wanted, we headed towards the checkout."
 $ renpy.pause (0.5)
-show lorem normal flip at Position(xpos=0.8)
+show lorem normal flip at Position(xpos=0.2)
 show zhong normal c at right
 with dissolve
 $ renpy.pause (0.5)
