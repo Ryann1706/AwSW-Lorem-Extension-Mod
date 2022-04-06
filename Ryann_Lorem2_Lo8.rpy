@@ -55,7 +55,7 @@ if adinedead == True:
 
 else:
     m "And soon after, Adine made her way over to us."
-    show lorem at right with move
+    show lorem at Position(xpos=0.8) with ease
     $ renpy.pause (0.5)
     if adinestatus == "bad" or adinestatus == "abandoned":
         show adine annoyed b flip at left with easeinleft
@@ -121,7 +121,7 @@ else:
     waitress "I'll be back with your orders soon."
 
 $ renpy.pause (0.3)
-show lorem at center with move
+show lorem at center with ease
 $ renpy.pause (0.5)
 
 if ryannplayerdrink == "coffee":
@@ -159,7 +159,7 @@ m "Soon after, our drinks arrived."
 show lorem normal with dissolve
 $ renpy.pause (0.3)
 if adinedead == False:
-    show lorem at right with move
+    show lorem at Position(xpos=0.8 with ease
     if adinestatus == "good" or adinestatus == "neutral" or adinestatus == "none":
         show adine normal b flip at left with easeinleft
         $ renpy.pause (0.3)
@@ -190,7 +190,7 @@ else:
     c "Thanks."
 
 show lorem think with dissolve 
-show lorem at center with move
+show lorem at center with ease
 play sound "fx/coffee.wav" # Eh, 1 in 4 is close enough
 if ryannplayerdrink == "water":
     m "The water was perfectly cool and refreshing, it was simple, yet still nice."
@@ -294,7 +294,7 @@ m "After doing some searching, comparing and questioning on whether things would
 m "We had soda, chocolate, crisps, and pretty much any other kind of sweets you could want. {w}Of course we had actual proper food too, nuts, grains, you know, healthy stuff."
 m "After getting everything we thought we wanted, we headed towards the checkout."
 $ renpy.pause (0.5)
-show lorem normal flip at left
+show lorem normal flip at Position(xpos=0.8)
 show zhong normal c at right
 with dissolve
 $ renpy.pause (0.5)
