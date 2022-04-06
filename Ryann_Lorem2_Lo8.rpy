@@ -159,7 +159,7 @@ m "Soon after, our drinks arrived."
 show lorem normal with dissolve
 $ renpy.pause (0.3)
 if adinedead == False:
-    show lorem at Position(xpos=0.8 with ease
+    show lorem at Position(xpos=0.8) with ease
     if adinestatus == "good" or adinestatus == "neutral" or adinestatus == "none":
         show adine normal b flip at left with easeinleft
         $ renpy.pause (0.3)
