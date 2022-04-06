@@ -323,7 +323,7 @@ m "We were interrupted by Ipsum coming through the front door."
 play sound "fx/door/door_open.wav"
 $ renpy.pause (0.5)
 show lorem normal flip with dissolve
-show lorem at Position(xpos=0.2 with ease
+show lorem at Position(xpos=0.2) with ease
 show ipsum normal at right with easeinright
 Lo "Oh, Ipsum, I thought you were supposed to be at work?"
 if annadead == True:
