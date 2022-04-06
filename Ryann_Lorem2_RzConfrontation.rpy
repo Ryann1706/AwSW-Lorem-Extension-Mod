@@ -113,7 +113,7 @@ else:
 
 stop music fadeout 2.0
 scene black with dissolveslow
-scene o3 at Pan((0, 0), (0, 250), 2.0) with dissolveslow
+scene o3 at Pan((0, 0), (0, 250), 4.0) with dissolveslow
 $ renpy.pause (2.0)
 m "Still quite shaken from the encounter with Reza, I just went straight to bed, hoping to process everything in the morning."
 $ renpy.pause (2.0)
