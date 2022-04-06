@@ -87,8 +87,10 @@ init python:
     rnwyraskedip3 = False
     # Lorem romanece counter
     rnloremromance = 0
-    # For extra content if played Casual Vandalism
+    
+    # For extra/different content if played my other mods
     ryannwindowssmashed = 0
+    ryann_adatp_played = False
 
     # Other random stuff
     ryannmavapology = False
