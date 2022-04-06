@@ -14,7 +14,7 @@ play sound "fx/gunshot.wav"
 show reza gunpoint with dissolve
 m  "Reza was quick with his aim, shooting Maverick in the leg, causing him to stumble."
 play sound "fx/flap1.ogg"
-show lorem at right with move
+show lorem at right with ease
 show reza angry with dissolve
 play sound "fx/loremkick.ogg"
 hide lorem with dissolve
