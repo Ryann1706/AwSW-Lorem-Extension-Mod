@@ -210,6 +210,7 @@ hide lorem with dissolve
 scene black with dissolveslow 
 $ renpy.pause (1.5)
 scene o2 at Pan((0, 0), (0, 250), 3.5) with dissolveslow
+$ renpy.pause (2.0)
 show lorem normal with dissolve 
 Lo "I didn’t think that pizza would be so filling, what should we do with the rest of it?"
 c "We could just leave it in the fridge for later?"
@@ -1256,6 +1257,7 @@ $ renpy.pause (1.0)
 scene np5 with dissolveslow
 $ renpy.pause (2.0)
 scene o3 at Pan((0, 0), (0, 250), 5.0) with dissolveslow
+$ renpy.pause (4.0)
 show lorem sad with dissolve
 $ renpy.pause (1.5)
 play sound "fx/undress.ogg"
@@ -1456,6 +1458,7 @@ $ renpy.pause (0.5)
 c "(I didn’t even think they could be more adorable, but being half asleep does it apparently.)"
 m "After finishing up I brought our breakfast out to the living room."
 scene o4 at Pan((0, 0), (0, 250), 4.0) with dissolveslow
+$ renpy.pause (3.5)
 show lorem normal with dissolve 
 play sound "fx/undress.ogg"
 if rnloremromance > 3:
