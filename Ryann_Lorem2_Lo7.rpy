@@ -29,7 +29,7 @@ $ renpy.pause (1.0)
 
 scene black with dissolveslow
 $ renpy.pause (1.5)
-scene o at Position(0, 250) with dissolveslow
+scene o at Position(ypos=0) with dissolveslow
 $ renpy.pause (1.5)
 play sound "fx/door/door_open.wav"
 $ renpy.pause (1.0)
