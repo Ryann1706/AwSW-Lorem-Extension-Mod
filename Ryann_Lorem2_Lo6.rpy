@@ -5,7 +5,8 @@ $ save_name = (_("LI - Lorem 6"))
 
 $ renpy.pause (3.0)
 play music "mx/basicguitar.ogg"
-scene o4 at Position(ypos=250) with dissolveslow
+scene o4 at Pan((0, 0), (0, 250), 5.0) with dissolveslow
+$ renpy.pause (1.0)
 m "I woke up looking at the ceiling I was now well-acquainted with, but without the nightmares I usually got."
 m "I got up and did my daily morning routine as best I could, given the lack of certain things that dragons didn’t need, but humans did."
 m "With the threat of Reza eliminated, and the other me going through the portal, I had the chance to reflect on me staying in the dragon's world permanently."
