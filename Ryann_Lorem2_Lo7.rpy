@@ -147,7 +147,7 @@ scene black with dissolve
 m "Lorem proceeded to tell me in depth about dragon video games, some descriptions and names sounding so similar I could have been fooled that they were cheap knock-offs of previously existing human games."
 play sound "fx/door/doorbell.wav"
 m "We got so in-depth we lost track of time, and before we knew it the doorbell rang."
-scene o with dissolve
+scene o at Pan((0, 0), (0, 250), 3.5) with dissolve
 m "Lorem got up to answer it and returned with the pizza."
 show lorem normal flip with easeinleft
 $ renpy.pause (0.3)
