@@ -323,7 +323,7 @@ m "We were interrupted by Ipsum coming through the front door."
 play sound "fx/door/door_open.wav"
 $ renpy.pause (0.5)
 show lorem normal flip with dissolve
-show lorem at left with move
+show lorem at Position(xpos=0.2 with ease
 show ipsum normal at right with easeinright
 Lo "Oh, Ipsum, I thought you were supposed to be at work?"
 if annadead == True:
@@ -379,7 +379,7 @@ else:
 c "Sure, I wouldn’t mind. It might be a few days before we can though."
 Ip happy "Glad to hear that. Just let me know when you’re available."
 $ renpy.pause (0.7)
-show lorem normal flip at left with easeinleft
+show lorem normal flip at Position(xpos=0.2) with easeinleft
 Lo "Hey, what were you two talking about while I was gone?"
 Ip normal "Oh, just science, physics mostly."
 Lo relieved flip "[player_name], you know what happened last time. Don’t get him started again."
@@ -636,7 +636,7 @@ Lo "Don’t worry about him, he's joking... {w}Mostly..."
 $ renpy.pause (0.5)
 hide ipsum with easeoutleft
 $ renpy.pause (0.5)
-show lorem at center with move
+show lorem at center with ease
 show lorem normal with dissolve
 Lo normal "And once again, there he goes, off to {i}hopefully{/i} not blow up the apartment."
 $ renpy.pause (1.0)
