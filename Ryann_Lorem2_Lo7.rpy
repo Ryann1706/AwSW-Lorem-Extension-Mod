@@ -3,7 +3,7 @@ label ryann_lorem2_lo7_start:
 
 $ save_name = (_("LI - Lorem 7"))
 
-scene o4 with dissolveslow
+scene o4 at Pan((0, 0), (0, 250), 5.0) with dissolveslow
 $ renpy.pause (2.0)
 play music "mx/cruising.ogg"
 
@@ -28,8 +28,8 @@ play sound "fx/phonepickup.ogg"
 $ renpy.pause (1.0)
 
 scene black with dissolveslow
-$ renpy.pause (1.0)
-scene o with dissolveslow
+$ renpy.pause (1.5)
+scene o at Pan((0, 0), (0, 250), 3.0) with dissolveslow
 $ renpy.pause (1.5)
 play sound "fx/door/door_open.wav"
 $ renpy.pause (1.0)
@@ -209,7 +209,7 @@ $ renpy.pause (0.5)
 hide lorem with dissolve 
 scene black with dissolveslow 
 $ renpy.pause (1.5)
-scene o2 with dissolveslow
+scene o2 at Pan((0, 0), (0, 250), 3.5) with dissolveslow
 show lorem normal with dissolve 
 Lo "I didn’t think that pizza would be so filling, what should we do with the rest of it?"
 c "We could just leave it in the fridge for later?"
@@ -1255,7 +1255,7 @@ m "The walk back to my apartment was dead silent, both of us were still too shak
 $ renpy.pause (1.0)
 scene np5 with dissolveslow
 $ renpy.pause (2.0)
-scene o3 with dissolveslow
+scene o3 at Pan((0, 0), (0, 250), 5.0) with dissolveslow
 show lorem sad with dissolve
 $ renpy.pause (1.5)
 play sound "fx/undress.ogg"
@@ -1414,7 +1414,7 @@ $ renpy.pause (1.5)
 scene black with dissolveslow
 stop music fadeout 2.0
 $ renpy.pause (6.0)
-scene o4 with dissolveslow
+scene o4 at Pan((0, 0), (0, 250), 5.0) with dissolveslow
 play music "mx/morningrise.ogg"
 $ renpy.pause (1.0)
 m "I woke up, still groggy from the events that occurred yesterday."
@@ -1455,7 +1455,7 @@ hide lorem with easeoutleft
 $ renpy.pause (0.5)
 c "(I didn’t even think they could be more adorable, but being half asleep does it apparently.)"
 m "After finishing up I brought our breakfast out to the living room."
-scene o4 with dissolveslow
+scene o4 at Pan((0, 0), (0, 250), 4.0) with dissolveslow
 show lorem normal with dissolve 
 play sound "fx/undress.ogg"
 if rnloremromance > 3:
@@ -1553,6 +1553,3 @@ stop music fadeout 2.0
 $ renpy.pause (4.0)
 
 jump ryann_lorem2_lo8_start
-
-
-
