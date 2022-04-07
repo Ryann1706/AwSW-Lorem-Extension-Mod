@@ -161,7 +161,7 @@ Lo normal "Either way, it's here now."
 if ryannpizzatopping == "salad":
     m "Lorem brought the pizza to the coffee table, and as expected, it was covered with a salad."
 else:
-    m "Lorem brought the pizza to the coffee table, and as expected, it was half salad and half [ryannpizzatopping]."
+    m "Lorem brought the pizza to the coffee table, and as expected, it was half salad, and half [ryannpizzatopping]."
 
 play sound "fx/pizzabite.ogg"
 m "Me and Lorem bit into our pizza at the same time..."
