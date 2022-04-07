@@ -150,7 +150,7 @@ m "We got so in-depth we lost track of time, and before we knew it the doorbell 
 scene o at Pan((0, 0), (0, 250), 3.5) with dissolve
 $ renpy.pause (0.5)
 m "Lorem got up to answer it and returned with the pizza."
-$ renpy.pause (3.0)
+$ renpy.pause (2.0)
 show lorem normal flip with easeinleft
 $ renpy.pause (0.3)
 show lorem normal with dissolve
