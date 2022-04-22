@@ -1329,25 +1329,42 @@ elif rnloremromance > 3:
     $ renpy.pause (2.0)
     Lo blush "Do... Do you see me as more than just a friend...?"
     $ renpy.pause (2.0)
-    c "Yes, I do, I see you as more than a friend."
-    Lo shy "W-Wait, really...?"
-    Lo "B-But what about me being a hermaphrodite?"
-    c "Remember what I said when you told me? I don’t mind at all."
-    show lorem normal blush with dissolve 
-    m "We stared into each other's eyes for what felt like several long minutes, I tilted my head to the side and started moving closer."
-    show lorem shy with dissolve 
-    m "Lorem seemed flustered, yet still copied my actions, the two of us getting closer to each other by the second."
-    show lorem sleep blush with dissolve 
-    m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck, as they grabbed my shoulder, pulling me closer."
-    show lorem normal blush with dissolve
-    m "We stayed like that for several long seconds, until we both slowly pulled away, still staring into each other's eyes."
-    c "Do you believe me now?"
-    show lorem blush with dissolve 
-    Lo "Yes..."
+    menu:
+        "I like you as more than a friend":
+            $ renpy.pause (1.0)
+            c "Yes, I do, I see you as more than a friend."
+            Lo shy "W-Wait, really...?"
+            Lo "B-But what about me being a hermaphrodite?"
+            c "Remember what I said when you told me? I don’t mind at all."
+            show lorem normal blush with dissolve 
+            m "We stared into each other's eyes for what felt like several long minutes, I tilted my head to the side and started moving closer."
+            show lorem shy with dissolve 
+            m "Lorem seemed flustered, yet still copied my actions, the two of us getting closer to each other by the second."
+            show lorem sleep blush with dissolve 
+            m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck, as they grabbed my shoulder, pulling me closer."
+            show lorem normal blush with dissolve
+            m "We stayed like that for several long seconds, until we both slowly pulled away, still staring into each other's eyes."
+            c "Do you believe me now?"
+            show lorem blush with dissolve 
+            Lo "Yes..."
+
+        "I like you as just a friend.":
+            $ renpy.pause (1.0)
+            $ rnloremromance = 0
+            c "I like you as just a friend."
+            show lorem normal with dissolve
+            c "Obviously being different species, we’d have different ways of living and different social standards, which I think is what’s causing the misunderstanding. Sorry for confusing you on where we stand."
+            Lo "Ah, that makes sense. Also, you don’t have to apologize for that. I just wanted to be sure how you felt about me."
+            $ renpy.pause (1.0)
+            show lorem think with dissolve
+            $ renpy.pause (1.0)
+            Lo normal "Now that I do know that, I know I’ve said it before, but I wanted you to know how much our friendship means to me."
+            jump ryann_lorem2_lo7_friendship_merge
 
 
 else:
     Lo normal "I know I’ve said it before, but I wanted you to know how much our friendship means to me."
+    label ryann_lorem2_lo7_friendship_merge:
     Lo sad "I don’t really have many other friends other than you and Ipsum, and no one else who knows I’m a hermaphrodite."
     Lo normal "But I’m glad that after what just happened, I know that you’ll have my back no matter what."
     c "Of course, Lorem, that’s what friends do for each other, I'm glad to know you’ll be by my side no matter what too."
