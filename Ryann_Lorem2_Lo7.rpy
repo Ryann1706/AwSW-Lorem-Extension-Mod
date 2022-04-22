@@ -147,7 +147,7 @@ scene black with dissolve
 m "Lorem proceeded to tell me in depth about dragon video games, some descriptions and names sounding so similar I could have been fooled that they were cheap knock-offs of previously existing human games."
 play sound "fx/door/doorbell.wav"
 m "We got so in-depth we lost track of time, and before we knew it the doorbell rang."
-scene o at Pan((0, 0), (0, 250), 3.5) with dissolve
+scene o at Pan((0, 0), (0, 250), 0.0) with dissolve
 $ renpy.pause (0.5)
 m "Lorem got up to answer it and returned with the pizza."
 $ renpy.pause (1.5)
@@ -211,7 +211,7 @@ $ renpy.pause (0.5)
 hide lorem with dissolve 
 scene black with dissolveslow 
 $ renpy.pause (1.5)
-scene o2 at Pan((0, 0), (0, 250), 3.5) with dissolveslow
+scene o2 at Pan((0, 0), (0, 250), 0.0) with dissolveslow
 $ renpy.pause (2.0)
 show lorem normal with dissolve 
 Lo "I didn’t think that pizza would be so filling, what should we do with the rest of it?"
@@ -412,7 +412,7 @@ menu:
 
     "Living quarters.":
         scene sec with dissolve 
-        m "We walked into the living quarters, which was very well furnished, there was normal things to have in a bedroom, a bed, footlocker, shelf, desk, laptop, etc."
+        m "We walked into the living quarters, which was very well furnished. There was normal things to have in a bedroom, a bed, footlocker, shelf, desk, laptop, etc."
         m "If this room was your only point of reference you’d probably think it was part of a normal house."
         label ryann_lorem2_lo7_before_living:
         menu:
@@ -761,7 +761,7 @@ if ryannactionsremaining == 0:
     jump ryann_lorem2_lo7_minigame_rip
 
 menu:
-    "Check on security locker.":
+    "Check security locker.":
         $ ryannactionsremaining -= 1
         if ryanncurrentitem == "Valve" or ryannvalveatpump == True:
             m "I looked through the locker again but couldn't find anything else useful."
@@ -901,7 +901,7 @@ menu:
                 $ ryanncrowbarused = True
                 $ ryannhaskey = True
                 m "I looked through the now opened gap into the locker, there was a horizontal pole with what looked like a uniform and some kind of cloak on hung up on it."
-                m "Ironically, there was also a key on a small shelf at the top of the locker, I took it and put it in one of my pockets, grateful I might not need to use brute force to open another lock."
+                m "Ironically, there was also a key on a small shelf at the top of the locker. I took it and put it in one of my pockets, grateful I might not need to use brute force to open another lock."
                 hide lorem with dissolve
                 $ ryannactionsremaining -= 1
                 jump ryann_lorem2_lo7_minigame_meeting
@@ -913,7 +913,7 @@ menu:
                         $ ryannwrenchlocker = True 
                         play sound "fx/ryannmetalhit.mp3"
                         m "I swung the pipe wrench at the lock, but it didn't break, it just indented the locker slightly."
-                        c "(I shouldn't try that again, if I cave the locker door in, I doubt we could get it open at all.)"
+                        c "(I shouldn't try that again. If I cave the locker door in, I doubt we could get it open at all.)"
                         $ ryannactionsremaining -= 1
                         jump ryann_lorem2_lo7_minigame_meeting
 
@@ -1176,7 +1176,7 @@ play sound "fx/explosion.ogg"
 $ renpy.pause (7.5)
 Rnn "That didn't go so well, huh?"
 Rnn "Don't worry, there's no shame in trying again, I won't tell anyone."
-Rnn "At least you're not going in completely blind this time, good luck!"
+Rnn "At least you're not going in completely blind this time. Good luck!"
 $ renpy.pause (2.0)
 
 $   ryannactionsremaining = 25
@@ -1438,7 +1438,7 @@ if rnloremromance > 3:
 
 else:
     m "My stiff back and neck pain didn’t hesitate to remind me though."
-    c "(Damn, this couch is unbearable to sleep on, I'm glad I did and not Lorem.)"
+    c "(Damn, this couch is unbearable to sleep on. I'm glad I did and not Lorem.)"
     m "After a decent amount of stretching, I went to check on Lorem. I made my way to the bedroom and slowly peeked through the door."
     show lorem sleep with dissolveslow 
     $ renpy.pause (0.5)
@@ -1459,8 +1459,8 @@ hide lorem with easeoutleft
 $ renpy.pause (0.5)
 c "(I didn’t even think they could be more adorable, but being half asleep does it apparently.)"
 m "After finishing up I brought our breakfast out to the living room."
-scene o4 at Pan((0, 0), (0, 250), 4.0) with dissolveslow
-$ renpy.pause (3.5)
+scene o4 at Pan((0, 0), (0, 250), 0.0) with dissolveslow
+$ renpy.pause (0.5)
 show lorem normal with dissolve 
 play sound "fx/undress.ogg"
 if rnloremromance > 3:
