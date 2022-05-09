@@ -885,7 +885,7 @@ menu:
 
     "Search lockers.":
         if ryannhaskey == False:
-            m "The only non-locked locker was labeled “I. Otomo” and it had a sturdy looking fingerprint lock on it."
+            m "The only locked locker was labeled “I. Otomo” and it had a sturdy looking fingerprint lock on it."
             if ryanncurrentitem == "Crowbar":
                 m "I jammed the crowbar into the top corner of the locker and began to force it open."
                 play sound "fx/ryannusecrowbar.mp3"
