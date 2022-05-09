@@ -274,7 +274,7 @@ menu:
         c "But they’re trespassing too, so they’ll get arrested before they arrest us, check and mate."
         show lorem normal with dissolve 
         m "I heard Lorem quietly chuckling, not wanting me to hear them laughing at my stupid joke."
-        Lo "You always know what to just say to lighten the mood, huh?"
+        Lo "You always know what just to say to lighten the mood, huh?"
         m "We continued walking, the tone slightly lifted from my dumb joke."
 
     "You can hold my hand if you’re scared.":
