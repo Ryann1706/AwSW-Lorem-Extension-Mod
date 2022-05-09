@@ -55,7 +55,7 @@ m "The sound of a door opening behind me snapped me out of my thoughts. {w}It wa
 hide izumi 
 show izumi normal with dissolve
 c "Hey Izumi, did you get lost on your way here, where were you?"
-As "It's interesting that you remeber her name, even though you were never told it in this timeline."
+As "It's interesting that you remember her name, even though you were never told it in this timeline."
 c "{i}Her{/i} name? {w}What do you mean?"
 m "A muffled sigh came from behind their mask."
 As "You really haven't pieced it together yet? Height or voice not ring a bell?"
