@@ -614,7 +614,7 @@ menu:
                 else:
                     $ ryannpumpfixed = True
                     m "As I put the valve into its slot, I noticed another flathead like slot on the valve, I took the screwdriver and tightened it."
-                    m "After a slight shake to make sure it was fitted properly, I was confident enought that it would work."
+                    m "After a slight shake to make sure it was fitted properly, I was confident enough that it would work."
                     $ ryanncurrentitem = "Nothing"
 
 
