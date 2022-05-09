@@ -257,13 +257,13 @@ Ip "I don't want to keep you here too long, so I’ll just take some samples and
 play sound "fx/rummage.wav"
 m "Ipsum rummaged through a drawer and pulled out a few things."
 if blood == True:
-    m "Some scissors, something that looked near identical to some nail clippers and the same tube and needle Anna had used before, or hopefully a different one that just looked the same."
+    m "Some scissors, something that looked near identical to some nail clippers, and the same tube and needle Anna had used before, or hopefully a different one that just looked the same."
     Ip normal "Can I have your hand?"
     m "I gave Ipsum my hand, a bit apprehensive, but I at least knew what to expect this time."
     m "The needle stuck into my hand; the pain wasn't as bad as the first time but it still did hurt."
 
 else:
-    "Some scissors, something that looked near identical to some nail clippers and a tube with some kind of needle attached to it."
+    "Some scissors, something that looked near identical to some nail clippers, and a tube with some kind of needle attached to it."
     Ip normal "Can I have your hand?"
     m "I gave Ipsum my hand, which he then put the tube onto the back of my hand."
     m "I recoiled slightly from pain caused by something sticking into the back of my hand."
