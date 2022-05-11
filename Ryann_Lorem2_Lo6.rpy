@@ -27,7 +27,7 @@ if remydead == False:
         c "Oh, hey Remy, how are you doing?"
         Ry "I'm doing better than usual, actually. But anyway, I'm here to deliver this letter."
         c "Who's it from?"
-        Ry "It’s from Emera, she said she wanted to talk to you about something, there's more about it in the letter."
+        Ry "It’s from Emera, she said she wanted to talk to you about something. There's more about it in the letter."
         c "Alright, well it was nice seeing you."
         Ry "It was nice seeing you too, I have to go now, so see you later."
         c "See ya."
@@ -51,7 +51,9 @@ if remydead == False:
         c "Hey Remy, who is this from?"
         Ry "It's from Emera. She said she wanted to talk to you about something. There's more about it in the letter."
         c "Alright, thanks."
-        Ry "It’s no problem. Goodbye."
+        Ry "I'm sorry to be so crude and rushed, but I'm very busy today."
+        c "Don't worry about it. I know what it's like to be busy."
+        Ry "Thank you for understanding, [player_name]. Goodbye."
         c "Bye."
         hide remy with dissolve
         jump ryann_lorem2_lorem6_letter
@@ -78,7 +80,7 @@ nvl clear
 window show
 n "Dear [player_name],"
 n "I hope you are in good health and condition given the circumstances you were under in recent times."
-n "I am writing to inform you that we must discuss matters related to the portal, your ambassador status and other important details."
+n "I am writing to inform you that we must discuss matters related to the portal, your ambassador status, and other important details."
 n "Please come to see me at my office at your earliest convenience."
 n "Minister of Culture and Arts,"
 n "Emera."
@@ -104,7 +106,7 @@ show lorem happy flip with dissolve
 Lo "Hey [player_name]!"
 c "Hey Lorem, how are you doing?"
 Lo think flip "Well, I'm a bit sore, but more confused than anything."
-Lo "All I can remember is Maverick getting shot, and then I charged at Reza, then... I woke up in a hospital bed."
+Lo "All I can remember about the other day is Maverick getting shot, and then I charged at Reza, then... I woke up in a hospital bed."
 Lo normal flip "But you’re here, so I'm assuming it went at least well enough."
 c "It did, but I have a lot to explain so you should get comfortable."
 Lo "Alright."
@@ -122,7 +124,7 @@ Lo sad flip "Oh... [player_name] I’m so sorry to hear that, but what do you me
 Lo "Actually, you don’t have to talk about it if you don’t want to... It must still be pretty painful..."
 c "It’s okay Lorem, but there's one last thing. Have you heard anything about a comet lately?"
 Lo think flip "Ipsum offhandedly mentioned it at some point, but with everything else you’ve said I don’t think it's good news."
-c "Well, yes and no, the important part is that us stopping Reza from escaping through the portal with the generator saved your entire species from extinction."
+c "Well, yes and no. The important part is that us stopping Reza from escaping through the portal with the generator saved your entire species from extinction."
 Lo sad flip "I don’t follow, but I'm not sure I want to think about what would have happened if we didn’t stop him, if us stopping him saved dragonkind."
 Lo "..."
 c "Maybe we should talk about something less depressing, considering I came over so we could have a good time."
@@ -130,9 +132,9 @@ Lo "Yeah..."
 Lo think flip "..."
 Lo "Actually, I still owe you dinner from you letting me draw you."
 c "It’s a bit early for dinner."
-Lo normal flip "I can make you lunch then, is there anything specific you want?"
+Lo normal flip "I can make you lunch then. Is there anything specific you want?"
 c "As long as it's not Pantoli’s Pizza, I'll be happy with it."
-Lo "Ha! Good one. {w}You can wait here, I shouldn’t be that long."
+Lo "Ha! Good one. {w}You can wait here, I shouldn’t take that long preparing it."
 show lorem normal with dissolve
 $ renpy.pause (0.2)
 hide lorem with easeoutleft
@@ -222,7 +224,7 @@ else:
 menu:
     "Ask about Ipsum." if not ryannaskipsum:
         c "So, where's Ipsum?"
-        Lo normal flip "He’s at work in the production facility, he should be home in a few hours if you’re looking for him."
+        Lo normal flip "He’s at work in the production facility. He should be home in a few hours if you’re looking for him."
         c "Nah, I was just curious since he wasn’t here."
         Lo "Ah, alright."
         $ ryannlo6ask += 1
@@ -230,7 +232,7 @@ menu:
         jump ryann_lorem2_lorem6_questions
 
     "Ask about books." if ryannlookbooks and  not ryannaskbooks:
-        c "I was looking at the book shelf there, and I saw a book called The Exteriors, what's it about?"
+        c "I was looking at the book shelf there, and I saw a book called The Exteriors. What's it about?"
         Lo think flip "Well, I don’t want to spoil it in case you want to read it, but it's about two rival teenage gangs called the Oilers and the Glovs."
         Lo normal flip "I thought it was really good, but it doesn't have an entirely happy ending."
         c "Well, nothing gold can stay, Ponyboy."
@@ -244,9 +246,9 @@ menu:
     
     "Ask about games." if not ryannaskgames:
         if ryannlookgames == True:
-            c "I saw a game over on the shelf, Super Marco Brothers, what's it about?"
+            c "I saw a game over on the shelf, Super Marco Brothers. What's it about?"
             Lo happy flip "Oh, that's one of my favorites! It’s a 2D side scroller where you have to jump to get powerups and avoid enemies and obstacles."
-            Lo "There are lots of different worlds and levels in it too! it's fairly old, but it’s a classic, do you have anything similar in your world?"
+            Lo "There are lots of different worlds and levels in it too! it's fairly old, but it’s a classic. Do you have anything similar in your world?"
             c "It does sound familiar, but I can't quite seem to place it..."
             $ ryannlo6ask += 1
             $ ryannaskgames = True
@@ -262,7 +264,7 @@ menu:
         
     "Ask about plants." if not ryannaskplant:
         if ryannlookplant == True:
-            c "I looked at that plant and it seems to be doing really well, Ipsum wasn’t joking when he said you loved plants."
+            c "I looked at that plant and it seems to be doing really well. Ipsum wasn’t joking when he said you loved plants."
             Lo normal flip "Well, it's not just plants, it’s botany I love."
             c "He also said you made a daisy crown. I'd love to see that. I bet you’d look so cute."
             Lo shy flip "Uhm... I-I..."
@@ -286,7 +288,7 @@ menu:
     "Ask about TV." if not ryannaskTV:
         if ryannlookTV == True:
             c "I saw what looked like a console and a DVD player, but do you use the TV for anything else?"
-            Lo normal flip "Well, there a subscription service you can pay for to watch shows, but most of them aren’t worth watching, except a show called Humans which is apparently pretty good, but not accurate to actual humans."
+            Lo normal flip "Well, there a subscription service you can pay for to watch shows. But most of them aren’t worth watching, except a show called Humans which is apparently pretty good, but not accurate to actual humans."
             Lo "Also, it's not DVD, its DDVD."
             c "What does the extra D stand for?"
             Lo "The whole thing stands for, Digital Dragon Video Disc."
@@ -346,7 +348,7 @@ show ipsum think with dissolve
 $ renpy.pause (0.5)
 m "I zoned out for a bit, thinking about what would happen to me and my ambassador status with the portal now completely non-functional, but I snapped out of it when I noticed Ipsum staring at me."
 c "Uh, Ipsum?"
-Ip normal "Oh, sorry about that, I'm just still very curious about your biology, given you being an entirely different species."
+Ip normal "Oh, sorry about that. I'm just still very curious about your biology, given you being an entirely different species."
 Ip think "Hmm, if you wouldn't mind, maybe I could take some samples to examine and run some tests on you in the production facility?"
 if annadead == True:
     Ip sad "And... {w}With what happened to Anna... She won't be a problem."
@@ -370,9 +372,9 @@ else:
 
     else:
         if blood == True:
-            c "I never agreed for Anna to do any tests on me, she just took some of my blood and gave me her number and said we could discuss biology."
+            c "What are you talking about? I never agreed for Anna to do any tests on me. She just took some of my blood and gave me her number and said we could discuss biology."
         else:
-            c "I never agreed for Anna to do any tests on me, she just gave me her number and said we could discuss biology."
+            c "What are you talking about? I never agreed for Anna to do any tests on me. She just gave me her number and said we could discuss biology."
         
         Ip think "Really...? Maybe we could do it then, if you don’t mind, of course."
 
@@ -380,8 +382,8 @@ c "Sure, I wouldn’t mind. It might be a few days before we can though."
 Ip happy "Glad to hear that. Just let me know when you’re available."
 $ renpy.pause (0.7)
 show lorem normal flip at Position(xpos=0.2) with easeinleft
-Lo "Hey, what were you two talking about while I was gone?"
-Ip normal "Oh, just science, physics mostly."
+Lo "Hey, what were you two up to while I was gone?"
+Ip normal "Oh, just talking about science, physics mostly."
 Lo relieved flip "[player_name], you know what happened last time. Don’t get him started again."
 Ip "You’re just saying that because you know you won't be able to keep up with us."
 Lo "Hmph."
@@ -391,7 +393,7 @@ menu:
         c "I know a lot about physics."
         Ip "Really? You won't mind if I asked you a question if you're such a genius when it comes to physics then, right?"
         c "Go ahead."
-        Ip "Alright, ahem, what is a superconductor?"
+        Ip "Alright, ahem. What is a superconductor?"
         menu:
             # The wrong ones are fake but they sound sciencey enough to work
             "A super charged electron using gamma radiation.":
@@ -415,10 +417,10 @@ menu:
         c "I know a bit, but not lots."
         Ip "Well, would you mind humoring me and letting me ask a question?"
         c "Alright."
-        Ip "Okay, what’s a tensegrity structure?"
+        Ip "Okay. What’s a tensegrity structure?"
         menu:
             "Parts in compression separated by parts in tension.":
-                Ip think "Huh, not bad, not many people know that."
+                Ip think "Huh, not bad. Not many people know that."
 
             "Parts in tension separated by parts in compression.":
                 Ip normal "You still have a bit to go to be a physicist apparently."
@@ -454,7 +456,7 @@ if rnwyrasked == 0:
 elif rnwyrasked == 1:
     c "So, do both of you understand now?"
     Ip think "I think I get it."
-    Ip "So, [player_name], {w}if you had the opportunity would you rather change into a dragon, or stay as a human?"
+    Ip "So, [player_name], {w}if you had the opportunity, would you rather, change into a dragon, or stay as a human?"
     c "Yeah, that’s the idea exactly."
     c "Now, as for the question..."
     menu:
@@ -472,7 +474,7 @@ elif rnwyrasked == 1:
 
     c "So, if we’re going anti-clockwise it's Lorem’s turn now."
     Lo think flip "Alright, so..."
-    Lo normal flip "Ipsum, would you rather, never own an Ixomen Sphere or give up on your tea collection?"
+    Lo normal flip "Ipsum, would you rather, never own an Ixomen Sphere, or give up on your tea collection?"
     Ip sad "That’s just unfair, how could I choose between those two?"
     c "Sorry, but that’s how the game goes."
     Ip normal "I’d have to choose my Ixomen Sphere though."
@@ -483,14 +485,14 @@ elif rnwyrasked == 1:
 elif rnwyrasked == 2:
 
     Ip think "So, Lorem."
-    Ip "Would you rather, never play video games or take care of plants?"
+    Ip "Would you rather, never play video games, or never take care of plants?"
     Lo relieved flip "Now that’s just cruel."
     Ip normal "So, you can ask me that kind of question but I can't?"
     Lo sad flip"I meant because I'm not giving up on my game, so the poor plants will just die."
     Ip think "Oh, I should have clarified your game wasn’t included."
     Lo normal flip "I’d still choose games regardless."
     Lo "Anyway, [player_name]."
-    Lo think flip "Would you rather eat ice cream or mac & cheese?"
+    Lo think flip "Would you rather, eat ice cream, or mac & cheese?"
     menu:
         "Ice cream":
             c "I’d have to go with ice cream."
@@ -500,13 +502,13 @@ elif rnwyrasked == 2:
             c "Well, it's most of them, but mainly strawberry."
             Lo think flip "When did you see what flavors we had?"
             c "I did have to buy food at some point while I’ve been here."
-            Lo relieved flip "Right, duh."
+            Lo relieved flip "Right. Duh."
             show lorem normal flip with dissolve
 
         "Mac & Cheese":
             c "I think I’d choose mac & cheese."
             c "But not the kind you’d get from a box, I mean the homemade kind."
-            c "But nearly every time I make it, it's always a bit burnt, the time when its perfect to take out of the oven is far too short."
+            c "But nearly every time I make it, it's always a bit burnt. The time when its perfect to take out of the oven is far too short."
             Ip think "I've never had the homemade kind."
             c "Well, you’re missing out then."
 
@@ -522,7 +524,7 @@ menu:
             "Live in the world of your favorite book or game?" if not rnwyraskedlo1:
                 $ rnwyraskedlo1 = True
                 $ rnwyrasked += 1
-                c "Would you rather, live in the world of your favorite book or favorite video game?"
+                c "Would you rather, live in the world of your favorite book, or favorite video game?"
                 Lo think flip "Hmm, probably my favorite game, my favorite book has a decent bit of violence, so I’ll avoid that."
                 Ip happy "I bet your favorite game is about farming."
                 Lo relieved flip "Ha ha..."
@@ -532,7 +534,7 @@ menu:
             "Trade your wings for strength and height or stay the same?" if not rnwyraskedlo2:
                 $ rnwyraskedlo2 = True
                 $ rnwyrasked += 1
-                c "Would you rather, trade your wings for strength and height or stay how you are now?"
+                c "Would you rather, trade your wings for strength and height, or stay how you are now?"
                 Lo think flip "Well, height and strength are tempting, but I think I’d miss flying too much."
                 Lo normal flip "Also, I wouldn’t have anything to rub in Ipsum’s face."
                 Ip think "We’ll see about that."
@@ -542,7 +544,7 @@ menu:
             "Be blind or deaf?" if not rnwyraskedlo3:
                 $ rnwyraskedlo3 = True
                 $ rnwyrasked += 1
-                c "Would you rather, be blind or deaf for the rest of your life?"
+                c "Would you rather, be blind, or deaf for the rest of your life?"
                 Lo think flip "Oh, that’s a bit tough..."
                 Lo "..."
                 Lo "I couldn’t work on my game if I was blind, so I'll pick deaf."
@@ -554,8 +556,8 @@ menu:
             "Live in the future or past?" if not rnwyraskedip1:
                 $ rnwyraskedip1 = True
                 $ rnwyrasked += 1
-                c "Would you rather, live in the future or past?"
-                Ip happy "The future, definitely, I'd love to see the advancements in technology and science."
+                c "Would you rather, live in the future, or past?"
+                Ip happy "The future, definitely. I'd love to see the advancements in technology and science."
                 Lo normal flip "You really just want an excuse to get another Ixomen Sphere."
                 jump ryann_lorem2_lorem6_wyr
 
@@ -572,7 +574,7 @@ menu:
             "Know how or when you’ll die?" if not rnwyraskedip3:
                 $ rnwyraskedip3 = True
                 $ rnwyrasked += 1
-                c "Would you rather, know how or when you’ll die?"
+                c "Would you rather, know how, or when you’ll die?"
                 Ip sad "Ah, that’s tough..."
                 Ip think "Knowing when you die is bound to cause existential dread, so I’d choose how."
                 Lo think flip "Wow, I didn’t expect such a deep answer."
@@ -583,9 +585,9 @@ menu:
 label ryann_lorem2_lorem6_afterwyr:
 
 $ renpy.pause (0.5)
-Ip happy "You know, I was skeptical at first but this was a lot more fun than I thought."
-Lo happy flip "Yeah, it really was, you have to tell us more human games like this!"
-c "Alright, but only if you can tell me about similar dragon games."
+Ip happy "You know, I was skeptical at first, but this was a lot more fun than I thought."
+Lo happy flip "Yeah, it really was! you have to tell us more human games like this."
+c "Alright, but only if you can tell me about similar dragon games in return."
 Lo normal flip "Maybe we could alternate which we do?"
 c "Sounds like a deal."
 $ renpy.pause (0.5)
@@ -611,11 +613,11 @@ menu:
         Ip "Heh, I might have gone a bit overboard this time."
         Lo "Just a bit?"
         $ renpy.pause (0.5)
-        Ip normal "Well, on that note, I have to go, my lab awaits me."
+        Ip normal "Well, on that note, I have to go. My lab awaits me."
 
     "Ipsum":
         c "I'd choose Ipsum."
-        Ip "Really now, is there any specific reason?"
+        Ip "Would you now? Is there any specific reason?"
         c "I wanted to see that smug grin disappear from your face when your plan backfired."
         c "Unless, {w}this {i}is{/i} what you wanted to happen?"
         Lo think flip "[player_name], what do you mean?"
@@ -638,17 +640,17 @@ hide ipsum with easeoutleft
 $ renpy.pause (0.5)
 show lorem at center with ease
 show lorem normal with dissolve
-Lo normal "And once again, there he goes, off to {i}hopefully{/i} not blow up the apartment."
+Lo normal "And once again, there he goes. Off to {i}hopefully{/i} not blow up the apartment."
 $ renpy.pause (1.0)
 Lo think "Wait, did you bring Ipsum’s Ixomen Sphere?"
-c "Ah, I had a feeling I forgot something. I can bring it at some other point, he’s survived without it this long, he can wait a few more days."
+c "Ah, I had a feeling I forgot something. I can bring it at some other point. He’s survived without it this long, he can wait a few more days."
 Lo normal "Heh, yeah."
 $ renpy.pause (1.0)
 c "I know I asked before when I invited you over for dinner, but how's your game going now?"
 Lo think "..."
 Lo "Well, ever since that talk you gave me, I've been feeling a lot more secure in what I'm doing."
 Lo "I'm doing the best I can for myself, and I'm not catering entirely to others so I don’t lose myself."
-Lo "I know that now, but I also still need help, I can't do this on my own."
+Lo "I know that now, but I also still need help. I can't do this on my own."
 c "You know you can always count on me and Ipsum to be there for you."
 Lo normal "Yeah, I know, and I really do appreciate that, but I need to put myself out there and be better."
 Lo think "You and Ipsum can't be the only people who accept me for me, right?"
@@ -659,6 +661,7 @@ c "Yeah, you’re an astounding person, anyone who says otherwise is an immature
 c "But remember, you'll have my support no matter what."
 $ renpy.pause (0.5)
 Lo relieved "Thank you, I know I've said it before, but that means a lot."
+play sound "fx/undress.ogg"
 m "Lorem walked up to me and hugged me, but because of their height they just rested their head against my upper abdomen, I still returned the hug regardless."
 $ renpy.pause (2.5)
 m "After a good few seconds, Lorem let go and backed off a bit."
