@@ -21,7 +21,7 @@ menu:
         show lorem think with dissolve
         m "Lorem got off the couch and hesitantly walked over to me."
         m "I pulled them into a comforting hug."
-        c "It's alright buddy, I dont mind at all."
+        c "It's alright, buddy. I dont mind at all."
         Lo sad "I..."
         m "Lorem was at a loss for words, they just returned the hug, and I heard a few quiet sniffles."
         Lo "You really don't mind?"
