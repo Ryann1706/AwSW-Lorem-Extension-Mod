@@ -6,8 +6,8 @@ $ save_name = (_("LI - Emera"))
 scene o4 at Pan((0, 0), (0, 250), 5.0) with dissolveslow
 $ renpy.pause (2.0)
 play music "mx/basicguitar.ogg"
-m "I woke up to sunlight on my face, but I refused to get up as I roughly knew what awaited me later."
-c "(Why do beds feel so comfortable when you need to get up and do stuff?)"
+m "I woke up to sunlight on my face, but I refused to get up, as I had a rough idea of awaited me later."
+c "(Why do beds feel so extra comfortable only when you need to get up and do stuff?)"
 $ renpy.pause (1.5)
 c "(The sooner I get this over with, the sooner I dont have to think about it.)"
 m "I reluctantly dragged myself out of bed, and while still half asleep, got ready to meet with Emera."
@@ -44,8 +44,8 @@ play sound "fx/door/door_close.ogg"
 play music "mx/library.ogg"
 $ renpy.pause (1.0)
 
-Em "Ah, good day [player_name]."
-c "Good morning Emera, your letter said you had something to discuss with me?"
+Em "Ah, good day, [player_name]."
+c "Good morning Emera. Your letter said you had something to discuss with me?"
 Em ques "I see you’re getting straight to business."
 $ renpy.pause (1.0)
 Em normal "There was an in-depth investigation done over yesterday and the night before on the underground building, because of the... {w}situation with Reza."
@@ -55,23 +55,23 @@ c "You mean it's broken?"
 Em "Not in the way you think. The portal itself is properly functioning, but the coordinates to the human world are missing."
 m "I obviously knew this already, but explaining how would definitely be difficult. {w}Playing dumb however, wasn’t. "
 c "Really? How did this happen?"
-Em ques "That is what we’re unsure of, and from that reaction, I'm assuming you are too."
+Em ques "That is what we’re unsure of, and judging from that reaction, I'm assuming you are too."
 Em normal "Which brings us to the point of this meeting."
 Em frown "Because we cannot contact humanity, we are forced to revoke your ambassador status."
 c "I see."
 Em normal "But to repay you for your service, we will allow you to apply for citizenship, and let you keep your apartment, and have certain utilities subsidized."
-c "Thank you, that will definitely be satisfactory."
+c "Thank you. That will definitely be satisfactory."
 Em "I'm glad it's to your liking, but you will have to fill in some paperwork before you leave."
-c "I expected that, but before I start there’s something crucially important I must warn you about."
+c "I expected that, but before I start, there’s something crucially important I must warn you about."
 Em "What is it?"
 c "Have you heard at all about a comet lately?"
-Em ques "I am aware of it, it's path is projected to pass by the planet safely, if that’s what you were worried about."
-c "Actually, it won't, according to my PDA, the comet will directly hit the planet causing a global extinction event if nothing is done about it."
+Em ques "I am aware of it. It's path is projected to pass by the planet safely, if that’s what you were worried about."
+c "Actually, it won't. According to my PDA, the comet will directly hit the planet causing a global extinction event if nothing is done about it."
 show emera normal with dissolve
 c "Thankfully, because the generator Reza tried to take wasn't damaged, it should supply enough power to safely divert it."
 $ renpy.pause (2.3)
-Em "I will have someone look into this matter, thank you for bringing it to my attention."
-Em "Regardless, I do not want to keep you any longer, but as I said, there’s papers that must be filled."
+Em "I will have someone look into this matter. Thank you for bringing it to my attention."
+Em "Regardless, I do not want to keep you any longer, but as I said, there are papers that must be filled."
 show emera normal at left with ease
 $ renpy.pause (0.5)
 play sound "fx/rummage3.ogg"
@@ -92,7 +92,7 @@ $ renpy.pause (1.5)
 
 scene town5 with dissolveslow
 play music "mx/elegant.ogg"
-m "Somehow, I managed to get it all done, but just as I was leaving..."
+m "Somehow, I managed to get it all done. But just as I was leaving..."
 
 if brycedead == False:
     if ryannwindowssmashed > 0:
@@ -109,12 +109,12 @@ if brycedead == False:
 
         elif brycestatus == "none":
             show bryce normal b with easeinright
-            Br "Hey [player_name]."
-            c "Hey Bryce."
+            Br "Hey, [player_name]."
+            c "Hey, Bryce."
             Br stern b "I'll get straight to the point."
             Br "I'm sure you remember the incident with the window?"
             c "Yeah..."
-            Br "We still need to talk about that, come on."
+            Br "We still need to talk about that. Come on."
 
         else:
             show bryce stern b with easeinright
@@ -122,7 +122,7 @@ if brycedead == False:
             c "What is it?"
             Br "We need to have that discussion about your incident earlier."
             c "Incident?"
-            Br " You smashing that window, come with me."
+            Br "You smashing that window. Come with me."
             c "Why should I?"
             Br "Because I was told you lost your ambassador status, and the perks that came with it."
             c "Wow, so you're threating me? Fine, let's just get this over with."
@@ -132,10 +132,10 @@ if brycedead == False:
         scene office with dissolveslow
         show bryce stern b with dissolve
         m "Bryce led me to the police station, then to his office."
-        Br  "Sit down."
+        Br "Sit down."
         play sound "fx/undress.ogg"
         $ renpy.pause (2.0)
-        Br "So, since you’ve lost your ambassador status, I could charge you for anti-social behavior, disturbing the peace and vandalism."
+        Br "So, since you’ve lost your ambassador status, I could charge you for anti-social behavior, disturbing the peace, and vandalism."
         Br "But for stopping Reza, I’ll drop it this once."
         if brycestatus == "good" or brycestatus == "neutral" or brycestatus == "none":
             Br "Look, I dont want to be speaking down to you like a child, but I still had to report what happened, so it's either this, or getting arrested."
@@ -150,7 +150,7 @@ if brycedead == False:
             scene black with dissolveslow
             hide bryce with dissolve
             $ renpy.pause (2.0)
-            m "Bryce proceeded to chew me out for the next half hour, I blocked out most of it, but still left with a headache and even more exhausted than before."
+            m "Bryce proceeded to chew me out for the next half hour. I blocked out most of it, but still left with a headache and even more exhausted than before."
 
         $ renpy.pause (1.0)
         scene town6 with dissolveslow
@@ -176,7 +176,7 @@ if brycedead == False:
 
             "You were out of line.":
                 $ ryannmavapology = False
-                c "Honestly, I still think you were out of line, you threatened and stalked me just because you had a hunch? Or was it just because of my species?"
+                c "Honestly, I still think you were out of line. You threatened and stalked me just because you had a hunch? Or was it just because of my species?"
                 Mv angry "Fine, if that’s the way you’re going to be about it, forget it."
                 show maverick angry flip with dissolve
                 $ renpy.pause (0.2)
@@ -204,7 +204,7 @@ if brycedead == False:
 
                 "You were out of line.":
                     $ ryannmavapology = False
-                    c "Honestly, I still think you were out of line, you threatened and stalked me just because you had a hunch? Or was it just because of my species?"
+                    c "Honestly, I still think you were out of line. You threatened and stalked me just because you had a hunch? Or was it just because of my species?"
                     Mv angry "Fine, if that’s the way you’re going to be about it, forget it."
                     show maverick angry flip with dissolve
                     $ renpy.pause (0.2)
@@ -217,7 +217,7 @@ if brycedead == False:
             show bryce normal b flip with dissolve
             show maverick normal at Position(xpos=0.825) with easeinright
             Br "Hey [player_name]."
-            c "Hey Bryce, and Maverick."
+            c "Hey, Bryce and Maverick."
             Mv "Hey."
             $ renpy.pause (2.0)
             Br stern b flip "Well, what are you waiting for?"
@@ -232,8 +232,8 @@ if brycedead == False:
                     $ ryannmavapology = True
                     c "Honestly, I don’t blame you for acting the way you did, from your point of view I can see why you were suspicious of me."
                     Mv nice "I'm glad that we can move on from this."
-                    Br smirk b flip "See Maverick, it wasn't that hard."
-                    Mv normal "Shut it Bryce."
+                    Br smirk b flip "See, Maverick, it wasn't that hard."
+                    Mv normal "Shut it, Bryce."
                     Br laugh b flip "He's quite the charming fellow, isn't he [player_name]?"
                     Br normal b flip "I gotta go, I'm still on the clock, we'll see you around."
                     show maverick normal flip with dissolve
@@ -244,13 +244,13 @@ if brycedead == False:
 
                 "You were out of line.":
                     $ ryannmavapology = False
-                    c "Honestly, I still think you were out of line, you threatened and stalked me just because you had a hunch? Or was it just because of my species?"
+                    c "Honestly, I still think you were out of line. You threatened and stalked me just because you had a hunch? Or was it just because of my species?"
                     Mv angry "Fine, if that’s the way you’re going to be about it, forget it."
                     show maverick angry flip with dissolve
                     $ renpy.pause (0.3)
                     hide maverick with easeoutright
                     $ renpy.pause (1.0)
-                    Br stern b flip "I understand you two didn't get along but did you have to say that?"
+                    Br stern b flip "I understand you two didn't get along, but did you have to say that?"
                     c "I just said what I thought, I didn't have to accept his apology."
                     Br "I know, but still, you could have just lied."
                     Br "Anyway, I'm still on the clock, I gotta go."
@@ -278,7 +278,7 @@ else:
 
         "You were out of line.":
             $ ryannmavapology = False
-            c "Honestly, I still think you were out of line, you threatened and stalked me just because you had a hunch? Or was it just because of my species?"
+            c "Honestly, I still think you were out of line. You threatened and stalked me just because you had a hunch? Or was it just because of my species?"
             Mv angry "Fine, if that’s the way you’re going to be about it, forget it."
             show maverick angry flip with dissolve
             $ renpy.pause (0.2)
