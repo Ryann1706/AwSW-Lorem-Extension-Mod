@@ -17,14 +17,14 @@ stop sound
 Lo "Hello?"
 c "Hey Lorem, is Ipsum there?"
 if rnloremromance > 3:
-    Lo "O-Oh, hey [player_name], I’ll... uh, get him for you now..."
+    Lo "O-Oh, hey, [player_name], I’ll... uh, get him for you now..."
 else:
-    Lo "Hey [player_name], I can get him now for you."
+    Lo "Hey, [player_name], I can get him now for you."
 
 $ renpy.pause (2.0)
-Ip "Hey [player_name], what is it?"
+Ip "Hey, [player_name], what is it?"
 c "I know it’s a bit short notice, but I can come in for those tests you wanted to do."
-Ip "Actually, it’s perfect timing, I don’t start work for a while, so we can do it in... roughly an hour?"
+Ip "Actually, it’s perfect timing. I don’t start work for a while, so we can do it in... roughly an hour?"
 c "Sounds good to me."
 Ip "I’ll meet you outside and bring you to the testing room."
 c "See you soon then."
@@ -40,7 +40,7 @@ play sound "fx/steps/clean.wav"
 $ renpy.pause (2.0)
 scene gate with dissolveslow
 play music "mx/anna3.ogg"
-m "I got to the production facility and Ipsum wasn’t there."
+m "I got to the production facility, but Ipsum wasn’t there."
 c "(Guess I'm the first one here.)"
 m "I didn’t have to wait long though."
 show ipsum normal with easeinright
@@ -84,7 +84,7 @@ Ip "How did you react?"
 c "I told them I didn’t mind at all, and hugged them."
 Ip happy "I'm really grateful about that. Other people haven't been as understanding."
 $ renpy.pause (1.0)
-Ip normal "Anyway, sorry about rambling, now one thing before we start doing this."
+Ip normal "Anyway, sorry about rambling. Now, one thing before we start doing this."
 play sound "fx/ryanncurtainpull.mp3"
 m  "Ipsum walked over to the curtains in the room and pulled them fully out."
 Ip "I'm assuming because of the clothes you’re wearing, humans don’t like being exposed?"
@@ -108,7 +108,7 @@ if annadead == True:
     c "She was one of Reza's victims."
     Ip sad "Oh, I didn't know that part."
     $ renpy.pause (1.5)
-    Ip "She wasn’t an amazing person, she was arrogant, stubborn and had a superiority complex, or at least that was my impression of her."
+    Ip "She wasn’t an amazing person, she was arrogant, stubborn, and had a superiority complex, or at least that was my impression of her."
     Ip "But there's no denying she was a genius, and she made great contributions to the scientific community, it definitely was a great loss."
     $ renpy.pause (2.0)
     m "We had a few minutes of silence while waiting for the machine to start-up."
@@ -120,14 +120,14 @@ else:
     show ipsum at right with ease 
     show anna rage b flip at left with easeinleft
     An "Ipsum!" with vpunch
-    Ip "Oh, hello Anna. What a pleasant surprise it is for you to visit."
+    Ip "Oh, hello, Anna. What a pleasant surprise it is for you to visit."
     An "Don’t you dare test me right now! I just saw you booked this room to test on [player_name], when I {i}specifically{/i} told you I was the only one allowed to do that."
     m "I stepped out from behind the curtains."
     c "You know I'm right here, right?"
     if annastatus == "bad" or annastatus == "abandoned":
         An face b flip "I was hoping you weren't."
         if annastatus == "abandoned":
-            An "Also, really cool of you to completely ghost me, I didn’t realize sending a 20 second voice message was such a strenuous task for humans."
+            An "Also, really cool of you to completely ghost me. I didn’t realize sending a 20 second voice message was such a strenuous task for humans."
         else:
             pass
     else:
@@ -137,7 +137,7 @@ else:
     if rnagreedannatest == True and rndidannatest == False and rncancelannatest == False:
         # If agreed to the tests, but didnt do or canncel them
         An disgust b flip "Regardless, you agreed for me to do tests on you, then you just don’t follow through, and let Ipsum do them instead?"
-        c "Okay, I will admit, that’s my bad, but I'm an ambassador, did you expect me not to be busy, especially when I'm helping the police?"
+        c "Okay, I will admit, that’s my bad. But I'm an ambassador, did you expect me not to be busy, especially when I'm helping the police?"
         c "Ipsum’s gonna do some tests anyway, can't he just share the results with you?"
 
     elif rndidannatest == True:
@@ -161,10 +161,10 @@ else:
 
     An sad b flip "..."
     An face b flip "..."
-    An disgust b flip "It’s not about those tests, it's about him going against what I specifically told him."
+    An disgust b flip "It’s not about those tests. It's about him going against what I specifically told him."
     An normal b flip "It doesn't matter anyway, now that I've gotten hold of one of your PDA’s."
     Ip normal "If it doesn't matter anyway, then why did you come storming in here and have a temper tantrum?"
-    An disgust b flip "Shut your mouth Ipsum."
+    An disgust b flip "Shut your mouth, Ipsum."
     Ip "That’s not very nice."
     c "What did you want from the PDAs anyway?"
 
@@ -181,7 +181,7 @@ else:
         c "That's vague."
         An face b flip "And? Do you want an entire list of things I've looked at?"
 
-    An disgust b flip "I'm going. But Ipsum I'm warning you. You’re on thin ice."
+    An disgust b flip "I'm going. But Ipsum, I'm warning you. You’re on thin ice."
     show anna disgust b with dissolve 
     $ renpy.pause (0.3)
     hide anna with easeoutleft
@@ -190,46 +190,46 @@ else:
 
     Ip think "Well, that was... interesting."
     c "So much for this room having privacy."
-    Ip normal "It was pretty impressive that you actually managed to talk back to her, when most people try they just get shut down completely."
+    Ip normal "It was pretty impressive that you actually managed to talk back to her. When most people try they just get shut down completely."
 
 $ renpy.pause (1.5)
 Ip "Alright, this should be ready now."
 
 if rndidannatest == True:
-    c "That’s for looking at muscle groups, bones and organs, right?"
-    Ip think "Yep, I'm assuming Anna used this on you then?"
+    c "That’s for looking at muscle groups, bones, and organs, right?"
+    Ip think "Yep. I'm assuming Anna used this on you then?"
     c "Yeah."
     c "(Hopefully this being used on me twice doesn't give me a dragon's dose of radiation.)"
 
 else:
     c "What are you doing?"
-    Ip normal "This lets me see your muscles, bones and organs, not in much detail, it's more of a general overview."
+    Ip normal "This lets me see your muscles, bones, and organs. Not in much detail though, it's more of a general overview."
 
-Ip normal "Just lie down here, you can still talk, but try not to move too much, it should only take a minute or two."
+Ip normal "Just lie down here. You can still talk, but try not to move too much. It should only take a minute or two."
 c "Alright."
 play sound "fx/bed.ogg"
 $ renpy.pause (1.0)
 c "So, what else were you going to do?"
-Ip think "Honestly, I'm just doing stuff as I go, doing this whole thing was really short notice on both our ends."
+Ip think "Honestly, I'm just doing stuff as I go. Doing this whole thing was really short notice on both our ends."
 play soundloop "fx/startx.ogg"
 queue soundloop "fx/hum.ogg"
 Ip normal "So, we won't be doing a huge number of things."
 c "Like what?"
-Ip think "Maybe I’ll take some blood, a hair and nail sample, and unrelated but I'm really intrigued by the fact you don’t have a tail."
-c "I can understand the interest in blood, but why hair and nails?"
-Ip "Well, obviously I have hair too, but it’s actually pretty uncommon for dragons, I want to know how similar or different it is."
+Ip think "Maybe I’ll take some blood, a hair, and nail sample. And unrelated, but I'm really intrigued by the fact you don’t have a tail."
+c "I can understand the interest in blood, but why hair, and nails?"
+Ip "Well, obviously I have hair too, but it’s actually pretty uncommon for dragons. I want to know how similar or different it is."
 c "Well, most humans have hair on their head, and some people have hair on more parts of their body, but that depends on gender and genetics."
 Ip "Stuff like that is a lot more interesting to me than you’d think, for dragons, gender has no influence on hair."
 c "Interesting."
 Ip "Also, about nails. All dragons have claws, most other mammals and reptiles here too, so why you still have nails from an evolutionary perspective bewilders me."
 c "Well, claws are better for things like slashing and puncturing, but nails are better for grabbing and climbing, which were more beneficial to humans in the past."
-c "Speaking of past humans, we used to have tails, but lost them to evolution and got our upright stance, all we have left is a bone called the coccyx."
+c "Speaking of past humans, we used to have tails, but lost them to evolution and got our upright stance. All we have left is a bone called the coccyx."
 Ip "I see."
 stop soundloop fadeout 2.0
 $ renpy.pause (1.5)
-Ip normal "Alright, this machine is done, you can get up now."
+Ip normal "Alright, this machine is done. You can get up now."
 if rndidannatest == True:
-    c "Wait, but when Anna used it, it took some time to prosses the data, why didn’t it now?"
+    c "Wait, but when Anna used it, it took some time to prosses the data. Why didn’t it now?"
     Ip "It already has, it finished scanning while we were talking, you looked comfortable so I let you stay lying down."
     c "Alright."
 else:
@@ -239,7 +239,7 @@ play sound "fx/bed.ogg"
 $ renpy.pause (1.0)
 Ip think " Okay, for this next part you’ll need to take off some of your clothes, more specifically the part covering your chest and abdomen."
 Ip normal "Again, only if you’re okay with it."
-c "I don’t really mind, also it’s called a shirt."
+c "I don’t really mind. Also, it’s called a shirt."
 Ip "Got it."
 play sound "fx/undress.ogg"
 m "I stood behind the curtain Ipsum provided and took off my shirt, putting it aside for the time being."
@@ -286,7 +286,7 @@ Ip happy "Now that all that’s over with, we can have some fun."
 c "What do you mean?"
 Ip "You didn’t think these tests were going to be the only thing we’d do, did you?"
 c "I kinda did, but I'm assuming you had something else planned?"
-Ip "Of course, just doing those tests would have been really boring, so we're going to do some good old-fashioned mischief too."
+Ip "Of course. Just doing those tests would have been really boring, so we're going to do some good old-fashioned mischief too."
 c "What did you have in mind then?"
 Ip normal " Actually, I thought you could come up with something. That game you told us earlier was pretty fun, so maybe whatever you come up with will be good too."
 c "Alright, let me think..."
@@ -326,7 +326,7 @@ if annadead == True:
 else:
     Ip normal "We need to take a trip to Anna’s lab."
     c "Are you sure that’s a good idea? Anna did say you were on thin ice."
-    Ip happy "But it couldn’t have been us doing anything, we were in the testing room the whole time, right?"
+    Ip happy "But it couldn’t have been us doing anything. We were in the testing room the whole time, right?"
     c "Right, I almost forgot that part."
 
 scene ryannfacilitylab with dissolveslow
@@ -339,7 +339,7 @@ hide ipsum with easeoutright
 m "Ipsum then walked into a small storage closet in the back of the room."
 $ renpy.pause (2.0)
 show ipsum normal with easeinright
-m "After a minute he returned with two beakers and a piece of string, one of the beakers had a piece of metal in it, while the other was empty. "
+m "After a minute, he returned with two beakers and a piece of string. One of the beakers had a piece of metal in it, while the other was empty. "
 c "What’s that?"
 Ip happy "Just some potassium."
 c "And what’s it for?"
@@ -407,7 +407,7 @@ else:
     show ipsum at right with ease
     show anna rage b flip at left with easeinleft
     An "IPSUM!" with vpunch
-    Ip "Welcome back Anna, did you-{w=0.15}{nw}"
+    Ip "Welcome back, Anna. Did you-{w=0.15}{nw}"
     An "Don’t you dare play dumb now! Did you do it?"
     Ip think "I don’t even know what {i}it{/i} is."
     An "The explosion in my lab!"
@@ -478,7 +478,7 @@ if annadead == True:
     play sound "fx/door/door_open.wav"
     $ renpy.pause (0.5)
     show damion arrogant at right with easeinright
-    Dm "Really mature, whoever this is, I hope you’re realizing you’re interrupting actually important work."
+    Dm "Really mature, whoever this is. I hope you’re realizing you’re interrupting actually important work."
     show damion arrogant flip with dissolve
     $ renpy.pause (0.3)
     hide damion with easeoutright
@@ -505,7 +505,7 @@ if annadead == True:
     m "It was hard for us to continue without chuckling pretty hard at this point."
     c "Why does he keep falling for it?"
     Ip "I don’t know, but I'm not complaining. We should stop before he starts crying though."
-    c "Judging by how he’s acting he's not far from it "
+    c "Judging by how he’s acting, he's not far from it "
     scene testingroom with dissolveslow
     show ipsum normal with dissolve
     m "After making sure Damion wasn’t at the door, Ipsum brough the sphere back."
@@ -527,7 +527,7 @@ else:
     play sound "fx/door/door_open.wav"
     $ renpy.pause (0.5)
     show anna disgust b at right with easeinright
-    An "Really mature, I bet you’re finding it hilarious that you’re wasting both of our time here. Grow up!"
+    An "Really mature. I bet you’re finding it hilarious that you’re wasting both of our time here. Grow up!"
     show anna disgust b flip with dissolve
     hide anna with easeoutright
     c "She really is hot headed, huh?"
@@ -550,7 +550,7 @@ else:
     m "As soon as the sound played from the sphere, Anna swung the door open expecting to find the culprit, but only found an empty corridor."
     An "You better get out here now or I’ll slit your neck when I find you!" with vpunch
     c "How is she this mad already?"
-    Ip "That’s just how she is, be glad you don’t work with her."
+    Ip "That’s just how she is. Be glad you don’t work with her."
     hide anna with dissolve
     scene testingroom with dissolveslow
     show ipsum normal with dissolve
@@ -567,7 +567,7 @@ jump ryann_lorem2_ipsum_end
 label ryann_lorem2_ipsum_scare:
 
 c "It’s pretty simple, but we could just scare someone?"
-Ip normal "Ah, a classic, it is pretty simple, but who said it needed to be complex?"
+Ip normal "Ah, a classic. It is pretty simple, but who said it needed to be complex?"
 Ip "Now we just need to find our victim."
 show ipsum at left with ease
 m "Ipsum stepped into the hall and looked around, then suddenly came back in the room."
@@ -577,7 +577,7 @@ c "That’s convenient."
 show ipsum normal with dissolve
 hide ipsum with easeoutleft
 $ renpy.pause (1.5)
-Ip "Hey, excuse me, could you help me over here for a second?"
+Ip "Hey, excuse me. Could you help me over here for a second?"
 m "I waited for Ipsum to give me some kind of signal to jump out."
 $ renpy.pause (2.0)
 m "The door was open enough for me to jump out, and see Ipsum, but not enough for me or the other person to see each other."
@@ -600,7 +600,7 @@ if ryannmavapology == True:
     Mv "For you, of all people, to be able to scare someone like me? That’s amazing."
     Mv nice b flip "I see you really have put all that behind us."
     c "Shouldn’t you be on sick leave?"
-    Mv normal b flip"You know well how understaffed we are, after persisting about it for long enough I was allowed to do less exerting things."
+    Mv normal b flip"You know well how understaffed we are. After persisting about it for long enough I was allowed to do less exerting things."
     c "Like what?"
     Mv "Naomi is the only other flyer available, so I'm collecting and dropping off reports and other things like she would."
     c "With an injured leg?"
@@ -629,8 +629,8 @@ else:
     show ipsum at center with move 
     Ip happy "Heh, well someone's pretty annoyed."
 
-show ipsum at center with move 
-c "Well, that deffinetly could have gone worse."
+show ipsum at center with ease
+c "Well, that definitely could have gone worse."
 Ip normal "I at least thought it was a bit funny."
 
 jump ryann_lorem2_ipsum_end
@@ -641,14 +641,14 @@ label ryann_lorem2_ipsum_end:
 $ renpy.pause (2.0)
 Ip think "Wait, what time is it?"
 Ip "Ah, my shift is starting soon, so it looks like this is the end of our get together."
-c "I guess it is, I had a really great time though."
+c "I guess it is. I had a really great time though."
 Ip normal "Maybe we should hang out again at some point?"
-c "Sure, hopefully Lorem doesn't get jealous."
-Ip happy "I don’t think they will, if anything they’ll be grateful their favorite dragon and favorite human are getting along."
+c "Sure. Hopefully Lorem doesn't get jealous."
+Ip happy "I don’t think they will. If anything they’ll be grateful their favorite dragon and favorite human are getting along."
 Ip normal "Also, that reminds me, Lorem told me that they wanted to hang out with you again soon."
 c "Maybe they are jealous?"
 Ip happy "Heh, let’s hope not."
-Ip normal "Anyway, I’ll see you later, thanks again for doing this."
+Ip normal "Anyway, I’ll see you later. Thanks again for doing this."
 c "See ya."
 
 scene black with dissolveslow
