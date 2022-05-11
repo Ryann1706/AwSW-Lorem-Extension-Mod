@@ -18,7 +18,7 @@ show lorem at right with ease
 show reza angry with dissolve
 play sound "fx/loremkick.ogg"
 hide lorem with dissolve
-m "He also dodged Lorem's charge, hitting them with a well-placed kick, knocking them into a wall, which they then fell to the ground."
+m "He also dodged Lorem's charge. Then he hit them with a well-placed kick, knocking them into a wall, and causing them to fall to the ground."
 show loremwounded at Pan((1080, 0), (500, 350), 6) with fade
 $ renpy.pause (4.5)
 show reza gunself with dissolve
@@ -48,7 +48,7 @@ show maverick nice
 $ renpy.pause (0.2)
 hide maverick with easeoutleft
 
-m "Maverick went to get help while I watched over Lorem, I checked on Reza, and unsurprisingly, he was dead."
+m "Maverick went to get help while I watched over Lorem. I checked on Reza, and unsurprisingly, he was dead."
 m "He had an unanticipated amount of ammo on him though, much more needed for simple self-defence."
 play sound "fx/door/hallwaydoor.ogg"
 m "The sound of a door opening behind me snapped me out of my thoughts. {w}It was the Administrator."
@@ -75,21 +75,21 @@ c "Are you asking me or telling me? Because I'm pretty sure both of us want to s
 "???" "As for my timeline..."
 "???" "..."
 "???" "It's better you don’t know."
-"???" "Anyway, we don’t have much longer, it's your choice."
+"???" "Anyway, we don’t have much longer to decide. It's your choice."
 menu:
 
     "[[Go back.]":
         c "I’ll go back."
         "???" "Honestly, I'm surprised to hear that, but it's your choice."
         hide izumi with dissolve
-        m "They took off their cloak and mask and handed them to me, and I started heading to the portal."
+        m "They took off their cloak and mask and handed them to me. Then I started heading to the portal."
         $ renpy.pause (1.0)
         "???" "Don't worry, I'll look after Lorem."
         stop music fadeout 2.0
         $ renpy.pause (2.0)
         scene black with dissolveslow
         play sound "fx/system.wav"
-        s "Congratulations! You abandoned Lorem while they were unconscious, hope you’re happy with yourself."
+        s "Congratulations! You abandoned Lorem while they were unconscious. Hope you’re happy with yourself."
         jump ml_main_menu
 
 
@@ -104,8 +104,8 @@ menu:
         hide izumi with easeoutright
     
 if brycedead == False:
-    m "Soon after, Maverick returned with Bryce and some paramedics, who had already bandaged Maverick's wound, they proceded to check over me, and then bring Lorem to the hospital to be monitored."
-    m "Bryce took mine and Maverick's statements, and escorted me back to my apartment."
+    m "Soon after, Maverick returned with Bryce and some paramedics, who had already bandaged Maverick's wound. They proceded to check over me, and then bring Lorem to the hospital to be monitored."
+    m "Bryce then took mine and Maverick's statements, and escorted me back to my apartment."
 
 else:
     m "Soon after, Maverick returned with some paramedics, who had already bandaged Maverick's wound, they proceded to check over me and then bring Lorem to the hospital to be monitored."
