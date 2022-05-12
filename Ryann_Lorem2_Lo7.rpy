@@ -489,6 +489,11 @@ menu:
 #======================================================================================================================================================================================
 
 label ryann_lorem2_lo7_minigame_start:
+$ renpy.pause (0.5)
+play sound "fx/system3.wav"
+m "This minigame works on a held item/inventory system. You can only “hold” one item at a time. If you pick up a new item while already “holding” one, the old item will return to the original opposition you found it, and the new one will become your new “held item”."
+m "Certain items don’t take up the “held item” slot and are kept once gotten, you just need to use them in the right place. Some items are needed to win the minigame, and some provide other useful benefits. When a “held item” is used, it will not reappear in its original position, unless the minigame is reset."
+$ renpy.pause (0.5)
 
 label ryann_lorem2_lo7_minigame_restart
 
