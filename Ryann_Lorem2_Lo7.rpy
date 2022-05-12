@@ -17,7 +17,7 @@ play sound "fx/phonering.ogg"
 $ renpy.pause (3.5)
 stop sound 
 Lo "Hello?"
-c "Hey Lorem, it’s [player_name]."
+c "Hey, Lorem, it’s [player_name]."
 Lo "Hey! Did you forget something the last time you called?"
 c "No, Ipsum told me you wanted to hang out soon, and I wanted to let you know I'm free today."
 Lo "Great, so am I! Is it alright if I come over later then?"
@@ -29,13 +29,13 @@ $ renpy.pause (1.0)
 
 scene black with dissolveslow
 $ renpy.pause (1.5)
-scene o at Pan((0, 0), (0, 250), 4.0) with dissolveslow
+scene o at Pan((0, 0), (0, 250), 0.0) with dissolveslow
 $ renpy.pause (1.5)
 play sound "fx/door/door_open.wav"
 $ renpy.pause (1.0)
 show lorem normal with dissolve
-c "Hey Lorem."
-Lo "Hey [player_name], can I come in?"
+c "Hey, Lorem."
+Lo "Hey [player_name]. Can I come in?"
 c "Of course."
 play sound "fx/door/door_close.ogg"
 $ renpy.pause (1.0)
@@ -43,23 +43,23 @@ $ renpy.pause (1.0)
 c "So, is there any reason specifically you wanted to meet up again so soon?"
 Lo "Do I need a reason to hang out with you?"
 c "I guess not."
-Lo think "By the way, Ipsum told me you two hung out yesterday, how did that go?"
+Lo think "By the way, Ipsum told me you two hung out yesterday. How did that go?"
 c "It was actually a lot more fun than I thought it would be."
 Lo normal "That's good to hear, I'm glad that you two are able to get along as well."
 Lo think "So, what did both of you get up to?"
 c "Well, Ipsum wanted to run a few tests on me and get some samples to study, so we met at the production facility before his shift."
-Lo normal "That explains why he didn’t leave his room at all of yesterday and today, and why he left pretty soon after you called him."
+Lo normal "That explains why he didn’t leave his room at all of yesterday and today, and why he started getting ready to leave pretty soon after you called him."
 Lo relieved "But you didn’t have to agree to doing that, you know that right?"
 c "But I wanted to. It's not like he forced me, and it’s not the only thing we did anyway."
 Lo normal "Ah, did he involve you in one of his pranks?"
 c "Yeah."
-Lo "He’s infamous for doing stuff like that, yet he never gets caught, it's honestly pretty impressive."
+Lo "He’s infamous for doing stuff like that, yet he never gets caught. It's honestly pretty impressive."
 Lo "Anyway, there is something I wanted to do though. I wanted you to experience what actually good-quality pizza is like, not that cheap Pantoli’s stuff."
 c "Alright, but I gave Ipsum his Ixomen Sphere yesterday too, so how are you gonna order it?"
 Lo think "Ipsum also told me that, so I brought one of their menus with me."
 play sound "fx/paper.wav"
 m "Lorem unfolded one of their wings and took the menu out, putting it on the coffee table for us both to see."
-Lo "I think I’ll have salad again, what topping do you want this time?"
+Lo "I think I’ll have salad again. What topping do you want this time?"
 c "Are we splitting this pizza too?"
 Lo relieved "Like I said, this is better quality, which means it's more expensive, and the smallest size is still too big for me, so yes, we’re splitting it again."
 show lorem normal with dissolve
@@ -109,9 +109,9 @@ m "There was a moment of silence between us, then I noticed Lorem glancing aroun
 c "Are you looking for something?"
 Lo think "Yeah, do you not have a TV in your apartment?"
 c "No, it's been like this since the day I’ve arrived here, which included no TV."
-Lo "That seems a bit odd, pretty much every apartment here has a TV, why not yours?"
-c "Maybe to avoid culture shock, but they still gave me books, so I don’t really know."
-Lo "I don’t think we’ll know for certain, the reason I was looking was because the pizza might take a while to get here."
+Lo "That seems a bit odd, pretty much every apartment here has a TV. Why not yours?"
+c "Maybe to avoid culture shock? But they still gave me books, so I don’t really know."
+Lo "I don’t think we’ll know for certain. The reason I was looking was because the pizza might take a while to get here."
 Lo normal "You gave Ixomen back his Ipsum Sphere, so there isn't much to do except read, huh?"
 $ renpy.pause (1.0)
 show lorem shy with dissolve 
@@ -131,8 +131,8 @@ menu:
     
     "I'm telling Ipsum about that.":
         c "I'm telling Ipsum you said that."
-        Lo relieved "Please don’t, he’ll never let me live it down..."
-        c "I'm kidding, I won't... {w}probably."
+        Lo relieved "Please don’t. He’ll never let me live it down..."
+        c "I'm kidding, I won't... {w}Probably."
         $ renpy.pause (0.5)
 
 
@@ -140,7 +140,7 @@ Lo normal "Uh, anyway, there has to be something for us to do while we wait."
 c "Actually, there's something I wanted to ask you."
 Lo think "What is it?"
 c "You’re making your own game, so I'm assuming you know a lot about video games."
-Lo normal "Just a lot? I’ve been playing video games for most of my life, go ahead and ask anything."
+Lo normal "Just a lot? I’ve been playing video games for most of my life, so go ahead and ask anything."
 c "I actually wanted to know what video games are like for dragons in general, and how similar they are to human ones."
 Lo happy "Oh, well where do I begin..."
 scene black with dissolve
@@ -185,9 +185,9 @@ $ renpy.pause (1.5)
 show lorem think with dissolve 
 m "I continued eating, completely captivated by the pizza, but I snapped out of it when I noticed Lorem gazing out the window, fixated on something."
 c "What are you looking at?"
-Lo "Huh? Oh, I was just looking at the portal, I was thinking about the underground building attached to it."
+Lo "Huh? Oh, I was just looking at the portal. I was thinking about the underground building attached to it."
 Lo "I know we were there when Reza was, but we barely saw any of it, and being there at all made me really curious what else could be in there."
-c "Actually, there was an investigation done after what happened with Reza, that’s when it was found out that the portal is broken."
+c "Actually, there was an investigation done after what happened with Reza. That’s when it was found out that the portal is broken."
 Lo sad "Oh, [player_name], I'm really sorry for bringing that up..."
 c "Lorem, don’t worry about it, like I said before, I'm fine."
 Lo "I know... But still, sorry."
@@ -203,7 +203,7 @@ c "Sadly no, the portal is broken for good, but no one else has to know that."
 Lo sad "..."
 Lo think "Do you really want to check what's down there?"
 c "I have to admit, I am pretty curious too."
-Lo "Alright then, yeah, maybe we could."
+Lo "Alright then. Yeah, maybe we could."
 c "We can go later then, when there’s less people outside that could see us."
 Lo "Good call."
 $ renpy.pause (0.5)
@@ -212,9 +212,9 @@ hide lorem with dissolve
 scene black with dissolveslow 
 $ renpy.pause (1.5)
 scene o2 at Pan((0, 0), (0, 250), 0.0) with dissolveslow
-$ renpy.pause (2.0)
+$ renpy.pause (1.0)
 show lorem normal with dissolve 
-Lo "I didn’t think that pizza would be so filling, what should we do with the rest of it?"
+Lo "I didn’t think that pizza would be so filling. What should we do with the rest of it?"
 c "We could just leave it in the fridge for later?"
 Lo "Sure."
 $ renpy.pause (0.3)
@@ -242,7 +242,7 @@ Lo think "Is that the comet?"
 c "Yeah, it is."
 $ renpy.pause (1.5)
 Lo sad "Are you sure we’ll be fine?"
-c "I'm confident we will be, with the power from the generator, and information from the PDA’s, the comet should be safely redirected."
+c "I'm confident we will be. With the power from the generator, and information from the PDA’s, the comet should be safely redirected."
 Lo relieved "Good..."
 $ renpy.pause (1.0)
 hide lorem with dissolve 
@@ -253,7 +253,7 @@ $ renpy.pause (1.5)
 m "I noticed as we got closer to the portal Lorem had gotten more and more apprehensive, so I tried to help them calm their nerves."
 menu:
     "I’ll protect you no matter what happens.":
-        c "Hey Lorem."
+        c "Hey, Lorem."
         Lo "Yeah?"
         c "You doing alright?"
         Lo "Uh, I'm just nervous about actually doing this..."
@@ -265,7 +265,7 @@ menu:
 
     "[[Make a joke.]":
         c "Lorem, why are you so nervous?"
-        Lo think "Oh, you noticed...? It’s just... what if we get caught, we’re technically trespassing, right?"
+        Lo think "Oh, you noticed...? It’s just... what if we get caught? We’re technically trespassing, right?"
         c "Really? That’s what you’re worried about?"
         c "Lorem, for someone to find us trespassing, they’d also have to be down there, right?"
         Lo "Right..."
@@ -279,9 +279,9 @@ menu:
 
     "You can hold my hand if you’re scared.":
         $ rnloremromance += 1
-        c "Lorem, you have no reason to be scared, I’ll be with you the entire time."
+        c "Lorem, you have no reason to be scared. I’ll be with you the entire time."
         Lo "I know..."
-        $ renpy.pause (1.5)
+        $ renpy.pause (2.0)
         c "You can hold my hand if you want."
         Lo shy "..."
         $ renpy.pause (1.5)
@@ -294,7 +294,7 @@ stop music fadeout 2.0
 scene hallway with dissolveslow
 $ renpy.pause (1.5)
 show lorem think with dissolve
-m "We made our way into the same corridor we confronted Reza in earlier, I took a look around and saw four rooms immediately around us."
+m "We made our way into the same corridor we confronted Reza in earlier. I took a look around and saw four rooms immediately around us."
 play music "mx/mysteryambience.ogg"
 
 # This is before the mini game starts, so the player can get the genreal layout
@@ -307,11 +307,11 @@ menu:
 
     "Maintenance room.":
         m "We went into the maintenance room, and straight away a few things stood out to us."
-        m "The primary generator that powered the facility and portal, an industrial looking pump and a large toolbox."
+        m "The primary generator that powered the facility, and portal, an industrial looking pump, and a large toolbox."
         label ryann_lorem2_lo7_before_maintenance:
         menu:
             "Look at generator.":
-                m "There was a very obvious sign next to the generator, “DO NOT BRING LIQUIDS NEAR, RISK OF CATASTROPHIC FAILURE.”"
+                m "There was a very obvious sign next to the generator, which said: “DO NOT BRING LIQUIDS NEAR, RISK OF CATASTROPHIC FAILURE.”"
                 show lorem think with dissolve
                 c "You’d think it’d be obvious enough not to bring liquids near anything electrical."
                 Lo relieved "Apparently not."
@@ -319,12 +319,12 @@ menu:
 
             "Look at pump.":
                 $ ryannpumpbefore = True
-                m "There was a label on the pump saying “Last scheduled maintenance done on 20...”"
+                m "There was a label on the pump saying: “Last scheduled maintenance done on 20...”"
                 m "The rest of the label was too faded to read, but judging by the look of the pump it was definitely a while ago."
                 c "(That’s not at all concerning...)"
 
             "Look at toolbox.":
-                m "Unsurprisingly, the toolbox had lots of useful tools in it, a crowbar, a heavy-duty pipe wrench, a claw hammer, some flex tape and more miscellaneous things."
+                m "Unsurprisingly, the toolbox had lots of useful tools in it, a crowbar, a heavy-duty pipe wrench, a claw hammer, some flex tape, and more miscellaneous things."
                 m "There was also a note on the toolbox, which said the following:"
                 m "“Someone keeps taking my tools without asking, so I'm keeping some in my quarters. If you want something you’ll actually have to ask,” - Otomo "
 
@@ -336,29 +336,29 @@ menu:
 
     "Lab.":
         scene ryannundergroundlab with dissolveslow
-        m "We walked into the lab, there was lots of high-tech machines I didn’t recognize or couldn’t understand at first glance."
-        m "The more obvious things were a security locker, some cardboard boxes piled in the corner and an indent in the wall with wires coming out of it."
+        m "We walked into the lab, and there was lots of high-tech machines I didn’t recognize or couldn’t understand at first glance."
+        m "The more obvious things were a security locker, some cardboard boxes piled in the corner, and an indent in the wall with wires coming out of it."
         label ryann_lorem2_lo7_before_lab:
         menu:
             "Look at security locker.":
-                m "The security locker was very sturdy, it looked like the only way to get in was a keycard scanner."
+                m "The security locker was very sturdy. It looked like the only way to get in was a keycard scanner."
                 m "I peeked inside through a small gap, but I couldn’t see much, there were random electrical components, an industrial valve, some storage boxes varying in size..."
 
             "Look at boxes." if not ryannlookedboxes:
                 $ ryannlookedboxes = True
-                c "(Reza must have used one of these boxes for the generator, why are they here though?)"
+                c "(Reza must have used one of these boxes for the generator. Why are they here though?)"
                 play sound "fx/rummage.wav"
                 m "Me and Lorem searched all the boxes, but they were all empty or had useless junk."
                 
             "Move boxes." if ryannlookedboxes and not ryannmovedboxes:
                 $ ryannmovedboxes = True
                 play sound "fx/box.wav"
-                m "We moved the boxes aside, and behind it was an eye washing station, I tried to turn it on but it wasn’t working for some reason."
-                m "The drain on the floor beneath it had a puddle of water on it, but it seemed like the drain wasn’t actually working, was it disabled as well, or just broken?"
+                m "We moved the boxes aside, and behind it was an eye washing station. I tried to turn it on but it wasn’t working for some reason."
+                m "The drain on the floor beneath it had a puddle of water on it, but it seemed like the drain wasn’t actually working. Was it disabled as well, or just broken?"
                 show lorem think with dissolve 
                 Lo "That’s a huge safety hazard."
                 c "Ipsum would be seething if he saw that."
-                Lo normal "Oh definitely."
+                Lo normal "Oh, definitely."
                 hide lorem with dissolve
 
             "Look at eye washing station." if ryannlookedboxes and ryannmovedboxes:
@@ -380,7 +380,7 @@ menu:
     
     "Meeting room.":
         scene whiteroom with dissolve 
-        m "We stepped into the meeting room, and there wasn't really anything exciting, there was a set of cabinets, a row of lockers and as expected a long table with chairs."
+        m "We stepped into the meeting room, and there wasn't really anything exciting. There was a set of cabinets, a row of lockers, and as expected a long table with chairs."
         label ryann_lorem2_lo7_before_meeting:
         menu:
             "Look at table.":
@@ -418,25 +418,25 @@ menu:
         menu:
             "Look at shelf.":
                 $ ryannlookedlist = True
-                m "The shelf had lots of things on it, mostly folders, documents and other pieces of paper with numerous things on them."
+                m "The shelf had lots of things on it, mostly folders, documents, and other pieces of paper with numerous things on them."
                 m "But most obviously a list, of presumably a maintenance worker."
                 nvl clear
                 window show
                 n "{b}List of things to fix:{/b}"
                 n "{b}High priority:{/b}"
-                n " - The coupling on the backup generator is loose so it can easily be taken out, the others are saying it's not an issue, but I know it is, since when were they the maintenance crew?"
+                n " - The coupling on the backup generator is loose so it can easily be taken out, the others are saying it's not an issue, but I know it is. Since when were they the maintenance crew?"
                 n "{b}Medium priority:{/b}"
-                n " - The pressure on the eye washing station in Lab A isn't optimal, I’ve disabled the drain and intake pipe with a pipe wrench for now until I fix it."
-                n " - One of those idiots put a crack in the casing of the primary generator, I put some duct tape on it for now as the risk for flooding or coolant leaking is low enough."
+                n " - The pressure on the eye washing station in Lab A isn't optimal. I’ve disabled the drain and intake pipe with a pipe wrench for now until I fix it."
+                n " - One of those idiots put a crack in the casing of the primary generator. I put some duct tape on it for now as the risk for flooding or coolant leaking is low enough."
                 n "{b}Low priority:{/b}"
-                n " - The Maintenance room pump is long overdue for scheduled maintenance, the risk of flooding is low enough and I have more urgent tasks before I can get to it."
+                n " - The Maintenance room pump is long overdue for scheduled maintenance. The risk of flooding is low enough and I have more urgent tasks before I can get to it."
                 window hide
                 nvl clear
                 $ renpy.pause (0.5)
                 jump ryann_lorem2_lo7_before_living
 
             "Look at footlocker.":
-                m "The footlocker was fairly small and made of solid steel, it had a pretty strong looking padlock on it too."
+                m "The footlocker was fairly small and made of solid steel. It had a pretty strong looking padlock on it too."
                 c "(No way we’re getting that open easily without the key.)"
                 jump ryann_lorem2_lo7_before_living
 
@@ -458,19 +458,19 @@ menu:
                 $ renpy.pause (3.5)
                 play music "mx/fervor.ogg"
                 m "The door started to jam, then suddenly fell with a loud crash, and soon after, the sound of running water."
-                m "I regained my bearings from the shock and noticed water had started leaking in from the wall next to the door, the impact from the door slamming must have partially ruptured the water pockets."
+                m "I regained my bearings from the shock and noticed water had started leaking in from the wall next to the door. The impact from the door slamming must have partially ruptured the water pockets."
                 Lo "Where is that water coming from?!"
                 c "It must be the water pockets surrounding the building!"
                 Lo "What?!"
                 c "There’s water pockets in the ground around the underground building, I thought with just the two of us it’d be safe enough."
                 c "(Wait... If the water touches the primary generator, we’ll never get out of here!)"
-                c "Lorem, we need to stop the water from touching the generator, it's our only chance at getting out of here."
+                c "Lorem, we need to stop the water from touching the generator. It's our only chance at getting out of here."
                 Lo "I-I..."
                 $ renpy.pause (1.5)
-                Lo sad "O-okay [player_name], w-what should we do?"
-                c "If the water touches the generator, it could stop working, or worse, we need to stop that."
+                Lo sad "O-Okay [player_name], w-what should we do?"
+                c "If the water touches the generator, it could stop working, or worse. We need to stop that."
                 Lo "How?!"
-                m "I turned around and had only then noticed another blast door further down the hall, limiting us to the same four rooms around us,{w} I took a second to think of our options..."
+                m "I turned around and had only then noticed another blast door further down the hall, limiting us to the same four rooms around us.{w} I took a second to think of our options..."
                 $ renpy.pause (1.5)
                 if ryannpumpbefore == True:
                     c "The pump... We need to activate the pump in the maintenance room, let's go!"
@@ -489,6 +489,8 @@ menu:
 #======================================================================================================================================================================================
 
 label ryann_lorem2_lo7_minigame_start:
+
+label ryann_lorem2_lo7_minigame_restart
 
 label ryann_lorem2_lo7_minigame_coridor:
 
@@ -618,6 +620,8 @@ menu:
                     $ ryanncurrentitem = "Nothing"
 
 
+        $ ryannlDisplayVar1 = ryannactionsremaining
+        $ ryannDisplayVar2 = ryanncurrentitem
         m "There were multiple different things to interact with on the face of the pump."
         menu:
             "Turn the valve clockwise." if not ryannpumpused:
@@ -895,9 +899,10 @@ menu:
                 m "The locker door was bent, but so was the crowbar."
                 show lorem think with dissolve
                 c "Damn, that crowbar must have been older than it looked, it's useless like this now."
+                $ ryanncurrentitem = "Nothing"
+                ryannDisplayVar2 = ryanncurrentitem
                 Lo "At least it held out long enough to open the locker."
                 c "Fair point."
-                $ ryanncurrentitem = "Nothing"
                 $ ryanncrowbarused = True
                 $ ryannhaskey = True
                 m "I looked through the now opened gap into the locker, there was a horizontal pole with what looked like a uniform and some kind of cloak on hung up on it."
@@ -923,11 +928,6 @@ menu:
                 elif ryanncurrentitem == "Claw hammer":
                     m "I swung the hammer at the lock, yet there wasn't any damage to it."
                     c "(That didn't work, I need to try something else...)"
-                    $ ryannactionsremaining -= 1
-                    jump ryann_lorem2_lo7_minigame_meeting
-
-                elif ryanncurrentitem == "Screwdriver":
-                    m "I searched around the locker trying to find the hinges, but when I eventually did I saw they were on the inside of the door, so there was no way to unscrew them."
                     $ ryannactionsremaining -= 1
                     jump ryann_lorem2_lo7_minigame_meeting
 
@@ -976,12 +976,12 @@ menu:
                 window show
                 n "{b}List of things to fix:{/b}"
                 n "{b}High priority:{/b}"
-                n " - The coupling on the backup generator is loose so it can easily be taken out, the others are saying it's not an issue, but I know it is, since when were they the maintenance crew?"
+                n " - The coupling on the backup generator is loose so it can easily be taken out, the others are saying it's not an issue, but I know it is. Since when were they the maintenance crew?"
                 n "{b}Medium priority:{/b}"
-                n " - The pressure on the eye washing station in Lab A isn't optimal, I’ve disabled the drain and intake pipe with a pipe wrench for now until I fix it."
-                n " - One of those idiots put a crack in the casing of the primary generator, I put some duct tape on it for now as the risk for flooding, or coolant leaking is low enough."
+                n " - The pressure on the eye washing station in Lab A isn't optimal. I’ve disabled the drain and intake pipe with a pipe wrench for now until I fix it."
+                n " - One of those idiots put a crack in the casing of the primary generator. I put some duct tape on it for now as the risk for flooding, or coolant leaking is low enough."
                 n "{b}Low priority:{/b}"
-                n " - The Maintenance room pump is long overdue for scheduled maintenance, the risk of flooding is low enough and I have more urgent tasks before I can get to it."
+                n " - The Maintenance room pump is long overdue for scheduled maintenance. The risk of flooding is low enough and I have more urgent tasks before I can get to it."
                 window hide
                 nvl clear
                 $ renpy.pause (0.5)
@@ -1201,7 +1201,7 @@ $   ryannlookedcabinet = False
 $   ryannlookedlist = False 
 
 play music "mx/fervor.ogg"
-jump ryann_lorem2_lo7_minigame_start
+jump ryann_lorem2_lo7_minigame_restart
 
 
 #======================================================================================================================================================================================
