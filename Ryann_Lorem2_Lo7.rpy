@@ -495,7 +495,7 @@ m "This minigame works on a held item/inventory system. You can only “hold” 
 m "Certain items don’t take up the “held item” slot and are kept once gotten, you just need to use them in the right place. Some items are needed to win the minigame, and some provide other useful benefits. When a “held item” is used, it will not reappear in its original position, unless the minigame is reset."
 $ renpy.pause (0.5)
 
-label ryann_lorem2_lo7_minigame_restart
+label ryann_lorem2_lo7_minigame_restart:
 
 label ryann_lorem2_lo7_minigame_coridor:
 
@@ -905,7 +905,7 @@ menu:
                 show lorem think with dissolve
                 c "Damn, that crowbar must have been older than it looked, it's useless like this now."
                 $ ryanncurrentitem = "Nothing"
-                ryannDisplayVar2 = ryanncurrentitem
+                $ ryannDisplayVar2 = ryanncurrentitem
                 Lo "At least it held out long enough to open the locker."
                 c "Fair point."
                 $ ryanncrowbarused = True
