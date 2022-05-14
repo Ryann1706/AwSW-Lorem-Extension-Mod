@@ -5,7 +5,7 @@ from modloader.modclass import Mod, loadable_mod
 @loadable_mod
 class AWSWMod(Mod): 
     name="Lorem Ipsun't"
-    version="v1.0"
+    version="v1.2"
     author="Ryann1706"
     nsfw=False
     dependencies = ["MagmaLink"]
