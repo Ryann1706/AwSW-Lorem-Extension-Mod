@@ -493,6 +493,7 @@ $ renpy.pause (0.5)
 play sound "fx/system3.wav"
 m "This minigame works on a held item/inventory system. You can only “hold” one item at a time. If you pick up a new item while already “holding” one, the old item will return to the original opposition you found it, and the new one will become your new “held item”."
 m "Certain items don’t take up the “held item” slot and are kept once gotten, you just need to use them in the right place. Some items are needed to win the minigame, and some provide other useful benefits. When a “held item” is used, it will not reappear in its original position, unless the minigame is reset."
+m "Good luck!"
 $ renpy.pause (0.5)
 
 label ryann_lorem2_lo7_minigame_restart:
@@ -545,7 +546,7 @@ menu:
     "Check on blast door.":
         $ ryannactionsremaining -= 1
         if ryanncurrentitem == "Crowbar":
-            m "I tried to find a spot on the door to leverage the crowbar, but the blast door was too close to the ground to even try to get it underneath, even if I could, the door is far too heavy to move by hand."
+            m "I tried to find a spot on the door to leverage the crowbar, but the blast door was too close to the ground to even try to get it underneath. Even if I could, the door is far too heavy to move by hand."
         elif ryanncurrentitem == "Pipe wrench":
             play sound "fx/ryannmetalhit.mp3"
             m "I swung the pipe wrench at the blast door, but there wasn't even the slightest scratch or dent in it. I needed to try something else."
@@ -553,7 +554,7 @@ menu:
             play sound "fx/ryannmetalhit.mp3"
             m "I swung the claw hammer at the blast door, but there wasn't even the slightest scratch or dent in it. I needed to try something else."
         else:
-            m "The blast door in the corridor was made of a thick sturdy metal, there was no way we were opening it by ourselves, we needed to find another way."
+            m "The blast door in the corridor was made of a thick sturdy metal, there was no way we were opening it by ourselves. We needed to find another way."
 
         jump ryann_lorem2_lo7_minigame_coridor
 
@@ -571,16 +572,16 @@ menu:
         if ryanntapeused == True:
             m "The tape I put on the generator casing wasn't enough to stop the water, but it will at least buy us some time."
         elif ryannlookedlist == True:
-            m "Upon closer inspection of the generator, I noticed the duct tape on the casing of it, it looked extremely old and like it would fall off any second."
+            m "Upon closer inspection of the generator, I noticed the duct tape on the casing of it. It looked extremely old and like it would fall off any second."
             if ryanncurrentitem == "Flex tape":
                 $ ryanntapeused = True
                 $ ryannactionsremaining += 10
-                m "I used a generous amount of flex tape on the crack on the casing, it wouldn’t be enough to stop the water from spilling over the top, but it would at least buy us some time."
+                m "I used a generous amount of flex tape I had on the crack on the casing. It wouldn’t be enough to stop the water from spilling over the top, but it would at least buy us some time."
                 c "(There's barely any of this tape left now, and definitely not enough of it left to be useful.)"
                 $ ryanncurrentitem = "Nothing"
 
             else:
-                c "(That tape wont stop any water anytime soon anymore, maybe we could do something about it?)"
+                c "(That tape wont stop any water anytime soon anymore. Maybe we could do something about it?)"
             
         else:
             c "(If the water touches this, we're screwed... {w}I can't let Lorem know that, they seem scared enough already...)"
@@ -613,14 +614,14 @@ menu:
             elif ryanncurrentitem == "Valve":
                 if ryannscrewdriveratpump == False:
                     $ ryannvalveatpump = True 
-                    m "I slotted the valve into it's slot and tried to turn it, it did turn but it was extremely loose."
+                    m "I slotted the valve into it's slot and tried to turn it. It did turn but it was extremely loose."
                     m "I then noticed another flathead shaped slot on the valve."
                     c "(This must need a screwdriver to be tightened, so I'll leave the valve here for now.)"
                     $ ryanncurrentitem = "Nothing"
 
                 else:
                     $ ryannpumpfixed = True
-                    m "As I put the valve into its slot, I noticed another flathead like slot on the valve, I took the screwdriver and tightened it."
+                    m "As I put the valve into its slot, I noticed another flathead like slot on the valve. I took the screwdriver and tightened it."
                     m "After a slight shake to make sure it was fitted properly, I was confident enough that it would work."
                     $ ryanncurrentitem = "Nothing"
 
@@ -648,7 +649,7 @@ menu:
             "Turn the valve counterclockwise." if not ryannpumpused:
                 $ ryannactionsremaining -= 1
                 $ ryannpumpused = True
-                m "I tried to turn the valve, it took a lot of force as it was stuck from the amount of rust on it, it eventually did give way though..."
+                m "I tried to turn the valve, it took a lot of force as it was stuck from the amount of rust on it. It eventually did give way though..."
                 $ renpy.pause (0.5)
                 play sound "fx/creak3.ogg"
                 $ renpy.pause (3.5)
@@ -719,7 +720,7 @@ menu:
 
 
     "Check toolbox.":
-        m "I looked through the toolbox and found some things that could be useful, there was also a note on the toolbox."
+        m "I looked through the toolbox and found some things that could be useful. There was also a note on the toolbox."
         menu:
             m "Should I take anything?"
 
@@ -773,26 +774,26 @@ menu:
     "Check security locker.":
         $ ryannactionsremaining -= 1
         if ryanncurrentitem == "Valve" or ryannvalveatpump == True:
-            m "I looked through the locker again but couldn't find anything else useful."
+            m "I looked through the locker again, but couldn't find anything else useful."
 
         elif ryannhaskeycard == True:
             if ryannpumpused == True:
                 play sound "fx/ryannpickuptool.mp3"
-                m "Using the keycard I had gotten earlier I opened the locker, I spotted a spare valve and took it immediately, not caring much for anything else inside."
+                m "Using the keycard I had gotten earlier I opened the locker. I spotted a spare valve and took it immediately, not caring much for anything else inside."
 
             else:
                 play sound "fx/ryannpickuptool.mp3"
-                m "Using the keycard I had gotten earlier I opened the locker, the only thing that seemed like it could be useful was a spare valve, the other random components and storage boxes didn't."
+                m "Using the keycard I had gotten earlier I opened the locker. The only thing that seemed like it could be useful was a spare valve, the other random components and storage boxes didn't."
 
             $ ryanncurrentitem = "Valve"
 
         elif ryanncurrentitem == "Crowbar":
-            m "Despite my best efforts using the crowbar, the locker was too sturdy to be forced open, it seemed like trying to find the keycard was our only option."
-            m "I could at least peek inside the locker through a small gap, but I couldn’t see much, there were random electrical components, a valve, and some storage boxes varying in size."
+            m "Despite my best efforts using the crowbar, the locker was too sturdy to be forced open. It seemed like trying to find the keycard was our only option."
+            m "I could at least peek inside the locker through a small gap, but I couldn’t see much. There were random electrical components, a valve, and some storage boxes varying in size."
 
         else:
-            m "The security locker was very sturdy, it looked the only way to get in was a keycard scanner."
-            m "I peeked inside through a small gap, but I couldn’t see much, there were random electrical components, a valve, and some storage boxes varying in size."
+            m "The security locker was very sturdy. It looked the only way to get in was a keycard scanner."
+            m "I peeked inside through a small gap, but I couldn’t see much. There were random electrical components, a valve, and some storage boxes varying in size."
 
         jump ryann_lorem2_lo7_minigame_lab
 
@@ -814,16 +815,16 @@ menu:
     "Look at eye washing station." if ryannlookedboxes and ryannmovedboxes:
         $ ryannactionsremaining -= 1
         if ryanncurrentitem == "Pipe wrench":
-            m "I looked at the drain beneath the eye washing station yet it wasn't draining any water from the room."
-            m "After a bit of seaching, I saw a pipe with a nut on it leading to the drain, I firmly tightend the pipe wrench around it and loosened it."
-            m "Some air bubbles came up from the drain, then a small stream of water started flowing down the pipe, not enough to stop the water, but enough to buy us some time."
-            m "I tried to retrieve the pipe wrench from the pipe, but it was stuck, probably from being tightened too much, we left it as we didnt have the time to spare getting it unstuck."
+            m "I looked at the drain beneath the eye washing station, yet it wasn't draining any water from the room."
+            m "After a bit of seaching, I saw a pipe with a nut on it leading to the drain. I firmly tightend the pipe wrench around it and loosened it."
+            m "Some air bubbles came up from the drain, then a small stream of water started flowing down the pipe. Not enough to stop the water, but enough to buy us some time."
+            m "I tried to retrieve the pipe wrench from the pipe, but it was stuck. Probably from being tightened too much. We left it as we didnt have the time to spare getting it unstuck."
             $ ryanncurrentitem = "Nothing"
             $ ryannwrenchused = True 
             $ ryannactionsremaining += 10
 
         elif ryannwrenchused == True:
-            m "The small drain underneath the eye washing station was draining a small amount of water from the room, not much but it was better than nothing."
+            m "The small drain underneath the eye washing station was draining a small amount of water from the room. Not much but it was better than nothing."
 
         else:
             m "I tried to see if the eye washing station was working, but it wasn't. It's not like we needed more water now anyway..."
@@ -874,7 +875,7 @@ menu:
             m "I picked it up, hoping to find a use for it."
 
         else:
-            m "I searched the papers again, yet as expected there wasn't anything else useful."
+            m "I searched the papers again, yet as expected, there wasn't anything else useful."
 
         $ ryannactionsremaining -= 1
         jump ryann_lorem2_lo7_minigame_meeting
@@ -898,19 +899,19 @@ menu:
             if ryanncurrentitem == "Crowbar":
                 m "I jammed the crowbar into the top corner of the locker and began to force it open."
                 play sound "fx/ryannusecrowbar.mp3"
-                m "It was working for the most part and the locker door was begining to bend, {w}then suddenly the crowbar slipped."
+                m "It was working for the most part and the locker door was begining to bend. {w}Then suddenly the crowbar slipped."
                 play sound "fx/metalbox.ogg"
                 $ renpy.pause (1.0)
                 m "The locker door was bent, but so was the crowbar."
                 show lorem think with dissolve
-                c "Damn, that crowbar must have been older than it looked, it's useless like this now."
+                c "Damn, that crowbar must have been older than it looked. It's useless like this now."
                 $ ryanncurrentitem = "Nothing"
                 $ ryannDisplayVar2 = ryanncurrentitem
                 Lo "At least it held out long enough to open the locker."
                 c "Fair point."
                 $ ryanncrowbarused = True
                 $ ryannhaskey = True
-                m "I looked through the now opened gap into the locker, there was a horizontal pole with what looked like a uniform and some kind of cloak on hung up on it."
+                m "I looked through the now opened gap into the locker. There was a horizontal pole with what looked like a uniform, and some kind of cloak on hung up on it."
                 m "Ironically, there was also a key on a small shelf at the top of the locker. I took it and put it in one of my pockets, grateful I might not need to use brute force to open another lock."
                 hide lorem with dissolve
                 $ ryannactionsremaining -= 1
@@ -932,7 +933,7 @@ menu:
 
                 elif ryanncurrentitem == "Claw hammer":
                     m "I swung the hammer at the lock, yet there wasn't any damage to it."
-                    c "(That didn't work, I need to try something else...)"
+                    c "(That didn't work. I need to try something else...)"
                     $ ryannactionsremaining -= 1
                     jump ryann_lorem2_lo7_minigame_meeting
 
@@ -966,12 +967,12 @@ menu:
         menu:
             "Look at blueprint.":
                 $ ryannactionsremaining -= 1
-                m "There was a blueprint of the underground building, at first I was expecting to learn something useful from it, but I was surely disappointed."
+                m "There was a blueprint of the underground building one of the shelfs. At first I was expecting to learn something useful from it, but I was surely disappointed."
                 m "It either showed us stuff we already knew, like the four rooms connected to the coridor, or something that we couldn't access, like an exit ladder behind the second blast door."
 
             "Check folders.":
                 $ ryannactionsremaining -= 1
-                m "There was an entire shelf decicated just to folders, just from skimming the labels on them, I doubted they could help us."
+                m "There was an entire shelf decicated just to folders. Just from skimming the labels on them, I doubted they could help us."
 
             "Look at maintenance list.":
                 $ ryannlookedlist = True 
@@ -1016,12 +1017,12 @@ menu:
 
             elif ryanncurrentitem == "Crowbar":
                 $ ryannactionsremaining -= 1
-                m "I tried to use the crowbar to force open the footlocker, but it was too small to get some proper leverage on it, even if I could, it's made of solid steel."
-                c "(This isn't working, maybe I could try and find the key?)"
+                m "I tried to use the crowbar to force open the footlocker, but it was too small to get some proper leverage on it. Even if I could, it's made of solid steel."
+                c "(This isn't working. Maybe I could try and find the key?)"
                 jump ryann_lorem2_lo7_minigame_living
 
             else:
-                c "(I doubt the key would be too far from here, maybe we should look around for it?)"
+                c "(I doubt the key would be too far from here. Maybe we should look around for it?)"
                 jump ryann_lorem2_lo7_minigame_living
 
 
@@ -1034,7 +1035,7 @@ menu:
             else:
                 if rnunlockedfootlocker == False:
                     $ rnunlockedfootlocker = True
-                    m "Using the key I got earlier I unlocked the footlocker, inside it were some personal items and some tools."
+                    m "Using the key I got earlier I unlocked the footlocker. Inside it were some personal items and some tools."
                     m "Out of all the tools only the screwdriver seemed useful."
                     $ ryanncurrentitem = "Screwdriver"
                     $ ryannactionsremaining -= 1
@@ -1063,13 +1064,13 @@ menu:
                 play sound "fx/keyboard.ogg"
                 $ renpy.pause (3.5)
                 play sound "fx/system3.wav"
-                s "ERROR: Can not deactive lockdown, water detected in: Compartment A"
+                s "ERROR: Can not deactive lockdown. Water detected in: Compartment A"
                 s "Contact maintenance for immediate assistance."
                 jump ryann_lorem2_lo7_minigame_laptop
 
             "Enter search term:":
                 play sound "fx/system3.wav"
-                s "Lockdown search engine engaged, search terms limited, lowercase input only. Type \"help\" for help."
+                s "Lockdown search engine engaged. Search terms limited. Lowercase input only. Type \"help\" for help."
                 $ ryannsearchterm = renpy.input(_("Enter search term:"))
                 play sound2 "fx/keyboard.ogg"
                 $ renpy.pause (3.5)
@@ -1116,8 +1117,8 @@ menu:
                             jump ryann_lorem2_lo7_minigame_manual
 
                         "Emergencies":
-                            s "In the case of an emergency, an automatic lockdown will engage, see \"Lockdown\" for more information."
-                            s "Necessary equipment, machinery and tools can be found per compartment to resolve an emergency."
+                            s "In the case of an emergency, an automatic lockdown will engage. See \"Lockdown\" for more information."
+                            s "Necessary equipment, machinery and tools, can be found per compartment to resolve an emergency."
                             s "If not, contact a maintenance crew member."
                             $ ryannactionsremaining -=1
                             jump ryann_lorem2_lo7_minigame_manual
@@ -1140,21 +1141,21 @@ menu:
                 elif ryannsearchterm == "sos" or ryannsearchterm == "emergency":
                     play sound "fx/system3.wav"
                     s "In emergency situations, consult the manual or contact a maintenance crew worker."
-                    s "In the event a emergency is detected, an automatic lockdown will engage, consult manual for more information."
+                    s "In the event a emergency is detected, an automatic lockdown will engage. Consult manual for more information."
 
                 elif ryannsearchterm == "power" or ryannsearchterm == "generator":
                     play sound "fx/system3.wav"
                     s "Primary generator status: Optimal"
-                    s "Backup generator status: ERROR: Generator not found, contact maintenace crew member immediately."
+                    s "Backup generator status: ERROR: Generator not found. Contact maintenace crew member immediately."
 
                 elif ryannsearchterm == "status":
                     play sound "fx/system3.wav"
                     s "Prossesing..."
-                    s "Water detected in [[Compartment A], contact maintenance crew member immediately."
+                    s "Water detected in [[Compartment A]. Contact maintenance crew member immediately."
 
                 else:
                     play sound "fx/system3.wav"
-                    s "ERROR: Lockdown search mode engaged, search terms limited, type \"help\" for help."
+                    s "ERROR: Lockdown search mode engaged. Search terms limited. Type \"help\" for help."
 
                 jump ryann_lorem2_lo7_minigame_laptop
 
@@ -1180,7 +1181,7 @@ $ renpy.pause (1.5)
 play sound "fx/explosion.ogg"
 $ renpy.pause (7.5)
 Rnn "That didn't go so well, huh?"
-Rnn "Don't worry, there's no shame in trying again, I won't tell anyone."
+Rnn "Don't worry, there's no shame in trying again. I won't tell anyone."
 Rnn "At least you're not going in completely blind this time. Good luck!"
 $ renpy.pause (2.0)
 
@@ -1221,13 +1222,13 @@ hide screen ryannextrainfo
 stop music fadeout 2.0
 m "With the pump restarted, and the new valve being turned, the pump came to life."
 play sound "fx/system3.wav"
-s "Primary pump active, draining system initiated."
+s "Primary pump active. Draining system initiated."
 m "The water level in the room started to slowly, but surely decrease."
 show lorem think with dissolve 
 Lo think "D-Did we do it...?"
 c "I think we did!"
 Lo relieved "Thank goodness... But how do we get out now?"
-c "I think that laptop might be able to do something."
+c "I think that laptop might be able to do something now."
 Lo "Lets go then... I just really want to get out of here..."
 $ renpy.pause (1.0)
 scene sec with dissolveslow
@@ -1240,18 +1241,18 @@ s "Welcome user, \"[player_name]\"."
 s "Deactivating lockdown..."
 s "New familiar user “Lorem” defined..."
 $ renpy.pause (1.0)
-m "We heard the sound of the door opening and left immediately, not wanting to be stuck down there in case anything else happened."
+m "We heard the sound of the door opening and left immediately. Not wanting to be stuck down there in case anything else happened."
 scene hallway with dissolveslow
 $ renpy.pause (1.5)
 if not ryanncurrentitem == "Nothing":
     if ryanncurrentitem == "Pipe wrench":
-        m "As we were leaving, I tossed the pipe wrench on the ground, not wanting any reminder of this place, or anything that happened here."
+        m "As we were leaving, I tossed the pipe wrench on the ground. Not wanting any reminder of this place, or anything that happened here."
 
     elif ryanncurrentitem == "Flex tape":
-        m "As we were leaving, I tossed the tape on the ground, not wanting any reminder of this place, or anything that happened here."
+        m "As we were leaving, I tossed the tape on the ground. Not wanting any reminder of this place, or anything that happened here."
         
     elif ryanncurrentitem == "Claw hammer":
-        m "As we were leaving, I tossed the claw hammer on the ground, not wanting any reminder of this place, or anything that happened here."
+        m "As we were leaving, I tossed the claw hammer on the ground. Not wanting any reminder of this place, or anything that happened here."
 
 else:
     pass
@@ -1259,7 +1260,7 @@ else:
 scene np2y with dissolveslow
 play sound "fx/steps/rough_gravel.wav"
 $ renpy.pause (1.5)
-m "The walk back to my apartment was dead silent, both of us were still too shaken to even try to talk about anything."
+m "The walk back to my apartment was dead silent. Both of us were still too shaken to even try to talk about anything."
 $ renpy.pause (1.0)
 scene np5 with dissolveslow
 $ renpy.pause (2.0)
@@ -1268,22 +1269,22 @@ $ renpy.pause (4.0)
 show lorem sad with dissolve
 $ renpy.pause (1.5)
 play sound "fx/undress.ogg"
-m "We entered my apartment and sat on the couch, still in complete silence."
-m "I managed to at least partially compose myself, unlike Lorem who still seemed quite unsettled."
+m "We entered my apartment and sat on the couch. Still in complete silence."
+m "I managed to at least partially compose myself, unlike Lorem, who still seemed quite unsettled."
 menu:
     "[[Put your arm around them.]":
         $ rnloremromance += 1
         play sound "fx/undress.ogg"
         m "I leaned over to the little dragon and put my arm around them, to help console them over what had just happened."
         m "They moved closer to me, resting at my side."
-        m "We sat together in silence, me listening to Lorem's breathing slow as they gradually calmed down."
+        m "We sat together in silence. Me listening to Lorem's breathing slow as they gradually calmed down."
         m "After a while they moved away and broke the silence."
 
     "[[Get the leftover pizza.] ":
-        m "I noticed I was fairly hungry and remembered about the pizza we had earlier, I thought Lorem might enjoy it too, and help him settle down."
+        m "I noticed I was fairly hungry and remembered about the pizza we had earlier. I thought Lorem might enjoy it too, and help him settle down."
         m "I got the box out of the fridge, and brought it out to the couch we were sitting on."
         m "Neither of us said anything, we just ate the pizza, which surprisingly, was still amazing despite being chilled from the fridge."
-        Lo relieved "This is exactly what I needed, it's so much better after what just happened."
+        Lo relieved "This is exactly what I needed. It's so much better after what just happened."
         $ renpy.pause (0.5)
         show lorem sad with dissolve 
         m "We sat in silence after eating, and Lorem eventually broke it."
@@ -1307,13 +1308,13 @@ if rnloremromance > 7:
     Lo relieved "But that’s the problem..."
     show lorem sad with dissolve 
     $ renpy.pause (2.0)
-    Lo blush "I have feelings for you, I-I like you as more than a friend..."
+    Lo blush "I have feelings for you. I-I like you as more than a friend..."
     $ renpy.pause (1.5)
     show lorem normal blush with dissolve 
     m "Lorem and I looked deeply into each other's eyes, theirs having a hint of fear of being rejected, yet also hope and relief of finally telling me their true feelings."
     c "Lorem..."
     $ renpy.pause (1.5)
-    c "I feel the same, I like you as more than a friend too."
+    c "I feel the same. I like you as more than a friend too."
     Lo "R-Really...?"
     m "I gently put my hand under Lorem’s chin, guiding their lips to mine, pulling them into a passionate kiss."
     show lorem shy with dissolve 
@@ -1323,21 +1324,21 @@ if rnloremromance > 7:
     show lorem normal blush with dissolve 
     m "We slowly parted; eyes still locked."
     c "Really."
-    Lo relieved "That’s such a relief, I was worried you wouldn’t feel the same because of me being a hermaphrodite."
+    Lo relieved "That’s such a relief. I was worried you wouldn’t feel the same because of me being a hermaphrodite."
     c "Remember what I said when you told me? I don’t mind at all."
     show lorem normal blush with dissolve 
 
 
 elif rnloremromance > 3:
     Lo think "It’s just... I wanted to make sure of something..."
-    Lo "I'm just unsure of what you think of me, it's hard to tell if you’re implying something or if it's just a human thing, so I’ll just be blunt and ask..."
+    Lo "I'm just unsure of what you think of me. It's hard to tell if you’re implying something, or if it's just a human thing I'm misinterpreting, so I’ll just be blunt and ask..."
     $ renpy.pause (2.0)
     Lo blush "Do... Do you see me as more than just a friend...?"
     $ renpy.pause (2.0)
     menu:
         "I like you as more than a friend":
             $ renpy.pause (1.0)
-            c "Yes, I do, I see you as more than a friend."
+            c "Yes, I do. I see you as more than a friend."
             Lo shy "W-Wait, really...?"
             Lo "B-But what about me being a hermaphrodite?"
             c "Remember what I said when you told me? I don’t mind at all."
@@ -1346,7 +1347,7 @@ elif rnloremromance > 3:
             show lorem shy with dissolve 
             m "Lorem seemed flustered, yet still copied my actions, the two of us getting closer to each other by the second."
             show lorem sleep blush with dissolve 
-            m "We closed our eyes, and our lips made contact, I put my hand around the back of Lorem’s neck, as they grabbed my shoulder, pulling me closer."
+            m "We closed our eyes, and our lips made contact. I put my hand around the back of Lorem’s neck, as they grabbed my shoulder, pulling me closer."
             show lorem normal blush with dissolve
             m "We stayed like that for several long seconds, until we both slowly pulled away, still staring into each other's eyes."
             c "Do you believe me now?"
@@ -1359,7 +1360,7 @@ elif rnloremromance > 3:
             c "I like you as just a friend."
             show lorem normal with dissolve
             c "Obviously being different species, we’d have different ways of living and different social standards, which I think is what’s causing the misunderstanding. Sorry for confusing you on where we stand."
-            Lo "Ah, that makes sense. Also, you don’t have to apologize for that. I just wanted to be sure how you felt about me."
+            Lo "Ah, that makes sense. Also, you don’t have to apologize for that. I just wanted to be sure how you felt about me. Like I said, I thought I could have just been misinterpreting a human thing."
             $ renpy.pause (1.0)
             show lorem think with dissolve
             $ renpy.pause (1.0)
@@ -1372,7 +1373,7 @@ else:
     label ryann_lorem2_lo7_friendship_merge:
     Lo sad "I don’t really have many other friends other than you and Ipsum, and no one else who knows I’m a hermaphrodite."
     Lo normal "But I’m glad that after what just happened, I know that you’ll have my back no matter what."
-    c "Of course, Lorem, that’s what friends do for each other, I'm glad to know you’ll be by my side no matter what too."
+    c "Of course, Lorem, that’s what friends do for each other. I'm glad to know you’ll be by my side no matter what too."
     c "One question though, does this mean I outrank Ipsum now?"
     Lo think "Hmm..."
     Lo normal "To stop anyone from being jealous, I’ll say you’re on par."
@@ -1399,12 +1400,12 @@ if rnloremromance > 3:
     Lo blush "D-Do you want to... {w}share the bed...?"
     m "I turned back around and faced Lorem."
     $ renpy.pause (1.5)
-    c "Sure Lorem."
+    c "Sure, Lorem."
     $ renpy.pause (1.0)
     play sound "fx/undress.ogg"
     show lorem shy with dissolve
     m "I started to get undressed, and as expected, Lorem got their usual adorable flustered look."
-    m "I got into the bed, and made short work of reducing the gap between us, after some slight hesitation Lorem did too, nuzzling themselves into me."
+    m "I got into the bed, and made short work of reducing the gap between us. After some slight hesitation Lorem did too, nuzzling themselves into me."
     show lorem blush with dissolve
     $ renpy.pause (1.0)
     Lo "I didn’t know humans were so... warm, and soft, and cuddly..."
@@ -1423,13 +1424,13 @@ if rnloremromance > 3:
 
 else:
     m "I grabbed a spare blanket and turned to Lorem before leaving the room." 
-    c "Goodnight Lorem."
-    Lo "Goodnight [player_name]."
+    c "Goodnight, Lorem."
+    Lo "Goodnight, [player_name]."
     hide lorem with dissolve
     $ renpy.pause (0.5)
     m "I made my way to the living room and started to prepare my own bed, setting the blanket down on the couch."
     play sound "fx/undress.ogg"
-    m "I settled down, and after struggling for a while I eventually found a comfortable sleeping position."
+    m "I settled down, and after struggling for a while, I eventually found a comfortable sleeping position."
     m "I looked out the window, and was alone with my thoughts."
     c "(I really am staying in the dragon's world permanently...)"
     c "(The thought alone would upset me... {w}But I'm glad I don't have to say goodbye to Lorem...)"
@@ -1448,7 +1449,7 @@ if rnloremromance > 3:
     show lorem sleep with dissolveslow
     $ renpy.pause (0.5)
     m "The adorable small dragon clinging to me was a pretty good reminder though."
-    m "Me and Lorem had moved during the night, so they were now lying on top of me, their small tail wrapped around my leg, and wings unfolded, covering me like a scaly blanket."
+    m "Me and Lorem had moved during the night, so they were now lying on top of me. Their small tail wrapped around my leg, and wings unfolded, covering me like a scaly blanket."
     m "I hadn’t the heart to wake them."
     $ renpy.pause (3.5)
     m "After a while of being Lorem’s personal pillow, I made sure my movements getting up were very slow and careful as not to wake Lorem."
@@ -1472,8 +1473,8 @@ scene ryannkitchen with dissolveslow
 m "After making my way to the kitchen and scouring the fridge and cabinets, I came up with the makings of a decent breakfast."
 m "As I began to prepare it, I heard a set of small footsteps behind me."
 show lorem normal flip at left with easeinleft
-Lo "Hey [player_name]..."
-c "Morning Lorem, you can wait in the living room, I’ll be out in a few minutes."
+Lo "Hey, [player_name]..."
+c "Morning, Lorem. You can wait in the living room. I’ll be out in a few minutes."
 Lo "Mhmm."
 show lorem normal with dissolve
 $ renpy.pause (0.3)
@@ -1495,7 +1496,7 @@ if rnloremromance > 3:
     $ renpy.pause (1.5)
     m "I leaned over to Lorem and gave them a quick peck on the cheek."
     show lorem shy with dissolve
-    c "Maybe we don't have to say anything, and we can just enjoy this together, we don't need to overthink it."
+    c "Maybe we don't have to say anything, and we can just enjoy this together. We don't need to overthink it."
     show lorem normal blush with dissolve
     $ renpy.pause (1.5)
     Lo "Yeah, maybe you're right."
@@ -1517,7 +1518,7 @@ if rnloremromance > 3:
             c "Maybe I will, just for you."
             $ renpy.pause (3.0)
             stop sound fadeout 3.5
-            m "I stopped after a while, and consequentially the purring did too, Lorem sighed, then moved away slightly to look up at me."
+            m "I stopped after a while, and consequentially the purring did too. Lorem sighed, then moved away slightly to look up at me."
 
         "Just cuddle.":
             m "I didn’t want to rush things and possibly make Lorem uncomfortable, so we continued to cuddle together on the couch."
@@ -1548,17 +1549,17 @@ else:
     Lo relieved "You managed to be brave and stay calm, while I was scared, like a coward."
     c "Lorem, you aren’t a coward, and I can tell you why."
     Lo "You don’t need to lie to make me feel better, I know I was scared and afraid the entire time we were down there..."
-    c "Exactly, you were scared, but that doesn't mean you’re a coward, if you really were, you wouldn’t have done anything, yet you did."
+    c "Exactly, you were scared, but that doesn't mean you’re a coward. If you really were, you wouldn’t have done anything, yet you did."
     show lorem think with dissolve 
-    c "A coward would have just given up, but despite being scared and having little hope, you didn’t give in and persevered, that’s true bravery."
+    c "A coward would have just given up, but despite being scared and having little hope, you didn’t give in and persevered. That’s true bravery."
     Lo "..."
     Lo normal "You’re right, I just thought that because I was comparing myself to how fearless you were."
     c "Oh, no, I was scared too."
     Lo think "Really? It definitely didn’t seem that way."
     c "I just didn’t show it because I knew the impact of how I reacted would have had on you."
-    Lo normal "Well, I'm glad you did, that whole situation definitely could have ended a lot worse."
+    Lo normal "Well, I'm glad you did. That whole situation definitely could have ended a lot worse."
     c "Yeah..."
-    Lo think "So, that’s... four times you’ve saved my life now? From Reza, the store when that shelf fell on me, in the underground building and soon enough, the comet."
+    Lo think "So, that’s... four times you’ve saved my life now? From Reza, the store when that shelf fell on me, in the underground building, and soon enough, the comet."
     c "And you saved mine by telling me to throw the Ixomen Sphere at Reza."
     Lo normal "Heh, after saving each other that much we must be bonded for life then, huh?"
     c "I guess so."
