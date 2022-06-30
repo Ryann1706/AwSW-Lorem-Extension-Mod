@@ -118,9 +118,9 @@ show lorem shy with dissolve
 $ renpy.pause (1.0)
 Lo "Uh... Forget you heard that."
 menu:
-    "You’re adorable.":
+    "You’re so cute.":
         $ rnloremromance += 1
-        c "You’re so adorable."
+        c "You’re so adorably cute."
         Lo "R-Really...?"
         $ renpy.pause (1.0)
     
@@ -1318,7 +1318,7 @@ if rnloremromance > 7:
     Lo "R-Really...?"
     m "I gently put my hand under Lorem’s chin, guiding their lips to mine, pulling them into a passionate kiss."
     show lorem shy with dissolve 
-    m "Lorem was surprised by my action, but soon gave in, returning the kiss and subtly slipping in a small amount of tongue, which I took as an invitation to return the favor."
+    m "Lorem was surprised by my action, but soon gave in, returning the kiss."
     show lorem sleep blush with dissolve 
     m "I moved my hand from their chin and started caressing their neck, while they held my shoulders pulling me closer."
     show lorem normal blush with dissolve 
