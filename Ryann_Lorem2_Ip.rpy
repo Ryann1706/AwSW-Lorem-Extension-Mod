@@ -229,7 +229,7 @@ stop soundloop fadeout 2.0
 $ renpy.pause (1.5)
 Ip normal "Alright, this machine is done. You can get up now."
 if rndidannatest == True:
-    c "Wait, but when Anna used it, it took some time to prosses the data. Why didn’t it now?"
+    c "Wait, but when Anna used it, it took some time to process the data. Why didn’t it now?"
     Ip "It already has, it finished scanning while we were talking, you looked comfortable so I let you stay lying down."
     c "Alright."
 else:
