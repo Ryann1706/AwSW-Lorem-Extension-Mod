@@ -137,7 +137,7 @@ init python:
     ryannlookedlist = False 
     
     ryann_looked_list_before = False
-    ryann_looked_table_before = Falsw
+    ryann_looked_table_before = False
 
 
 
