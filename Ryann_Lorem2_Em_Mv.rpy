@@ -65,7 +65,7 @@ Em "I'm glad it's to your liking, but you will have to fill in some paperwork be
 c "I expected that, but before I start, there’s something crucially important I must warn you about."
 Em "What is it?"
 c "Have you heard at all about a comet lately?"
-Em ques "I am aware of it. It's path is projected to pass by the planet safely, if that’s what you were worried about."
+Em ques "I am aware of it. Its path is projected to pass by the planet safely, if that’s what you were worried about."
 c "Actually, it won't. According to my PDA, the comet will directly hit the planet causing a global extinction event if nothing is done about it."
 show emera normal with dissolve
 c "Thankfully, because the generator Reza tried to take wasn't damaged, it should supply enough power to safely divert it."
