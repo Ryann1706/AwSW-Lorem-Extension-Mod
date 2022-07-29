@@ -307,7 +307,7 @@ menu:
 
     "Maintenance room.":
         m "We went into the maintenance room, and straight away a few things stood out to us."
-        m "The primary generator that powered the facility, and portal, an industrial looking pump, and a large toolbox."
+        m "The primary generator that powered the facility and portal, an industrial looking pump, and a large toolbox."
         label ryann_lorem2_lo7_before_maintenance:
         menu:
             "Look at generator.":
@@ -883,7 +883,7 @@ menu:
 
     "Search cabinet.":
         if ryannlookedcabinet == True:
-            m "I seached the cabinet again, yet there still wasn't anyhting that could help us."
+            m "I seached the cabinet again, yet there still wasn't anything that could help us."
 
         else:
             $ ryannlookedcabinet = True
@@ -972,7 +972,7 @@ menu:
 
             "Check folders.":
                 $ ryannactionsremaining -= 1
-                m "There was an entire shelf decicated just to folders. Just from skimming the labels on them, I doubted they could help us."
+                m "There was an entire shelf dedicated just to folders. Just from skimming the labels on them, I doubted they could help us."
 
             "Look at maintenance list.":
                 $ ryannlookedlist = True 
@@ -1060,7 +1060,7 @@ menu:
             jump ryann_lorem2_lo7_minigame_rip
 
         menu:
-            "Deactive lockdown.":
+            "Deactivate lockdown.":
                 play sound "fx/keyboard.ogg"
                 $ renpy.pause (3.5)
                 play sound "fx/system3.wav"
@@ -1150,7 +1150,7 @@ menu:
 
                 elif ryannsearchterm == "status":
                     play sound "fx/system3.wav"
-                    s "Prossesing..."
+                    s "Processing..."
                     s "Water detected in [[Compartment A]. Contact maintenance crew member immediately."
 
                 else:
