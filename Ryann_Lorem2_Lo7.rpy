@@ -384,6 +384,7 @@ menu:
         label ryann_lorem2_lo7_before_meeting:
         menu:
             "Look at table.":
+                $ ryann_looked_table_before = True
                 $ ryannlookedtable = True
                 show lorem think with dissolve
                 m "The table was pretty standard, there was four chairs under it and a stack of papers at the end of it."
@@ -417,6 +418,7 @@ menu:
         label ryann_lorem2_lo7_before_living:
         menu:
             "Look at shelf.":
+                $ ryann_looked_list_before = True
                 $ ryannlookedlist = True
                 m "The shelf had lots of things on it, mostly folders, documents, and other pieces of paper with numerous things on them."
                 m "But most obviously a list, of presumably a maintenance worker."
@@ -1200,11 +1202,14 @@ $   ryannpumponoff = 0
 $   ryannpumpon = False
 $   ryannvalveatpump = False
 $   ryannscrewdriveratpump = False
-$   ryannlookedtable = False
 $   ryannlookedboxes = False
 $   ryannmovedboxes = False
 $   ryannlookedcabinet = False 
-$   ryannlookedlist = False 
+
+if ryann_looked_list_before == False:
+    $ ryannlookedlist = False
+if ryann_looked_table_before == False:
+    $ ryannlookedtable = False
 
 play music "mx/fervor.ogg"
 jump ryann_lorem2_lo7_minigame_restart
