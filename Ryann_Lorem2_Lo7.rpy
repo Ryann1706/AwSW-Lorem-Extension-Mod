@@ -271,7 +271,7 @@ menu:
         Lo "Right..."
         c "So, if they’re also trespassing, they’ll get arrested too, so we’ll be fine."
         Lo relieved "But whoever arrested them would arrest us too."
-        c "But they’re trespassing too, so they’ll get arrested before they arrest us, check and mate."
+        c "But they’re trespassing too, so they’ll get arrested before they arrest us."
         show lorem normal with dissolve 
         m "I heard Lorem quietly chuckling, not wanting me to hear them laughing at my stupid joke."
         Lo "You always know what just to say to lighten the mood, huh?"
