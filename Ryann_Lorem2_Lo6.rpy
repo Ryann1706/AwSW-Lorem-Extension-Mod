@@ -235,9 +235,7 @@ menu:
         c "I was looking at the book shelf there, and I saw a book called The Exteriors. What's it about?"
         Lo think flip "Well, I don’t want to spoil it in case you want to read it, but it's about two rival teenage gangs called the Oilers and the Glovs."
         Lo normal flip "I thought it was really good, but it doesn't have an entirely happy ending."
-        c "Well, nothing gold can stay, Ponyboy."
-        Lo think flip "What?"
-        c "It was a reference to... {w}Nevermind."
+        c "Interesting..."
         $ ryannlo6ask += 1
         $ ryannaskbooks = True
         jump ryann_lorem2_lorem6_questions
